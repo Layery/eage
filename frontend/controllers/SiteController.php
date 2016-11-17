@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\AgentTeam;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\db\Query;
@@ -152,6 +153,8 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+        $rs = new AgentTeam();
+        p($rs);
         return $this->render('about');
     }
 
