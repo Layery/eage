@@ -4,6 +4,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\db\Query;
+use yii\helpers\ArrayHelper;
 use yii\log\Logger;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -83,10 +84,9 @@ class SiteController extends Controller
                     ->limit(3)
                     ->all();
 
-        $log = new Logger();
-        $rs = $log->log($rs,1,'sitecontroller');
-        p($rs);
-        return $this->renderContent();
+        $rs = ArrayHelper::map($rs,'name','id');
+
+        return $this->renderContent('hello');
     }
 
     /**

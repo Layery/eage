@@ -28,8 +28,9 @@ return [
             'targets' => [
                 'file' => [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['trace', 'info'],
-                    'categories' => ['yii\*'],
+                    'levels' => ['error'],
+                    'categories' => ['error'],
+                    'logFile' => '@app/runtime/logs/error.log'
                 ],
                 'email' => [
                     'class' => 'yii\log\EmailTarget',
@@ -44,14 +45,16 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+
+        // url美化
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'suffix' => '.html',
             'rules' => [
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
