@@ -25,11 +25,19 @@ return [
             'name' => 'frontend',
         ],
         'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
-                [
+                'file' => [
                     'class' => 'yii\log\FileTarget',
+                    'levels' => ['trace', 'info'],
+                    'categories' => ['yii\*'],
+                ],
+                'email' => [
+                    'class' => 'yii\log\EmailTarget',
                     'levels' => ['error', 'warning'],
+                    'message' => [
+                        'to' => ['weidingyi@aliyun.com'],
+                        'subject' => 'New eage.com log message',
+                    ],
                 ],
             ],
         ],

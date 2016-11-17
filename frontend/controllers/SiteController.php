@@ -3,6 +3,8 @@ namespace frontend\controllers;
 
 use Yii;
 use yii\base\InvalidParamException;
+use yii\db\Query;
+use yii\log\Logger;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -72,9 +74,19 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $rs = Yii::app()->curl();
+        $rs = Yii::$app->getDb()->createCommand('select * from fy_admin')->queryOne();
+        $query = new Query();
+        $rs = $query->select('id, name')
+                    ->where(['in', 'id', [15, 16, 17]])
+                    ->from('fy_admin')
+                    ->offset(0)
+                    ->limit(3)
+                    ->all();
 
-        return $this->renderContent('hello');
+        $log = new Logger();
+        $rs = $log->log($rs,1,'sitecontroller');
+        p($rs);
+        return $this->renderContent();
     }
 
     /**
