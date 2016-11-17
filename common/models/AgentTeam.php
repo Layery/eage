@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\db\Query;
 
 /**
  * This is the model class for table "fy_agent_team".
@@ -55,5 +56,14 @@ class AgentTeam extends \yii\db\ActiveRecord
             'num' => '允余经纪人数',
             'type' => '分组类别1：普通分组，2：干线分组',
         ];
+    }
+
+    public function getDataList()
+    {
+        $query = new Query();
+        $rs = $query->select('*')
+                    ->from(self::tableName())
+                    ->all();
+        return $rs;
     }
 }

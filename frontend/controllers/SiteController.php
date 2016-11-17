@@ -6,11 +6,11 @@ use Yii;
 use yii\base\InvalidParamException;
 use yii\db\Query;
 use yii\helpers\ArrayHelper;
-use yii\log\Logger;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\data\ArrayDataProvider;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
@@ -86,7 +86,7 @@ class SiteController extends Controller
                     ->all();
 
         $rs = ArrayHelper::map($rs,'name','id');
-
+        Yii::error('test log ', 'error');
         return $this->renderContent('hello');
     }
 
@@ -153,9 +153,20 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        $rs = new AgentTeam();
-        p($rs);
-        return $this->render('about');
+        $agentTeam = new AgentTeam();
+        $rs = $agentTeam->getDataList();
+        $dataProvider = new ArrayDataProvider(
+            [
+                'allModels' => $rs,
+                'pagination' => [
+                    'pageSize' => 10,
+                ],
+                'sort' => [
+                    'attributes' => ['id', 'name'],
+                ],
+            ]
+        );
+        return $this->render('about', ['data' => $dataProvider]);
     }
 
     /**
