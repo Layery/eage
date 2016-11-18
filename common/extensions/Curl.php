@@ -13,7 +13,7 @@
  *
  */
 
-namespace common\util;
+namespace common\extensions;
 
 use Yii;
 use yii\base\Exception;

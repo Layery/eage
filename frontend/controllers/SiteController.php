@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use common\models\AgentTeam;
+use common\extensions\Curl;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\db\Query;
@@ -245,7 +246,14 @@ class SiteController extends Controller
     public function actionView()
     {
         $id = Yii::$app->getRequest()->get('id');
-        Yii::
+        $curl = new Curl();
+        $params = [
+            'id' => $id,
+            'name' => 'llf'
+        ];
+        $url = http_build_query($params);
+        $rs = $curl->post($url);
+        p($rs);
         return $this->renderContent($id);
     }
 
