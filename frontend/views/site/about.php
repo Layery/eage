@@ -12,13 +12,18 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php
    echo GridView::widget([
         'dataProvider' => $data,
-        'columns' => [
-            'id',
-            'name',
-            'province',
-            'city',
-            'area_id',
-            'dateline',
+       'columns' => [
+           ['class' => 'yii\grid\SerialColumn'],
+           'id',
+           'name',
+           'province',
+           'city',
+           'area_id',
+           'dateline',
+           'label' => [
+               'class' => 'yii\grid\ActionColumn',
+
+           ]
         ],
     ]);
 ?>

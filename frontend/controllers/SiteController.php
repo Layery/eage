@@ -146,28 +146,6 @@ class SiteController extends Controller
         }
     }
 
-    /**
-     * Displays about page.
-     *
-     * @return mixed
-     */
-    public function actionAbout()
-    {
-        $agentTeam = new AgentTeam();
-        $rs = $agentTeam->getDataList();
-        $dataProvider = new ArrayDataProvider(
-            [
-                'allModels' => $rs,
-                'pagination' => [
-                    'pageSize' => 10,
-                ],
-                'sort' => [
-                    'attributes' => ['id', 'name'],
-                ],
-            ]
-        );
-        return $this->render('about', ['data' => $dataProvider]);
-    }
 
     /**
      * Signs user up.
@@ -238,4 +216,46 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionAbout()
+    {
+        $agentTeam = new AgentTeam();
+        $rs = $agentTeam->getDataList();
+        $dataProvider = new ArrayDataProvider(
+            [
+                'allModels' => $rs,
+//                'filterModel' => $searchModel,
+
+                'pagination' => [
+                    'pageSize' => 10,
+                ],
+            ]
+        );
+        return $this->render('about', ['data' => $dataProvider]);
+    }
+
+
+    public function actionView()
+    {
+        $id = Yii::$app->getRequest()->get('id');
+        Yii::
+        return $this->renderContent($id);
+    }
+
+
+    public function actionUserview()
+    {
+        p($_GET);
+    }
+
+
+
+
 }
