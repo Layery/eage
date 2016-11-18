@@ -13,7 +13,7 @@
  *
  */
 
-namespace linslin\yii2\curl;
+namespace common\util;
 
 use Yii;
 use yii\base\Exception;
