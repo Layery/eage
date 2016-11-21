@@ -20,10 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
            'city',
            'area_id',
            'dateline',
-           'label' => [
-               'class' => 'yii\grid\ActionColumn',
-
-           ]
+           ['class' => 'common\widgets\MyActionColumn']
         ],
     ]);
 ?>

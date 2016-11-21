@@ -182,7 +182,7 @@ class MyActionColumn extends ActionColumn
         if (is_callable($this->urlCreator)) {
             return call_user_func($this->urlCreator, $action, $model, $key, $index);
         } else {
-//            $params = is_array($key) ? $key : ['id' => (string) $key];
+            $params = is_array($key) ? $key : ['id' => (string) $key];   // @todo 框架中为啥生成的url中的id不对??
             $params = is_array($model['id']) ? $model['id'] : ['id' => (string) $model['id']];
             $params[0] = $this->controller ? $this->controller . '/' . $action : $action;
             return Url::toRoute($params);

@@ -17,6 +17,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\Test;
 
 /**
  * Site controller
@@ -232,8 +233,6 @@ class SiteController extends Controller
         $dataProvider = new ArrayDataProvider(
             [
                 'allModels' => $rs,
-//                'filterModel' => $searchModel,
-
                 'pagination' => [
                     'pageSize' => 10,
                 ],
@@ -246,24 +245,13 @@ class SiteController extends Controller
     public function actionView()
     {
         $id = Yii::$app->getRequest()->get('id');
-        $curl = new Curl();
-        $params = [
-            'id' => $id,
-            'name' => 'llf'
-        ];
-        $url = http_build_query($params);
-        $rs = $curl->post($url);
-        p($rs);
+        $name = 'testName';
+        $testModel = new Test();
+        $rs = $testModel->sendTestCurl(['id' => $id, 'name' => $name]);
+        
+
         return $this->renderContent($id);
     }
-
-
-    public function actionUserview()
-    {
-        p($_GET);
-    }
-
-
 
 
 }
