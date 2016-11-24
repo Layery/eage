@@ -4,9 +4,15 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\grid\DataPicer;
 
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
+?>
+
+<?php
+
+var_dump(DataPicer::widget());
 ?>
 
 <?php
