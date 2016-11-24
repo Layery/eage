@@ -37,7 +37,7 @@ return [
                     'levels' => ['error', 'warning'],
                     'message' => [
                         'to' => ['weidingyi@aliyun.com'],
-                        'subject' => 'New eage.com log message',
+                        'subject' => 'New yii.cc log message',
                     ],
                 ],
             ],
@@ -47,13 +47,13 @@ return [
         ],
 
         // url美化
-       'urlManager' => [
-           'enablePrettyUrl' => true,
-           'showScriptName' => false,
-           'suffix' => '.html',
-           'rules' => [
-           ],
-       ],
+       // 'urlManager' => [
+       //     'enablePrettyUrl' => true,
+       //     'showScriptName' => false,
+       //     'suffix' => '.html',
+       //     'rules' => [
+       //     ],
+       // ],
 
     ],
     'params' => $params,
