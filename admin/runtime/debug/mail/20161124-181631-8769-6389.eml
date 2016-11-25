@@ -1,0 +1,120 @@
+Message-ID: <5e98e5ca23d9d7635546069b232affc2@localhost>
+Date: Thu, 24 Nov 2016 18:16:31 +0800
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-11-24 18:16:31 [::1][-][-][error][error] test log=20
+2016-11-24 18:16:=
+31 [::1][-][-][info][application] $_COOKIE =3D [
+    'PHPSESSID' =3D> '8h=
+mfrdhfpl3pga98vk1fc11245'
+    'frontend' =3D> 'l5i5u6rk4264psflq6bcrs4s87=
+'
+    '_csrf-frontend' =3D>
+'b4c5dc09e107a25b59b6a4e9b82ae5dc9ead718789=
+18542ada344db8735d8b59a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"2Aw7Z_jPW=
+GetGiGvNRfcPZvMETeSZLXI\";}'
+]
+
+$_SERVER =3D [
+    'HTTP_HOST' =3D>=
+ 'localhost'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_UPGRADE_=
+INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Wind=
+ows NT 10.0; WOW64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.28=
+40.99
+Safari/537.36'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xh=
+tml+xml,application/xml;q=3D0.9,image/webp,*/*;q=3D0.8'
+    'HTTP_ACCEPT_=
+ENCODING' =3D> 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' =3D> =
+'zh-CN,zh;q=3D0.8'
+    'HTTP_COOKIE' =3D> 'PHPSESSID=3D8hmfrdhfpl3pga98vk=
+1fc11245;
+frontend=3Dl5i5u6rk4264psflq6bcrs4s87;
+_csrf-frontend=3Db4c5d=
+c09e107a25b59b6a4e9b82ae5dc9ead71878918542ada344db8735d8b59a%3A2%3A%7Bi%3A0=
+%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%222Aw7Z_jPWGetGiGvNRfc=
+PZvMETeSZLXI%22%3B%7D'
+    'PATH' =3D> 'C:\\Program Files (x86)\\Intel\\i=
+CLS
+Client\\;C:\\Program Files\\Intel\\iCLS
+Client\\;C:\\Windows\\syste=
+m32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsP=
+owerShell\\v1.0\\;C:\\Program
+Files (x86)\\Intel\\Intel(R) Management Eng=
+ine
+Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine=
+
+Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management
+En=
+gine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management
+Engine=
+ Components\\IPT;D:\\software\\phpstudy\\MySQL\\bin;C:\\Program
+Files\\Gi=
+t\\cmd;C:\\ProgramData\\Microsoft\\Windows\\Start
+Menu\\Programs\\Git;D:\=
+\software\\phpstudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program=
+
+Files
+(x86)\\OpenSSH\\bin;D:\\software\\TortoiseSVN\\bin;D:\\software\=
+\TortoiseSVN\\cmdTool\\bin;C:\\Program
+Files (x86)\\VanDyke
+Software\\C=
+lients\\;D:\\software\\nginx-1.11.5;C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=
+=89\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program
+Files (x86)\\Van=
+Dyke Software\\Clients\\'
+    'SystemRoot' =3D> 'C:\\Windows'
+    'COMS=
+PEC' =3D> 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EX=
+E;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Win=
+dows'
+    'SERVER_SIGNATURE' =3D> ''
+    'SERVER_SOFTWARE' =3D> 'Apache=
+/2.4.18 (Win32) OpenSSL/1.0.2e
+PHP/5.5.30'
+    'SERVER_NAME' =3D> 'loca=
+lhost'
+    'SERVER_ADDR' =3D> '::1'
+    'SERVER_PORT' =3D> '80'
+    '=
+REMOTE_ADDR' =3D> '::1'
+    'DOCUMENT_ROOT' =3D> 'D:/www'
+    'REQUEST_=
+SCHEME' =3D> 'http'
+    'CONTEXT_PREFIX' =3D> ''
+    'CONTEXT_DOCUMENT_=
+ROOT' =3D> 'D:/www'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    'S=
+CRIPT_FILENAME' =3D> 'D:/www/eage/admin/web/index.php'
+    'REMOTE_PORT' =
+=3D> '55965'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'SERVER_PROTOCO=
+L' =3D> 'HTTP/1.1'
+    'REQUEST_METHOD' =3D> 'GET'
+    'QUERY_STRING' =
+=3D> ''
+    'REQUEST_URI' =3D> '/eage/admin/web/'
+    'SCRIPT_NAME' =3D=
+> '/eage/admin/web/index.php'
+    'PHP_SELF' =3D> '/eage/admin/web/index.=
+php'
+    'REQUEST_TIME_FLOAT' =3D> 1479982591.775
+    'REQUEST_TIME' =
+=3D> 1479982591
+]
