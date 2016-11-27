@@ -30,4 +30,18 @@ phpunit.phar
 /phpunit.xml
 
 # vagrant runtime
+
 /.vagrant
+
+
+/frontend/runtime
+
+
+
+
+
+
+
+
+
+
