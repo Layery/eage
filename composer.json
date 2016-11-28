@@ -18,7 +18,8 @@
         "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "linslin/yii2-curl": "*"
+        "linslin/yii2-curl": "*",
+        "kartik-v/yii2-dynagrid": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
