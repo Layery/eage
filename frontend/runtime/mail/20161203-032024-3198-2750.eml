@@ -1,0 +1,233 @@
+Message-ID: <75606dc5fa8e7d4e1e22bc9137b97c5d@yii.cc>
+Date: Sat, 03 Dec 2016 03:20:24 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-03 03:20:24
+[127.0.0.1][-][j4slgqm8tkiru7iarob0e8efn2][error][yii=
+\i18n\PhpMessageSource::loadFallbackMessages]
+The message file for catego=
+ry 'yii' does not exist:
+D:\www\eage\vendor\yiisoft\yii2/messages/zh-CH/y=
+ii.php Fallback file
+does not exist as well:
+D:\www\eage\vendor\yiisoft=
+\yii2/messages/zh/yii.php
+2016-12-03 03:20:24
+[127.0.0.1][-][j4slgqm8tk=
+iru7iarob0e8efn2][error][Error] Error: Call
+to undefined method common\mo=
+dels\User::findByUsername() in
+D:\www\eage\common\models\LoginForm.php:74=
+
+Stack trace:
+#0 D:\www\eage\common\models\LoginForm.php(44):
+common\=
+models\LoginForm->getUser()
+#1 [internal function]:
+common\models\Login=
+Form->validatePassword('password', NULL)
+#2 D:\www\eage\vendor\yiisoft\yi=
+i2\validators\InlineValidator.php(69):
+call_user_func(Array, 'password', =
+NULL)
+#3 D:\www\eage\vendor\yiisoft\yii2\validators\Validator.php(252):=
+
+yii\validators\InlineValidator->validateAttribute(Object(common\models\L=
+oginForm),
+'password')
+#4 D:\www\eage\vendor\yiisoft\yii2\base\Model.ph=
+p(356):
+yii\validators\Validator->validateAttributes(Object(common\models=
+\LoginForm),
+Array)
+#5 D:\www\eage\common\models\LoginForm.php(58):
+y=
+ii\base\Model->validate()
+#6 D:\www\eage\frontend\controllers\SiteControl=
+ler.php(106):
+common\models\LoginForm->login()
+#7 [internal function]:=
+
+frontend\controllers\SiteController->actionLogin()
+#8 D:\www\eage\vend=
+or\yiisoft\yii2\base\InlineAction.php(55):
+call_user_func_array(Array, Ar=
+ray)
+#9 D:\www\eage\vendor\yiisoft\yii2\base\Controller.php(154):
+yii\b=
+ase\InlineAction->runWithParams(Array)
+#10 D:\www\eage\vendor\yiisoft\yii=
+2\base\Module.php(454):
+yii\base\Controller->runAction('login', Array)
+=
+#11 D:\www\eage\vendor\yiisoft\yii2\web\Application.php(87):
+yii\base\Mod=
+ule->runAction('site/login', Array)
+#12 D:\www\eage\vendor\yiisoft\yii2\b=
+ase\Application.php(375):
+yii\web\Application->handleRequest(Object(yii\w=
+eb\Request))
+#13 D:\www\eage\frontend\web\index.php(28):
+yii\base\Appli=
+cation->run()
+#14 {main}
+2016-12-03 03:20:24
+[127.0.0.1][-][j4slgqm8t=
+kiru7iarob0e8efn2][info][application] $_GET =3D
+[
+    'r' =3D> 'site/lo=
+gin'
+]
+
+$_POST =3D [
+    '_csrf-frontend' =3D>
+'emhGSWMxWXEuHj4vC=
+VIPJxs9NhwkCGpIDAMeKhFYECUsChl4JmQtIw=3D=3D'
+    'LoginForm' =3D> [
+   =
+     'username' =3D> 'admin'
+        'password' =3D> '123'
+        'rem=
+emberMe' =3D> '1'
+    ]
+    'login-button' =3D> ''
+]
+
+$_COOKIE =
+=3D [
+    'frontend' =3D> 'j4slgqm8tkiru7iarob0e8efn2'
+    '_csrf-front=
+end' =3D>
+'8b7aca814a4f788bad2bb4c51b84757e266048606ac38cb16814a528384610=
+6ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TvxfjcVVaUpUG939vkXcriITVb_1E=
+UtR\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '__captcha/=
+site/captcha' =3D> 'quvunep'
+    '__captcha/site/captchacount' =3D> 1
+]=
+
+
+$_SERVER =3D [
+    'PATH' =3D> 'C:\\Program Files (x86)\\Intel\\iCL=
+S
+Client\\;C:\\Program Files\\Intel\\iCLS
+Client\\;C:\\Windows\\system3=
+2;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPow=
+erShell\\v1.0\\;C:\\Program
+Files (x86)\\Intel\\Intel(R) Management Engin=
+e
+Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine
+=
+Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management
+Engin=
+e Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management
+Engine Co=
+mponents\\IPT;D:\\software\\phpstudy\\MySQL\\bin;C:\\Program
+Files\\Git\\=
+cmd;C:\\ProgramData\\Microsoft\\Windows\\Start
+Menu\\Programs\\Git;D:\\so=
+ftware\\phpstudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program
+F=
+iles
+(x86)\\OpenSSH\\bin;D:\\software\\TortoiseSVN\\cmdTool\\bin;C:\\Prog=
+ram
+Files (x86)\\VanDyke
+Software\\Clients\\;D:\\software\\nginx-1.11.5=
+;D:\\software\\redis3.2\\;C:\\Program
+Files
+(x86)\\Subversion\\bin;D:\\=
+software\\TortoiseSVN\\bin;C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\=
+\Roaming\\Composer\\vendor\\bin;C:\\Program
+Files (x86)\\VanDyke Software=
+\\Clients\\'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:=
+\\Windows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.=
+VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    '=
+PHP_FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/software/phpstudy=
+/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' =3D> '2684'
+    'SCRIPT_NAME' =3D>=
+ '/index.php'
+    'REQUEST_URI' =3D> '/index.php?r=3Dsite%2Flogin'
+    =
+'QUERY_STRING' =3D> 'r=3Dsite%2Flogin'
+    'REQUEST_METHOD' =3D> 'POST'=
+
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CG=
+I/1.1'
+    'REMOTE_PORT' =3D> '52002'
+    'SCRIPT_FILENAME' =3D> 'D:/ww=
+w/eage/frontend/web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.ne=
+t'
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'D:/www/eage/frontend/web'
+    'CON=
+TEXT_PREFIX' =3D> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROO=
+T' =3D> 'D:/www/eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+ =
+   'SERVER_PORT' =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERV=
+ER_NAME' =3D> 'yii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) =
+OpenSSL/1.0.2e
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'S=
+ystemRoot' =3D> 'C:\\Windows'
+    'HTTP_COOKIE' =3D> 'frontend=3Dj4slgqm8=
+tkiru7iarob0e8efn2;
+_csrf-frontend=3D8b7aca814a4f788bad2bb4c51b84757e2660=
+48606ac38cb16814a5283846106ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%2=
+2%3Bi%3A1%3Bs%3A32%3A%22TvxfjcVVaUpUG939vkXcriITVb_1EUtR%22%3B%7D'
+    'H=
+TTP_ACCEPT_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_ACCEPT_ENCODING' =
+=3D> 'gzip, deflate'
+    'HTTP_REFERER' =3D> 'http://yii.cc/index.php?r=
+=3Dsite%2Flogin'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xm=
+l,application/xml;q=3D0.9,image/webp,*/*;q=3D0.8'
+    'CONTENT_TYPE' =3D>=
+ 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/=
+5.0 (Windows NT 10.0; WOW64)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrom=
+e/54.0.2840.99
+Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D>=
+ '1'
+    'HTTP_ORIGIN' =3D> 'http://yii.cc'
+    'HTTP_CACHE_CONTROL' =
+=3D> 'max-age=3D0'
+    'CONTENT_LENGTH' =3D> '203'
+    'HTTP_CONNECTION=
+' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'FCGI_ROLE' =3D> 'RESP=
+ONDER'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 1=
+480735224.2086
+    'REQUEST_TIME' =3D> 1480735224
+]

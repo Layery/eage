@@ -1,0 +1,150 @@
+Message-ID: <38913afca65b23b7b25fe2c9738be687@yii.cc>
+Date: Sat, 03 Dec 2016 03:15:54 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-03 03:15:54
+[127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::l=
+oadFallbackMessages]
+The message file for category 'yii' does not exist:=
+
+D:\www\eage\vendor\yiisoft\yii2/messages/zh-CH/yii.php Fallback file
+d=
+oes not exist as well:
+D:\www\eage\vendor\yiisoft\yii2/messages/zh/yii.ph=
+p
+2016-12-03 03:15:54 [127.0.0.1][-][-][info][application] $_GET =3D [
+=
+    'r' =3D> 'site/login'
+]
+
+$_COOKIE =3D [
+    'frontend' =3D> 'j4=
+slgqm8tkiru7iarob0e8efn2'
+    '_csrf-frontend' =3D>
+'8b7aca814a4f788bad=
+2bb4c51b84757e266048606ac38cb16814a5283846106ba:2:{i:0;s:14:\"_csrf-fronten=
+d\";i:1;s:32:\"TvxfjcVVaUpUG939vkXcriITVb_1EUtR\";}'
+]
+
+$_SESSION =3D=
+ [
+    '__flash' =3D> []
+    '__captcha/site/captcha' =3D> 'quvunep'
+=
+    '__captcha/site/captchacount' =3D> 1
+]
+
+$_SERVER =3D [
+    'PAT=
+H' =3D> 'C:\\Program Files (x86)\\Intel\\iCLS
+Client\\;C:\\Program Files\=
+\Intel\\iCLS
+Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\Syst=
+em32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program
+F=
+iles (x86)\\Intel\\Intel(R) Management Engine
+Components\\DAL;C:\\Program=
+ Files\\Intel\\Intel(R) Management Engine
+Components\\DAL;C:\\Program Fil=
+es (x86)\\Intel\\Intel(R) Management
+Engine Components\\IPT;C:\\Program F=
+iles\\Intel\\Intel(R) Management
+Engine Components\\IPT;D:\\software\\php=
+study\\MySQL\\bin;C:\\Program
+Files\\Git\\cmd;C:\\ProgramData\\Microsoft\=
+\Windows\\Start
+Menu\\Programs\\Git;D:\\software\\phpstudy\\php55;C:\\Pro=
+gramData\\ComposerSetup\\bin;C:\\Program
+Files
+(x86)\\OpenSSH\\bin;D:\\=
+software\\TortoiseSVN\\cmdTool\\bin;C:\\Program
+Files (x86)\\VanDyke
+So=
+ftware\\Clients\\;D:\\software\\nginx-1.11.5;D:\\software\\redis3.2\\;C:\\P=
+rogram
+Files
+(x86)\\Subversion\\bin;D:\\software\\TortoiseSVN\\bin;C:\\=
+Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\\bin=
+;C:\\Program
+Files (x86)\\VanDyke Software\\Clients\\'
+    'SYSTEMROOT'=
+ =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\\Windows\\system32\\cmd.exe'=
+
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.=
+MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' =3D> '=
+1000'
+    'PHPRC' =3D> 'D:/software/phpstudy/php70n'
+    '_FCGI_SHUTDOW=
+N_EVENT_' =3D> '2568'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'REQUEST_=
+URI' =3D> '/index.php?r=3Dsite%2Flogin'
+    'QUERY_STRING' =3D> 'r=3Dsite=
+%2Flogin'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SERVER_PROTOCOL' =3D> 'H=
+TTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'REMOTE_PORT' =3D> =
+'51953'
+    'SCRIPT_FILENAME' =3D> 'D:/www/eage/frontend/web/index.php'=
+
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROO=
+T' =3D> 'D:/www/eage/frontend/web'
+    'CONTEXT_PREFIX' =3D> ''
+    'RE=
+QUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'D:/www/eage/frontend/=
+web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '80'
+ =
+   'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_NAME' =3D> 'yii.cc'
+    '=
+SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e
+mod_fcgid/2.3=
+.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'SystemRoot' =3D> 'C:\\Windows'=
+
+    'HTTP_COOKIE' =3D> 'frontend=3Dj4slgqm8tkiru7iarob0e8efn2;
+_csrf-f=
+rontend=3D8b7aca814a4f788bad2bb4c51b84757e266048606ac38cb16814a5283846106ba=
+%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Tvxfj=
+cVVaUpUG939vkXcriITVb_1EUtR%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh=
+-CN,zh;q=3D0.8'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, sdch'
+ =
+   'HTTP_REFERER' =3D> 'http://yii.cc/index.php'
+    'HTTP_ACCEPT' =3D>=
+
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,*/*;=
+q=3D0.8'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; WOW64)=
+
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99
+Safari/537.=
+36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_CONNECTION'=
+ =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'FCGI_ROLE' =3D> 'RESPO=
+NDER'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 14=
+80734954.3684
+    'REQUEST_TIME' =3D> 1480734954
+]

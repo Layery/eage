@@ -1,0 +1,317 @@
+Message-ID: <d284591f17a7944faf2321551512d6cc@yii.cc>
+Date: Sat, 03 Dec 2016 03:26:49 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-03 03:26:49
+[127.0.0.1][-][j4slgqm8tkiru7iarob0e8efn2][error][yii=
+\i18n\PhpMessageSource::loadFallbackMessages]
+The message file for catego=
+ry 'yii' does not exist:
+D:\www\eage\vendor\yiisoft\yii2/messages/zh-CH/y=
+ii.php Fallback file
+does not exist as well:
+D:\www\eage\vendor\yiisoft=
+\yii2/messages/zh/yii.php
+2016-12-03 03:26:49
+[127.0.0.1][-][j4slgqm8tk=
+iru7iarob0e8efn2][error][yii\db\Exception]
+PDOException: SQLSTATE[42S22]:=
+ Column not found: 1054 Unknown column
+'email' in 'where clause' in
+D:\=
+www\eage\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\www\=
+eage\vendor\yiisoft\yii2\db\Command.php(900):
+PDOStatement->execute()
+#=
+1 D:\www\eage\vendor\yiisoft\yii2\db\Command.php(388):
+yii\db\Command->qu=
+eryInternal('fetchColumn', 0)
+#2 D:\www\eage\vendor\yiisoft\yii2\db\Query=
+.php(367):
+yii\db\Command->queryScalar()
+#3
+D:\www\eage\vendor\yiisof=
+t\yii2\validators\UniqueValidator.php(125):
+yii\db\Query->exists()
+#4 D=
+:\www\eage\vendor\yiisoft\yii2\validators\Validator.php(252):
+yii\validat=
+ors\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm),=
+
+'email')
+#5 D:\www\eage\vendor\yiisoft\yii2\base\Model.php(356):
+yii=
+\validators\Validator->validateAttributes(Object(frontend\models\SignupForm=
+),
+Array)
+#6 D:\www\eage\frontend\models\SignupForm.php(46):
+yii\base=
+\Model->validate()
+#7 D:\www\eage\frontend\controllers\SiteController.php=
+(162):
+frontend\models\SignupForm->signup()
+#8 [internal function]:
+f=
+rontend\controllers\SiteController->actionSignup()
+#9 D:\www\eage\vendor\=
+yiisoft\yii2\base\InlineAction.php(55):
+call_user_func_array(Array, Array=
+)
+#10 D:\www\eage\vendor\yiisoft\yii2\base\Controller.php(154):
+yii\bas=
+e\InlineAction->runWithParams(Array)
+#11 D:\www\eage\vendor\yiisoft\yii2\=
+base\Module.php(454):
+yii\base\Controller->runAction('signup', Array)
+#=
+12 D:\www\eage\vendor\yiisoft\yii2\web\Application.php(87):
+yii\base\Modu=
+le->runAction('site/signup', Array)
+#13 D:\www\eage\vendor\yiisoft\yii2\b=
+ase\Application.php(375):
+yii\web\Application->handleRequest(Object(yii\w=
+eb\Request))
+#14 D:\www\eage\frontend\web\index.php(28):
+yii\base\Appli=
+cation->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Col=
+umn not found: 1054 Unknown
+column 'email' in 'where clause'
+The SQL be=
+ing executed was: SELECT EXISTS(SELECT * FROM `user` WHERE
+`email`=3D'llf=
+@llf.com') in
+D:\www\eage\vendor\yiisoft\yii2\db\Schema.php:633
+Stack t=
+race:
+#0 D:\www\eage\vendor\yiisoft\yii2\db\Command.php(915):
+yii\db\Sc=
+hema->convertException(Object(PDOException), 'SELECT
+EXISTS(S...')
+#1 D=
+:\www\eage\vendor\yiisoft\yii2\db\Command.php(388):
+yii\db\Command->query=
+Internal('fetchColumn', 0)
+#2 D:\www\eage\vendor\yiisoft\yii2\db\Query.ph=
+p(367):
+yii\db\Command->queryScalar()
+#3
+D:\www\eage\vendor\yiisoft\y=
+ii2\validators\UniqueValidator.php(125):
+yii\db\Query->exists()
+#4 D:\w=
+ww\eage\vendor\yiisoft\yii2\validators\Validator.php(252):
+yii\validators=
+\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm),
+'=
+email')
+#5 D:\www\eage\vendor\yiisoft\yii2\base\Model.php(356):
+yii\val=
+idators\Validator->validateAttributes(Object(frontend\models\SignupForm),=
+
+Array)
+#6 D:\www\eage\frontend\models\SignupForm.php(46):
+yii\base\M=
+odel->validate()
+#7 D:\www\eage\frontend\controllers\SiteController.php(1=
+62):
+frontend\models\SignupForm->signup()
+#8 [internal function]:
+fro=
+ntend\controllers\SiteController->actionSignup()
+#9 D:\www\eage\vendor\yi=
+isoft\yii2\base\InlineAction.php(55):
+call_user_func_array(Array, Array)=
+
+#10 D:\www\eage\vendor\yiisoft\yii2\base\Controller.php(154):
+yii\base=
+\InlineAction->runWithParams(Array)
+#11 D:\www\eage\vendor\yiisoft\yii2\b=
+ase\Module.php(454):
+yii\base\Controller->runAction('signup', Array)
+#1=
+2 D:\www\eage\vendor\yiisoft\yii2\web\Application.php(87):
+yii\base\Modul=
+e->runAction('site/signup', Array)
+#13 D:\www\eage\vendor\yiisoft\yii2\ba=
+se\Application.php(375):
+yii\web\Application->handleRequest(Object(yii\we=
+b\Request))
+#14 D:\www\eage\frontend\web\index.php(28):
+yii\base\Applic=
+ation->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] =3D> 42S22
+    [1] =3D> 1054
+    [2] =3D> Unknown c=
+olumn 'email' in 'where clause'
+)
+
+2016-12-03 03:26:48
+[127.0.0.1][=
+-][j4slgqm8tkiru7iarob0e8efn2][info][application] $_GET =3D
+[
+    'r' =
+=3D> 'site/signup'
+]
+
+$_POST =3D [
+    '_csrf-frontend' =3D>
+'S2x=
+HbkJGcVQfGj8IKCUnAio5NzsFf0JtPQcfDTAvOAAdDhhfBxMFBg=3D=3D'
+    'SignupFor=
+m' =3D> [
+        'username' =3D> 'llf'
+        'email' =3D> 'llf@llf.c=
+om'
+        'password' =3D> 'llfllf'
+    ]
+    'signup-button' =3D> '=
+'
+]
+
+$_COOKIE =3D [
+    'frontend' =3D> 'j4slgqm8tkiru7iarob0e8efn2=
+'
+    '_csrf-frontend' =3D>
+'8b7aca814a4f788bad2bb4c51b84757e266048606a=
+c38cb16814a5283846106ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TvxfjcVVa=
+UpUG939vkXcriITVb_1EUtR\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =3D> =
+[]
+    '__captcha/site/captcha' =3D> 'quvunep'
+    '__captcha/site/capt=
+chacount' =3D> 1
+]
+
+$_SERVER =3D [
+    'PATH' =3D> 'C:\\Program Fil=
+es (x86)\\Intel\\iCLS
+Client\\;C:\\Program Files\\Intel\\iCLS
+Client\\;=
+C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\=
+System32\\WindowsPowerShell\\v1.0\\;C:\\Program
+Files (x86)\\Intel\\Intel=
+(R) Management Engine
+Components\\DAL;C:\\Program Files\\Intel\\Intel(R) =
+Management Engine
+Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R=
+) Management
+Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Ma=
+nagement
+Engine Components\\IPT;D:\\software\\phpstudy\\MySQL\\bin;C:\\Pr=
+ogram
+Files\\Git\\cmd;C:\\ProgramData\\Microsoft\\Windows\\Start
+Menu\\=
+Programs\\Git;D:\\software\\phpstudy\\php55;C:\\ProgramData\\ComposerSetup\=
+\bin;C:\\Program
+Files
+(x86)\\OpenSSH\\bin;D:\\software\\TortoiseSVN\\c=
+mdTool\\bin;C:\\Program
+Files (x86)\\VanDyke
+Software\\Clients\\;D:\\so=
+ftware\\nginx-1.11.5;D:\\software\\redis3.2\\;C:\\Program
+Files
+(x86)\\=
+Subversion\\bin;D:\\software\\TortoiseSVN\\bin;C:\\Users\\=E6=9C=AA=
+=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program
+F=
+iles (x86)\\VanDyke Software\\Clients\\'
+    'SYSTEMROOT' =3D> 'C:\\Windo=
+ws'
+    'COMSPEC' =3D> 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' =
+=3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDI=
+R' =3D> 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPR=
+C' =3D> 'D:/software/phpstudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' =3D> '2=
+704'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'REQUEST_URI' =3D> '/index=
+.php?r=3Dsite%2Fsignup'
+    'QUERY_STRING' =3D> 'r=3Dsite%2Fsignup'
+   =
+ 'REQUEST_METHOD' =3D> 'POST'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+   =
+ 'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'REMOTE_PORT' =3D> '52040'
+    =
+'SCRIPT_FILENAME' =3D> 'D:/www/eage/frontend/web/index.php'
+    'SERVER_A=
+DMIN' =3D> 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'D:/www/=
+eage/frontend/web'
+    'CONTEXT_PREFIX' =3D> ''
+    'REQUEST_SCHEME' =
+=3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'D:/www/eage/frontend/web'
+    'RE=
+MOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'SERVER_ADD=
+R' =3D> '127.0.0.1'
+    'SERVER_NAME' =3D> 'yii.cc'
+    'SERVER_SOFTWAR=
+E' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e
+mod_fcgid/2.3.9'
+    'SER=
+VER_SIGNATURE' =3D> ''
+    'SystemRoot' =3D> 'C:\\Windows'
+    'HTTP_CO=
+OKIE' =3D> 'frontend=3Dj4slgqm8tkiru7iarob0e8efn2;
+_csrf-frontend=3D8b7ac=
+a814a4f788bad2bb4c51b84757e266048606ac38cb16814a5283846106ba%3A2%3A%7Bi%3A0=
+%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TvxfjcVVaUpUG939vkXc=
+riITVb_1EUtR%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'=
+
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate'
+    'HTTP_REFERER' =3D=
+> 'http://yii.cc/index.php?r=3Dsite%2Fsignup'
+    'HTTP_ACCEPT' =3D>
+'t=
+ext/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,*/*;q=3D0=
+.8'
+    'CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded'
+    'HT=
+TP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; WOW64)
+AppleWebKit/537=
+.36 (KHTML, like Gecko) Chrome/54.0.2840.99
+Safari/537.36'
+    'HTTP_UP=
+GRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_ORIGIN' =3D> 'http://yii.cc'=
+
+    'HTTP_CACHE_CONTROL' =3D> 'max-age=3D0'
+    'CONTENT_LENGTH' =3D> =
+'187'
+    'HTTP_CONNECTION' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'=
+
+    'FCGI_ROLE' =3D> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.php'
+  =
+  'REQUEST_TIME_FLOAT' =3D> 1480735608.9574
+    'REQUEST_TIME' =3D> 14807=
+35608
+]

@@ -1,0 +1,127 @@
+Message-ID: <7e552832910c7f56e811332181800728@yii.cc>
+Date: Sat, 03 Dec 2016 02:19:55 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-03 02:19:53 [127.0.0.1][-][-][error][error] test log=20
+2016-12-03 =
+02:19:54
+[127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallback=
+Messages]
+The message file for category 'yii' does not exist:
+D:\www\ea=
+ge\vendor\yiisoft\yii2/messages/zh-CH/yii.php Fallback file
+does not exis=
+t as well:
+D:\www\eage\vendor\yiisoft\yii2/messages/zh/yii.php
+2016-12-=
+03 02:19:51 [127.0.0.1][-][-][info][application] $_SESSION =3D [
+    '__f=
+lash' =3D> []
+]
+
+$_SERVER =3D [
+    'PATH' =3D> 'C:\\Program Files =
+(x86)\\Intel\\iCLS
+Client\\;C:\\Program Files\\Intel\\iCLS
+Client\\;C:\=
+\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\Sys=
+tem32\\WindowsPowerShell\\v1.0\\;C:\\Program
+Files (x86)\\Intel\\Intel(R)=
+ Management Engine
+Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Man=
+agement Engine
+Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) M=
+anagement
+Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Manag=
+ement
+Engine Components\\IPT;D:\\software\\phpstudy\\MySQL\\bin;C:\\Progr=
+am
+Files\\Git\\cmd;C:\\ProgramData\\Microsoft\\Windows\\Start
+Menu\\Pro=
+grams\\Git;D:\\software\\phpstudy\\php55;C:\\ProgramData\\ComposerSetup\\bi=
+n;C:\\Program
+Files
+(x86)\\OpenSSH\\bin;D:\\software\\TortoiseSVN\\cmdT=
+ool\\bin;C:\\Program
+Files (x86)\\VanDyke
+Software\\Clients\\;D:\\softw=
+are\\nginx-1.11.5;D:\\software\\redis3.2\\;C:\\Program
+Files
+(x86)\\Sub=
+version\\bin;D:\\software\\TortoiseSVN\\bin;C:\\Users\\=E6=9C=AA=E5=AE=
+=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program
+Files (=
+x86)\\VanDyke Software\\Clients\\'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+=
+    'COMSPEC' =3D> 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+=
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D>=
+ 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D>=
+ 'D:/software/phpstudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' =3D> '1996'
+=
+    'SCRIPT_NAME' =3D> '/index.php'
+    'REQUEST_URI' =3D> '/'
+    'QUE=
+RY_STRING' =3D> ''
+    'REQUEST_METHOD' =3D> 'GET'
+    'SERVER_PROTOCOL=
+' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'REMOTE_PO=
+RT' =3D> '50665'
+    'SCRIPT_FILENAME' =3D> 'D:/www/eage/frontend/web/ind=
+ex.php'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    'CONTEXT_DOCUM=
+ENT_ROOT' =3D> 'D:/www/eage/frontend/web'
+    'CONTEXT_PREFIX' =3D> ''
+=
+    'REQUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'D:/www/eage/fr=
+ontend/web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '=
+80'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_NAME' =3D> 'yii.cc'=
+
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e
+mod_f=
+cgid/2.3.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'SystemRoot' =3D> 'C:\\W=
+indows'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_AC=
+CEPT_ENCODING' =3D> 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' =3D>
+'text/=
+html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,*/*;q=3D0.8'=
+
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; WOW64)
+Apple=
+WebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99
+Safari/537.36'
+  =
+  'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_CONNECTION' =3D> 'c=
+lose'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'FCGI_ROLE' =3D> 'RESPONDER'
+=
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 1480731590=
+.9535
+    'REQUEST_TIME' =3D> 1480731590
+]
