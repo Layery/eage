@@ -140,8 +140,6 @@ class Curl
      */
     public function put($url, $raw = true)
     {
-        $rs = Url::to($raw);
-        p($rs);
         return $this->_httpRequest('PUT', $url, $raw);
     }
 
