@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use common\models\AgentTeam;
 use common\extensions\Curl;
+use frontend\models\Article;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\db\Query;
@@ -78,18 +79,19 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $rs = Yii::$app->getDb()->createCommand('select * from fy_admin')->queryOne();
-        $query = new Query();
-        $rs = $query->select('id, name')
-                    ->where(['in', 'id', [15, 16, 17]])
-                    ->from('fy_admin')
-                    ->offset(0)
-                    ->limit(3)
-                    ->all();
-
-        $rs = ArrayHelper::map($rs,'name','id');
-        Yii::error('test log ', 'error');
-        return $this->renderContent('hello');
+//        $rs = Yii::$app->getDb()->createCommand('select * from fy_admin')->queryOne();
+//        $query = new Query();
+//        $rs = $query->select('id, name')
+//                    ->where(['in', 'id', [15, 16, 17]])
+//                    ->from('fy_admin')
+//                    ->offset(0)
+//                    ->limit(3)
+//                    ->all();
+//
+//        $rs = ArrayHelper::map($rs,'name','id');
+//        Yii::error('test log ', 'error');
+          $result = (new Article())->getArticle();
+          return $this->render('index', ['result' => $result]);
     }
 
     /**
