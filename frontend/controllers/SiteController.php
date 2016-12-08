@@ -18,7 +18,6 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
-use frontend\models\Test;
 
 /**
  * Site controller
@@ -82,16 +81,20 @@ class SiteController extends Controller
 //        $rs = Yii::$app->getDb()->createCommand('select * from fy_admin')->queryOne();
 //        $query = new Query();
 //        $rs = $query->select('id, name')
-//                    ->where(['in', 'id', [15, 16, 17]])
-//                    ->from('fy_admin')
-//                    ->offset(0)
-//                    ->limit(3)
-//                    ->all();
+//            ->where(['in', 'id', [15, 16, 17]])
+//            ->from('fy_admin')
+//            ->offset(0)
+//            ->limit(3)
+//            ->all();
 //
 //        $rs = ArrayHelper::map($rs,'name','id');
 //        Yii::error('test log ', 'error');
-          $result = (new Article())->getArticle();
-          return $this->render('index', ['result' => $result]);
+        if (IS_AJAX) {
+            $result = (new Article())->getArticle();
+            echo json_encode($result);
+            Yii::$app->end();
+        }
+        return $this->render('index');
     }
 
     /**
@@ -102,7 +105,6 @@ class SiteController extends Controller
     public function actionLogin()
     {
         $user = new User();
-        p($user);
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
