@@ -1,7 +1,6 @@
 <?php
 namespace frontend\controllers;
 
-use common\models\AgentTeam;
 use common\extensions\Curl;
 use frontend\models\Article;
 use Yii;

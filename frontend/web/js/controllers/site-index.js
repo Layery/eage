@@ -15,10 +15,17 @@ $(function(){
             html_str += '<div class="col-md-8 column">' +
                 '<h2>'+ v.name +'</h2>' +
                 '<p>'+ v.post +'</p>' +
-                '<p><a>vew detail</a></p>' +
+                '<p><a href="javascript:detail('+ v.id +')">vew detail</a></p>' +
                 '</div>';
         });
         $(".clearfix").html(html_str);
-
     })
-})
+});
+
+
+function detail(id) {
+    var url = '/article/detail';
+    $.post(url, {id : id}, function(back){
+        alert(back);
+    })
+}
