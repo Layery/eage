@@ -24,6 +24,12 @@ class Article extends \yii\db\ActiveRecord
         return '{{%b_article}}';
     }
 
+    public static function model()
+    {
+        return new self();
+    }
+
+
     /**
      * @inheritdoc
      */
@@ -60,7 +66,23 @@ class Article extends \yii\db\ActiveRecord
             ->from(self::tableName())
             ->all();
         return $rs;
+    }
 
+
+
+    public function getDetail()
+    {
+        $id = Yii::$app->request->post('id');
+        $query = new Query();
+        $rs = $query->select('*')
+            ->from(self::tableName())
+            ->where(['id' => $id])
+            ->all();
+        return $rs;
 
     }
+
+
+
+
 }

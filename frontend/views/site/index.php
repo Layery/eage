@@ -13,6 +13,10 @@ $this->title = 'Layery';
         </div>
     </div>
 
+    <div class="body-model">
+        
+    </div>
+
     <!--<div class="col-md-4 column">
         <ul>
             <li>

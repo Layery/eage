@@ -1,9 +1,22 @@
 <?php
 
 namespace frontend\controllers;
-use Yii;
+use common\extensions\Curl;
 use frontend\models\Article;
-use Yii\web\Controller;
+use Yii;
+use yii\base\InvalidParamException;
+use yii\db\Query;
+use yii\helpers\ArrayHelper;
+use yii\web\BadRequestHttpException;
+use yii\web\Controller;
+use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+use yii\data\ArrayDataProvider;
+use common\models\LoginForm;
+use frontend\models\PasswordResetRequestForm;
+use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
+use frontend\models\ContactForm;
 
 class ArticleController extends Controller
 {

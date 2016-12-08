@@ -26,6 +26,6 @@ $(function(){
 function detail(id) {
     var url = '/article/detail';
     $.post(url, {id : id}, function(back){
-        alert(back);
+        var html = jQuery.parseJSON(back);
     })
 }
