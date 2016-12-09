@@ -12,7 +12,7 @@ $(function(){
     .done(function(back){
         var html_str = '';
         $.each(back, function(k , v){
-            html_str += '<div class="col-md-8 column">' +
+            html_str += '<div class="body-content">' +
                 '<h2>'+ v.name +'</h2>' +
                 '<p>'+ v.post +'</p>' +
                 '<p><a href="javascript:detail('+ v.id +')">vew detail</a></p>' +
@@ -27,5 +27,6 @@ function detail(id) {
     var url = '/article/detail';
     $.post(url, {id : id}, function(back){
         var html = jQuery.parseJSON(back);
+        alert(html);
     })
 }

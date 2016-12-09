@@ -9,15 +9,14 @@ $this->title = 'Layery';
 <div class="site-index">
     <div class="body-content">
         <div class="row clearfix">
+            <div class="col-md-8 column">
 
+            </div>
         </div>
     </div>
 
-    <div class="body-model">
-        
-    </div>
-
-    <!--<div class="col-md-4 column">
+    <!--
+    <div class="col-md-4 column">
         <ul>
             <li>
                 Lorem ipsum dolor sit amet
@@ -75,5 +74,5 @@ $this->title = 'Layery';
         <p>
             <a class="btn" href="#">View details »</a>
         </p>
-    </div>-->
+    </div> -->
 </div>
