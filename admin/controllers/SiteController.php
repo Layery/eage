@@ -21,7 +21,14 @@ class SiteController extends BaseController
      */
     public function actionIndex()
     {
-        return $this->render('index', ['name' => '刘龙飞']);
+        return $this->render('index');
+    }
+
+    public function actionTree()
+    {
+
+        $name = '哇哈哈';
+        return $this->render('tree', ['name' => $name]);
     }
 
     /**

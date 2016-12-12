@@ -12,13 +12,13 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        '/themes/default/easyui.css',
-        '/themes/icon.css',
-        '/themes/demo.css'
+        'css/themes/default/easyui.css',
+        'css/themes/icon.css',
+        'css/themes/demo.css'
     ];
     public $js = [
-        'js/easyui/jquery.min.js',
-        'js/easyui/jquery.easyui.min.js'
+        'easyui/jquery.min.js',
+        'easyui/jquery.easyui.min.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
