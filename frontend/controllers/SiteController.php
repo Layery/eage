@@ -248,7 +248,6 @@ class SiteController extends Controller
 
     public function actionView()
     {
-
         $id = Yii::$app->getRequest()->get('id');
         $name = 'testName';
         $testModel = new Test();

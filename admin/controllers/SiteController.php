@@ -31,6 +31,11 @@ class SiteController extends BaseController
         return $this->render('tree', ['name' => $name]);
     }
 
+
+    public function actionTest()
+    {
+        p('asdfasdf');
+    }
     /**
      * Logs in a user.
      *
