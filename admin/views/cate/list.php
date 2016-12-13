@@ -1,9 +1,10 @@
 <?php
+//use yii\bootstrap\Nav;
+//use yii\bootstrap\NavBar;
+//use yii\widgets\Breadcrumbs;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
+use yii\base\Widget;
+use yii\grid\GridView;
 use common\widgets\Alert;
 
 ?>
@@ -19,12 +20,24 @@ use common\widgets\Alert;
 <!--    </tr>-->
 <!--    </thead>-->
 <!--</table>-->
-<div><?php echo '<pre/>'; print_r($data); ?></div>
-<script type="text/javascript">
-    var toolbar = [{
-        text:'添加新栏目',
-        iconCls:'icon-add',
-        handler:function(){alert('add')}
-    }];
-</script>
-</body>
+<!---->
+<!--<script type="text/javascript">-->
+<!--    var toolbar = [{-->
+<!--        text:'添加新栏目',-->
+<!--        iconCls:'icon-add',-->
+<!--        handler:function(){alert('add')}-->
+<!--    }];-->
+<!--</script>-->
+
+<?php
+echo GridView::widget([
+    'dataProvider' => $data,
+    'columns' => [
+        ['class' => 'yii\grid\SerialColumn'],
+        'id',
+        'name',
+        'email',
+        ['class' => 'common\widgets\MyActionColumn']
+    ],
+]);
+?>

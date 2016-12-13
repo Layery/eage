@@ -3,6 +3,7 @@
 namespace admin\models;
 
 use Yii;
+use yii\data\ArrayDataProvider;
 use yii\db\Query;
 
 /**
@@ -54,10 +55,17 @@ class Cate extends Base
 
     public function getList()
     {
-        $query = new Query();
-        $rs = $query->select('*')
-            ->from(self::tableName())
-            ->all();
-        return $rs;
+        $query = new Query;
+        $provider = new ArrayDataProvider([
+            'allModels' => $query->from(self::tableName())->all(),
+            'sort' => [
+                'attributes' => ['id', 'username', 'email'],
+            ],
+            'pagination' => [
+                'pageSize' => 10,
+            ],
+        ]);
+
+        return $provider;
     }
 }
