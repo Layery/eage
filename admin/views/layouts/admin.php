@@ -12,7 +12,7 @@ AppAsset::register($this);
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Layery</title>
+    <title>Layery-admin</title>
     <?= Html::jsFile('@web/js/easyui/jquery.min.js') ?>
     <?= Html::jsFile('@web/js/easyui/jquery.easyui.min.js') ?>
     <?= Html::cssFile('@web/css/themes/demo.css') ?>

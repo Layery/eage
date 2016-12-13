@@ -24,18 +24,6 @@ class SiteController extends BaseController
         return $this->render('index');
     }
 
-    public function actionTree()
-    {
-
-        $name = '哇哈哈';
-        return $this->render('tree', ['name' => $name]);
-    }
-
-
-    public function actionTest()
-    {
-        p('asdfasdf');
-    }
     /**
      * Logs in a user.
      *

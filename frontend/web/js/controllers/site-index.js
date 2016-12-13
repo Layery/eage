@@ -1,4 +1,3 @@
-
 $(function(){
     //$.post('/site/index', function(back){
     //    $(".body-content").html(back);
@@ -18,7 +17,7 @@ $(function(){
                 '<p><a href="javascript:detail('+ v.id +')">vew detail</a></p>' +
                 '</div>';
         });
-        $(".clearfix").html(html_str);
+        $("#container").html(html_str);
     })
 });
 
