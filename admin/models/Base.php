@@ -7,10 +7,10 @@
 
 namespace admin\models;
 
-use yii\base\Model;
+use yii\db\ActiveRecord;
 use yii\db\Query;
 
-class Base extends Model
+class Base extends ActiveRecord
 {
     public $table = NULL;
 

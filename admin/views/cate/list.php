@@ -7,6 +7,7 @@ use yii\base\Widget;
 use yii\grid\GridView;
 use common\widgets\Alert;
 
+
 ?>
 <!--<table class="easyui-datagrid" style="width:100%;height: 100%;" data-options="rownumbers:true,singleSelect:true,url:'',method:'get',toolbar:toolbar">-->
 <!--    <thead>-->
@@ -29,15 +30,16 @@ use common\widgets\Alert;
 <!--    }];-->
 <!--</script>-->
 
-<?php
-echo GridView::widget([
-    'dataProvider' => $data,
-    'columns' => [
-        ['class' => 'yii\grid\SerialColumn'],
-        'id',
-        'name',
-        'email',
-        ['class' => 'common\widgets\MyActionColumn']
-    ],
-]);
-?>
+
+<?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+            'id',
+            'name',
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => '{view}　{update}　{delete}',
+            ],
+        ],
+    ]); ?>

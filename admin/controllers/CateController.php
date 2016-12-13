@@ -19,7 +19,9 @@ class CateController extends BaseController
     public function actionList()
     {
         $rs = (new Cate())->getList();
-        return $this->render('list', ['data' => $rs]);
+        return $this->render('list', [
+            'dataProvider' => $rs,
+        ]);
     }
 
 

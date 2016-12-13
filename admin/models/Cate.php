@@ -4,6 +4,7 @@ namespace admin\models;
 
 use Yii;
 use yii\data\ArrayDataProvider;
+use yii\data\ActiveDataProvider;
 use yii\db\Query;
 
 /**
@@ -55,17 +56,15 @@ class Cate extends Base
 
     public function getList()
     {
-        $query = new Query;
-        $provider = new ArrayDataProvider([
-            'allModels' => $query->from(self::tableName())->all(),
-            'sort' => [
-                'attributes' => ['id', 'username', 'email'],
-            ],
-            'pagination' => [
-                'pageSize' => 10,
-            ],
+        $provider = new ActiveDataProvider([
+            'query' => Cate::find()->asArray(),
+            // 'sort' => [
+            //     'attributes' => ['id', 'username', 'email'],
+            // ],
+            // 'pagination' => [
+            //     'pageSize' => 10,
+            // ],
         ]);
-
         return $provider;
     }
 }
