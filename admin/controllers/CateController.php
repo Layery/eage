@@ -16,7 +16,11 @@ class CateController extends BaseController
         parent::init();
     }
 
-
+    public function actionList()
+    {
+        $rs = (new Cate())->getList();
+        return $this->render('list', ['data' => $rs]);
+    }
 
 
 }

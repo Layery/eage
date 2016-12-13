@@ -3,6 +3,8 @@
 namespace admin\models;
 
 use Yii;
+use yii\db\Query;
+
 /**
  * This is the model class for table "b_category".
  *
@@ -50,4 +52,12 @@ class Cate extends Base
         ];
     }
 
+    public function getList()
+    {
+        $query = new Query();
+        $rs = $query->select('*')
+            ->from(self::tableName())
+            ->all();
+        return $rs;
+    }
 }
