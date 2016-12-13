@@ -18,6 +18,7 @@ class BaseController extends Controller
     public $controller;
     public $action;
     private $model;
+    public $tableName;
     // 初始化引入所有的js , css文件
     public function init()
     {
@@ -37,14 +38,18 @@ class BaseController extends Controller
 
     public function beforeAction( $action)
     {
-        $this->controller = \Yii::$app->controller->id;
-        $this->action = \Yii::$app->controller->action->id;
+        $this->controller = ucfirst(strtolower(Yii::$app->controller->id));
+        $this->action = Yii::$app->controller->action->id;
+
         return parent::beforeAction($action);
     }
 
+
     public function actionList()
     {
-        $rs = $this->model->getList($this->controller, $this->action);
+
+        $rs = (new $this->controller())->getList();
         return $this->render('list', ['data' => $rs]);
     }
+
 }

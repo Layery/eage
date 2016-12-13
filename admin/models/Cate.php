@@ -14,12 +14,15 @@ use Yii;
  */
 class Cate extends Base
 {
-    /**
-     * @inheritdoc
-     */
+
+    public function __construct()
+    {
+        $this->table = self::tableName();
+    }
+
     public static function tableName()
     {
-        return 'b_category';
+        return '{{%b_category}}';
     }
 
     /**
@@ -47,8 +50,4 @@ class Cate extends Base
         ];
     }
 
-    public function getList()
-    {
-        return 'aaaaaaaaaaaa';
-    }
 }

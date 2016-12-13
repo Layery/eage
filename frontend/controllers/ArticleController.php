@@ -1,13 +1,14 @@
 <?php
 
 namespace frontend\controllers;
+use admin\models\Base;
 use Yii;
 use yii\db\Query;
 use yii\web\Controller;
 use frontend\models\Article;
 use yii\data\ArrayDataProvider;
 
-class ArticleController extends Controller
+class ArticleController extends BaseController
 {
     public function actionIndex()
     {
@@ -22,6 +23,12 @@ class ArticleController extends Controller
             $result = Article::model()->getDetail($id);
             echo json_encode($result);
         }
+    }
+
+    public function actionList()
+    {
+        $rs = (new Article())->getList();
+        return $this->render('list', ['data' => $rs]);
     }
 
 }

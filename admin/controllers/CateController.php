@@ -7,8 +7,16 @@
  */
 
 namespace admin\controllers;
+use admin\models\Cate;
 
 class CateController extends BaseController
 {
+    public function init()
+    {
+        parent::init();
+    }
+
+
+
 
 }

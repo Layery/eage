@@ -8,11 +8,28 @@
 namespace admin\models;
 
 use yii\base\Model;
+use yii\db\Query;
 
 class Base extends Model
 {
-    public function getList($controller , $action)
+    public $table = NULL;
+
+    protected $model;
+
+    public function __construct()
     {
-        return $this;
+
     }
+
+
+    public function getList()
+    {
+        $query = new Query();
+        $rs = $query->select('*')
+                    ->from($this->table)
+                    ->all();
+        return $rs;
+    }
+
+
 }

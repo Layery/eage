@@ -28,7 +28,10 @@ use common\widgets\Alert;
 
     <ul class="easyui-tree">
         <li>
-            <span><?= Html::a('栏目管理', ['cate/list']) ?></span>
+            <span><?= Html::a('CateManage', ['cate/list']) ?></span>
+        </li>
+        <li>
+            <span><?= Html::a('ArticleManage', ['article/list']) ?></span>
         </li>
     </ul>
 
