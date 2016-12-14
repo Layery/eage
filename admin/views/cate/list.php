@@ -4,11 +4,13 @@
 //use yii\widgets\Breadcrumbs;
 use yii\helpers\Html;
 use yii\base\Widget;
+use yii\helpers\Url;
 use yii\grid\GridView;
 use common\widgets\Alert;
 
 ?>
-<table class="easyui-datagrid" style="width:100%;height: 100%;" data-options="rownumbers:true,singleSelect:true,url:'?r=cate/list',method:'post',toolbar:toolbar">
+
+<table class="easyui-datagrid" style="width:100%;height: 100%;" data-options="rownumbers:true,singleSelect:true,url:'<?= Url::toRoute("cate/list") ?>',method:'post',toolbar:toolbar">
     <thead>
     <tr>
         <th data-options="field:'id',width:80">ID</th>
@@ -18,25 +20,18 @@ use common\widgets\Alert;
         <th data-options="field:'dateline',width:240">Dateline</th>
     </tr>
     </thead>
-<!--    <div style="margin-bottom:5px">-->
-<!--        <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true"></a>-->
-<!--        <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true"></a>-->
-<!--        <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true"></a>-->
-<!--        <a href="#" class="easyui-linkbutton" iconCls="icon-cut" plain="true"></a>-->
-<!--        <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true"></a>-->
-<!--    </div>-->
-
 </table>
 
-<script type="text/javascript">
 
+<script type="text/javascript">
     var toolbar = [
         {
             text: '添加新栏目',
             iconCls: 'icon-add',
             handler: function () {
-                var a = $(".yiicontent").load('/cate/_add.html');
-                alert(a);
+                var a = $(".yiicontent").load('/view/cate/_add.html');
+                console.log(a);
+                
             }
         },
         {
@@ -46,6 +41,8 @@ use common\widgets\Alert;
             }
         }
     ];
+
+    
 </script>
 
 
