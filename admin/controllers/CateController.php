@@ -18,10 +18,12 @@ class CateController extends BaseController
 
     public function actionList()
     {
-        $rs = (new Cate())->getList();
-        return $this->render('list', [
-            'dataProvider' => $rs,
-        ]);
+        if (IS_AJAX) {
+            p($_POST);
+            $rs = (new Cate())->getList();
+            echo json_encode($rs);
+        }
+        return $this->render('list');
     }
 
 
