@@ -25,7 +25,7 @@ AppAsset::register($this);
 <?= $this->render('/common/top') ?>
 <?= $this->render('/common/left') ?>
 <!--<div data-options="region:'center',title:">-->
-<div data-options=<?php echo "\"region:'center',title:'asd'\""; ?> >
+<div class="yiicontent" data-options=<?php echo "\"region:'center',title:'asd'\""; ?> >
     <?php echo $content; ?>
 </div>
 

@@ -35,6 +35,8 @@ use common\widgets\Alert;
             text: '添加新栏目',
             iconCls: 'icon-add',
             handler: function () {
+                var a = $(".yiicontent").load('/cate/_add.html');
+                alert(a);
             }
         },
         {
