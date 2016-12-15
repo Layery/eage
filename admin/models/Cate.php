@@ -33,6 +33,7 @@ class Cate extends Base
     public function rules()
     {
         return [
+
             [['parent_id', 'dateline'], 'integer'],
             [['name', 'introduce'], 'string', 'max' => 255]
         ];

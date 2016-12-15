@@ -20,8 +20,6 @@ AppAsset::register($this);
     <?= Html::cssFile('@web/css/themes/default/easyui.css') ?>
 </head>
 <body class="easyui-layout">
-<h2>Layout</h2>
-<div style="margin:20px 0;"></div>
 <?= $this->render('/common/top') ?>
 <?= $this->render('/common/left') ?>
 <!--<div data-options="region:'center',title:">-->

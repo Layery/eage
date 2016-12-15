@@ -23,26 +23,15 @@ use common\widgets\Alert;
 </table>
 
 
-<script type="text/javascript">
-    var toolbar = [
-        {
-            text: '添加新栏目',
-            iconCls: 'icon-add',
-            handler: function () {
-                var a = $(".yiicontent").load('/view/cate/_add.html');
-                console.log(a);
-                
-            }
-        },
-        {
-            text:'编辑栏目',
-            iconCls:'icon-edit',
-            handler:function(){
-            }
-        }
-    ];
 
-    
+<script type="text/javascript">
+    var toolbar = [{
+        'text' : 'createCate',
+        'iconCls':'icon-add',
+        'handler' : function(){
+            window.location.href = "index.php?r=cate/create";
+        }
+    }]
 </script>
 
 

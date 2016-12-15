@@ -1,5 +1,4 @@
-
-<div title="New Topic" style="width:100%;max-width:400px;padding:30px 60px;">
+<div style="width:100%;max-width:400px;padding:30px 60px;">
     <form id="ff" method="post">
         <div style="margin-bottom:20px">
             <input class="easyui-textbox" name="name" style="width:100%" data-options="label:'Name:',required:true">
@@ -22,4 +21,11 @@
         <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Clear</a>
     </div>
 </div>
-
+<script>
+    function submitForm(){
+        $('#ff').form('submit');
+    }
+    function clearForm(){
+        $('#ff').form('clear');
+    }
+</script>

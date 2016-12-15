@@ -7,6 +7,7 @@
 
 namespace admin\models;
 
+use yii;
 use yii\db\ActiveRecord;
 use yii\db\Query;
 
@@ -31,5 +32,14 @@ class Base extends ActiveRecord
         return $rs;
     }
 
+    public function create(Array $data = []) {
+        if (!$this->setAttributes($data)) {
+            $error = $this->getErrors();
+//            return $error;
+        }
+        p($this);
+        $this->save();
+        return 'ok';
+    }
 
 }

@@ -7,6 +7,8 @@
  */
 
 namespace admin\controllers;
+
+use yii;
 use admin\models\Cate;
 
 class CateController extends BaseController
@@ -28,5 +30,20 @@ class CateController extends BaseController
         return $this->render('list');
     }
 
+    public function actionCreate() {
+        if (IS_POST) {
+            $data = [
+                'name' => yii::$app->request->post('name'),
+                'introduce' => yii::$app->request->post('introduce'),
+                'parent_id' => yii::$app->request->post('parent_id'),
+                'dateline' => time()
+            ];
+            $cate = new Cate();
+            $result = $cate->create($data);
+            p($result);
+        }
+
+        return $this->render('_add',['data' => '']);
+    }
 
 }
