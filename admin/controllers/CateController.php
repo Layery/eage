@@ -40,7 +40,7 @@ class CateController extends BaseController
             ];
             $cate = new Cate();
             $result = $cate->create($data);
-            p($result);
+            return $result;
         }
 
         return $this->render('_add',['data' => '']);

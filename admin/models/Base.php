@@ -35,9 +35,9 @@ class Base extends ActiveRecord
     public function create(Array $data = []) {
         if (!$this->setAttributes($data)) {
             $error = $this->getErrors();
-//            return $error;
+            p($error);
+            return $error;
         }
-        p($this);
         $this->save();
         return 'ok';
     }

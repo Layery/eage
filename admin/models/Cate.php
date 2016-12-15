@@ -34,8 +34,8 @@ class Cate extends Base
     {
         return [
 
-            [['parent_id', 'dateline'], 'integer'],
-            [['name', 'introduce'], 'string', 'max' => 255]
+            [['parent_id', 'dateline'], 'integer' , 'safe'],
+            [['name', 'introduce'], 'string', 'max' => 255, 'safe']
         ];
     }
 
