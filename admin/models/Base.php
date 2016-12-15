@@ -10,6 +10,7 @@ namespace admin\models;
 use yii;
 use yii\db\ActiveRecord;
 use yii\db\Query;
+use yii\helpers\Json;
 
 class Base extends ActiveRecord
 {
@@ -33,13 +34,12 @@ class Base extends ActiveRecord
     }
 
     public function create(Array $data = []) {
-        if (!$this->setAttributes($data)) {
+        if ($this->setAttributes($data)) {
             $error = $this->getErrors();
-            p($error);
             return $error;
         }
         $this->save();
-        return 'ok';
+        return json_encode(['code' => 0 , 'msg' => 'ok']);
     }
 
 }

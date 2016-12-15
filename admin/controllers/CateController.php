@@ -36,7 +36,7 @@ class CateController extends BaseController
                 'name' => yii::$app->request->post('name'),
                 'introduce' => yii::$app->request->post('introduce'),
                 'parent_id' => yii::$app->request->post('parent_id'),
-                'dateline' => time()
+                'dateline' => intval(time())
             ];
             $cate = new Cate();
             $result = $cate->create($data);
