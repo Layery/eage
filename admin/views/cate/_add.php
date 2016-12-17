@@ -37,15 +37,14 @@
         $('#ff').form('submit', {
             url : 'index.php?r=cate/create',
             success : function(data) {
-                 if (data.code == 0) {
-                     $.messager.show({
-                         title: "操作提示",
-                         msg: data.msg,
-                         showType: 'slide',
-                         timeout: 2000
-                     });
-                 }
-//               test.append(data);
+                var data = eval('('+data+')');
+                if (data.code == 0) {
+                    $.messager.show({
+                        title : '消息提醒',
+                        msg : data.msg,
+                        timeout : 1000
+                    });
+                }
             }
         });
     }
