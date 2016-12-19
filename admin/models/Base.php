@@ -23,7 +23,6 @@ class Base extends ActiveRecord
 
     }
 
-
     public function getList()
     {
         $query = new Query();

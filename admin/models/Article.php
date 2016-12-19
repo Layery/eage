@@ -22,17 +22,17 @@ class Article extends Base
         $this->table = self::tableName();
     }
 
+    public static function model()
+    {
+        return new self();
+    }
+
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
         return '{{%b_article}}';
-    }
-
-    public static function model()
-    {
-        return new self();
     }
 
 

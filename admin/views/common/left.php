@@ -15,7 +15,7 @@ use common\widgets\Alert;
             <span ><?= Html::a('CateManage', ['cate/list']) ?></span>
         </li>
         <li>
-            <span ><?= Html::a('ArticleManage', ['article/list']) ?></span>
+            <span ><?= Html::a('ArticleManage', ['article/create']) ?></span>
         </li>
     </ul>
 

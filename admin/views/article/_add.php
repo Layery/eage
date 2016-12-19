@@ -1,3 +1,10 @@
+<?php
+use yii\helpers\Html;
+use common\widgets\Alert;
+
+?>
+
+<?= Html::jsFile('@web/js/uedit/ueditor.all.min.js')?>
 <div style="width:100%;max-width:400px;padding:30px 60px;">
     <form id="ff" method="post">
         <div style="margin-bottom:20px">

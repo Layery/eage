@@ -23,16 +23,6 @@ class BaseController extends Controller
     public function init()
     {
         $this->layout = 'admin';
-        $this->js = [
-            [JS_URL . 'jquery-ui-1.10.3.custom.min.js'],
-            [JS_URL . 'jquery.ui.touch-punch.min.js'],
-            [JS_URL . 'jquery.slimscroll.min.js'],
-            [JS_URL . 'jquery.easy-pie-chart.min.js'],
-            [JS_URL . 'jquery.sparkline.min.js'],
-            [JS_URL . 'flot/jquery.flot.min.js'],
-            [JS_URL . 'flot/jquery.flot.pie.min.js'],
-            [JS_URL . 'flot/jquery.flot.resize.min.js']
-        ];
         $this->model = new Base();
     }
 
@@ -40,7 +30,6 @@ class BaseController extends Controller
     {
         $this->controller = ucfirst(strtolower(Yii::$app->controller->id));
         $this->action = Yii::$app->controller->action->id;
-
         return parent::beforeAction($action);
     }
 
