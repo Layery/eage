@@ -1,0 +1,129 @@
+Message-ID: <0d79d0f96687dce421827535c3349818@yii.cc>
+Date: Wed, 07 Dec 2016 16:46:31 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 16:46:31
+[127.0.0.1][-][-][error][yii\base\InvalidParamExcepti=
+on]
+yii\base\InvalidParamException: Response content must not be an array=
+.
+in E:\www\eage\vendor\yiisoft\yii2\web\Response.php:960
+Stack trace:=
+
+#0 E:\www\eage\vendor\yiisoft\yii2\web\Response.php(311):
+yii\web\Resp=
+onse->prepare()
+#1 E:\www\eage\vendor\yiisoft\yii2\base\Application.php(3=
+81):
+yii\web\Response->send()
+#2 E:\www\eage\frontend\web\index.php(20)=
+: yii\base\Application->run()
+#3 {main}
+2016-12-07 16:46:31 [127.0.0.1]=
+[-][-][info][application] $_GET =3D [
+    'r' =3D> 'site/index'
+]
+
+=
+$_COOKIE =3D [
+    'frontend' =3D> 'h7106hoamnq830f38ftvpk9eq0'
+    '_c=
+srf-frontend' =3D>
+'b2bd11689b266500c302c11054ef925dd146374c08b302fbeda69=
+1d6e1d6de94a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"U2_zFBscxFpCOLbDXh4o=
+Uiw0c2kOCtlo\";}'
+]
+
+$_SERVER =3D [
+    'PATH' =3D>
+'C:\\Windows\=
+\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\Wi=
+ndowsPowerShell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php55;D:\\me=
+mcache\\memcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\ComposerSet=
+up\\bin;D:\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts\\;D:\\Pt=
+hon\\;C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\v=
+endor\\bin'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\=
+\Windows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.V=
+BS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    'P=
+HP_FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/php70n'=
+
+    '_FCGI_SHUTDOWN_EVENT_' =3D> '1940'
+    'SCRIPT_NAME' =3D> '/index=
+.php'
+    'REQUEST_URI' =3D> '/index.php?r=3Dsite%2Findex'
+    'QUERY_S=
+TRING' =3D> 'r=3Dsite%2Findex'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SER=
+VER_PROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+  =
+  'REMOTE_PORT' =3D> '52640'
+    'SCRIPT_FILENAME' =3D> 'E:/www/eage/fron=
+tend/web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    'C=
+ONTEXT_DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'CONTEXT_PREFIX=
+' =3D> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'E:=
+/www/eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_=
+PORT' =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_NAME' =
+=3D> 'yii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1=
+.0.2e
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'SystemRoot=
+' =3D> 'C:\\Windows'
+    'HTTP_COOKIE' =3D> 'frontend=3Dh7106hoamnq830f38=
+ftvpk9eq0;
+_csrf-frontend=3Db2bd11689b266500c302c11054ef925dd146374c08b30=
+2fbeda691d6e1d6de94a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1=
+%3Bs%3A32%3A%22U2_zFBscxFpCOLbDXh4oUiw0c2kOCtlo%22%3B%7D'
+    'HTTP_ACCEP=
+T_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip=
+, deflate, sdch'
+    'HTTP_REFERER' =3D> 'http://yii.cc/'
+    'HTTP_ACC=
+EPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/=
+webp,*/*;q=3D0.8'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.=
+0)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116
+Safari/5=
+37.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_CACHE_CO=
+NTROL' =3D> 'max-age=3D0'
+    'HTTP_CONNECTION' =3D> 'close'
+    'HTTP_=
+HOST' =3D> 'yii.cc'
+    'FCGI_ROLE' =3D> 'RESPONDER'
+    'PHP_SELF' =3D=
+> '/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 1481129191.6155
+    'REQUE=
+ST_TIME' =3D> 1481129191
+]

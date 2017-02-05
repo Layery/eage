@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/admin/controllers/CateController.php" line="1" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c8fed25-1430-4d30-b408-715719f985c6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/web/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common/config/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/web/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/web/assets/.gitignore" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/AppAsset.php" afterPath="$PROJECT_DIR$/admin/assets/AppAsset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/config/bootstrap.php" afterPath="$PROJECT_DIR$/admin/config/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/config/main.php" afterPath="$PROJECT_DIR$/admin/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/config/params.php" afterPath="$PROJECT_DIR$/admin/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/admin/controllers/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/BaseController.php" afterPath="$PROJECT_DIR$/admin/controllers/BaseController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/CateController.php" afterPath="$PROJECT_DIR$/admin/controllers/CateController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/controllers/SiteController.php" afterPath="$PROJECT_DIR$/admin/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/Article.php" afterPath="$PROJECT_DIR$/admin/models/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/Base.php" afterPath="$PROJECT_DIR$/admin/models/Base.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/Cate.php" afterPath="$PROJECT_DIR$/admin/models/Cate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/ContactForm.php" afterPath="$PROJECT_DIR$/admin/models/ContactForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/PasswordResetRequestForm.php" afterPath="$PROJECT_DIR$/admin/models/PasswordResetRequestForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/ResetPasswordForm.php" afterPath="$PROJECT_DIR$/admin/models/ResetPasswordForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/SignupForm.php" afterPath="$PROJECT_DIR$/admin/models/SignupForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/models/System.php" afterPath="$PROJECT_DIR$/admin/models/System.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/article/_add.php" afterPath="$PROJECT_DIR$/admin/views/article/_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/article/list.php" afterPath="$PROJECT_DIR$/admin/views/article/list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/cate/_add.php" afterPath="$PROJECT_DIR$/admin/views/cate/_add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/cate/list.php" afterPath="$PROJECT_DIR$/admin/views/cate/list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/common/left.php" afterPath="$PROJECT_DIR$/admin/views/common/left.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/layouts/admin.php" afterPath="$PROJECT_DIR$/admin/views/layouts/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/about.php" afterPath="$PROJECT_DIR$/admin/views/site/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/contact.php" afterPath="$PROJECT_DIR$/admin/views/site/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/error.php" afterPath="$PROJECT_DIR$/admin/views/site/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/index.php" afterPath="$PROJECT_DIR$/admin/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/login.php" afterPath="$PROJECT_DIR$/admin/views/site/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/requestPasswordResetToken.php" afterPath="$PROJECT_DIR$/admin/views/site/requestPasswordResetToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/resetPassword.php" afterPath="$PROJECT_DIR$/admin/views/site/resetPassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/signup.php" afterPath="$PROJECT_DIR$/admin/views/site/signup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/site/tree.php" afterPath="$PROJECT_DIR$/admin/views/site/tree.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.activeForm.js" afterPath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.activeForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.captcha.js" afterPath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.captcha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.gridView.js" afterPath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.gridView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.js" afterPath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.validation.js" afterPath="$PROJECT_DIR$/admin/web/assets/2738832c/yii.validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap.css" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/js/bootstrap.js" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/ce809887/js/npm.js" afterPath="$PROJECT_DIR$/admin/web/assets/ce809887/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.activeForm.js" afterPath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.activeForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.captcha.js" afterPath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.captcha.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.gridView.js" afterPath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.gridView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.js" afterPath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.validation.js" afterPath="$PROJECT_DIR$/admin/web/assets/cea228bc/yii.validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.js" afterPath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.min.js" afterPath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.slim.js" afterPath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.slim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.slim.min.js" afterPath="$PROJECT_DIR$/admin/web/assets/d8549166/jquery.slim.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.js" afterPath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.min.js" afterPath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.slim.js" afterPath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.slim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.slim.min.js" afterPath="$PROJECT_DIR$/admin/web/assets/df801788/jquery.slim.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap.css" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/js/bootstrap.js" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/assets/f35e7f19/js/npm.js" afterPath="$PROJECT_DIR$/admin/web/assets/f35e7f19/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/accordion.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/calendar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/combo.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/combobox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/datagrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/datalist.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/datalist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/datebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/dialog.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/easyui.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/filebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/layout.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/linkbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/menu.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/menubutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/messager.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/pagination.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/panel.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/passwordbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/passwordbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/progressbar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/propertygrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/searchbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/slider.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/spinner.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/splitbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/switchbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/switchbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/tabs.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/textbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/tooltip.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/tree.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/validatebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/black/window.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/black/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/accordion.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/calendar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/combo.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/combobox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/datagrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/datalist.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/datalist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/datebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/dialog.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/easyui.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/filebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/layout.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/linkbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/menu.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/menubutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/messager.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/pagination.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/panel.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/passwordbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/passwordbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/progressbar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/propertygrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/searchbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/slider.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/spinner.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/splitbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/switchbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/switchbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/tabs.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/textbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/tooltip.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/tree.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/validatebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/window.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/bootstrap/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/color.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/color.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/accordion.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/calendar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/combo.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/combobox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/datagrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/datalist.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/datalist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/datebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/dialog.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/easyui.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/filebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/layout.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/linkbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/menu.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/menubutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/messager.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/pagination.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/panel.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/passwordbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/passwordbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/progressbar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/propertygrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/searchbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/slider.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/spinner.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/splitbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/switchbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/switchbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/tabs.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/textbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/tooltip.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/tree.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/validatebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/default/window.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/default/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/demo.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/accordion.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/calendar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/combo.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/combobox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/datagrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/datalist.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/datalist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/datebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/dialog.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/easyui.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/filebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/layout.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/linkbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/menu.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/menubutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/messager.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/pagination.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/panel.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/passwordbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/passwordbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/progressbar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/propertygrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/searchbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/slider.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/spinner.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/splitbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/switchbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/switchbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/tabs.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/textbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/tooltip.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/tree.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/validatebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/gray/window.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/gray/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/icon.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/icon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/accordion.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/calendar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/combo.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/combobox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/datagrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/datalist.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/datalist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/datebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/dialog.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/easyui.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/filebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/layout.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/linkbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/menu.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/menubutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/messager.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/pagination.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/panel.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/passwordbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/passwordbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/progressbar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/propertygrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/searchbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/slider.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/spinner.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/splitbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/switchbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/switchbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/tabs.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/textbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/tooltip.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/tree.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/validatebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/material/window.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/material/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/accordion.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/accordion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/calendar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/calendar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/combo.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/combo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/combobox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/combobox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/datagrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/datagrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/datalist.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/datalist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/datebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/datebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/dialog.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/easyui.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/easyui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/filebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/filebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/layout.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/linkbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/linkbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/menu.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/menubutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/menubutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/messager.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/messager.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/pagination.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/pagination.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/panel.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/panel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/passwordbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/passwordbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/progressbar.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/progressbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/propertygrid.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/propertygrid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/searchbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/searchbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/slider.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/spinner.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/spinner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/splitbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/splitbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/switchbutton.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/switchbutton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/tabs.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/textbox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/textbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/tooltip.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/tree.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/tree.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/validatebox.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/validatebox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/metro/window.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/metro/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/css/themes/mobile.css" afterPath="$PROJECT_DIR$/admin/web/css/themes/mobile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/index.php" afterPath="$PROJECT_DIR$/admin/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/easyui/easyloader.js" afterPath="$PROJECT_DIR$/admin/web/js/easyui/easyloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/easyui/jquery.easyui.min.js" afterPath="$PROJECT_DIR$/admin/web/js/easyui/jquery.easyui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/easyui/jquery.easyui.mobile.js" afterPath="$PROJECT_DIR$/admin/web/js/easyui/jquery.easyui.mobile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/easyui/jquery.min.js" afterPath="$PROJECT_DIR$/admin/web/js/easyui/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/anchor/anchor.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/anchor/anchor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/attachment/attachment.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/attachment/attachment.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/attachment/attachment.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/attachment/attachment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/attachment/attachment.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/attachment/attachment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/background/background.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/background/background.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/background/background.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/background/background.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/background/background.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/background/background.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/chart.config.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/chart.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/charts.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/charts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/charts.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/charts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/charts.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/charts/charts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/emotion/emotion.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/emotion/emotion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/emotion/emotion.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/emotion/emotion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/emotion/emotion.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/emotion/emotion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/gmap/gmap.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/gmap/gmap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/help/help.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/help/help.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/help/help.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/help/help.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/help/help.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/help/help.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/image/image.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/image/image.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/image/image.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/image/image.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/image/image.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/image/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/insertframe/insertframe.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/insertframe/insertframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/internal.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/internal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/link/link.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/link/link.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/map/map.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/map/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/map/show.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/map/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/music/music.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/music/music.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/music/music.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/music/music.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/music/music.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/music/music.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/preview/preview.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/preview/preview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/scrawl/scrawl.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/scrawl/scrawl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/scrawl/scrawl.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/scrawl/scrawl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/scrawl/scrawl.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/scrawl/scrawl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/searchreplace/searchreplace.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/searchreplace/searchreplace.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/searchreplace/searchreplace.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/searchreplace/searchreplace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/snapscreen/snapscreen.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/snapscreen/snapscreen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/spechars/spechars.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/spechars/spechars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/spechars/spechars.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/spechars/spechars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittable.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittable.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittable.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittable.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittable.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittd.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittip.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/table/edittip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/config.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/template.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/template.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/template.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/template/template.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/video/video.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/video/video.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/video/video.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/video/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/video/video.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/video/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/webapp/webapp.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/webapp/webapp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/wordimage/tangram.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/wordimage/tangram.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/wordimage/wordimage.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/wordimage/wordimage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/wordimage/wordimage.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/dialogs/wordimage/wordimage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/index.html" afterPath="$PROJECT_DIR$/admin/web/js/uedit/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/lang/en/en.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/lang/en/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/lang/zh-cn/zh-cn.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/lang/zh-cn/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/php/Uploader.class.php" afterPath="$PROJECT_DIR$/admin/web/js/uedit/php/Uploader.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/php/action_crawler.php" afterPath="$PROJECT_DIR$/admin/web/js/uedit/php/action_crawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/php/action_list.php" afterPath="$PROJECT_DIR$/admin/web/js/uedit/php/action_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/php/action_upload.php" afterPath="$PROJECT_DIR$/admin/web/js/uedit/php/action_upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/php/config.json" afterPath="$PROJECT_DIR$/admin/web/js/uedit/php/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/php/controller.php" afterPath="$PROJECT_DIR$/admin/web/js/uedit/php/controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/themes/default/css/ueditor.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/themes/default/css/ueditor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/themes/default/css/ueditor.min.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/themes/default/css/ueditor.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/themes/default/dialogbase.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/themes/default/dialogbase.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/themes/iframe.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/themes/iframe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/SyntaxHighlighter/shCore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/codemirror/codemirror.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/codemirror/codemirror.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/mootools-adapter.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/mootools-adapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/mootools-adapter.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/prototype-adapter.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/prototype-adapter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/prototype-adapter.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/standalone-framework.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/standalone-framework.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/adapters/standalone-framework.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts-more.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts-more.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts-more.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts-more.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/highcharts.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/annotations.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/annotations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/annotations.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/annotations.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/canvas-tools.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/canvas-tools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/canvas-tools.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/canvas-tools.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/data.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/data.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/data.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/drilldown.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/drilldown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/drilldown.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/drilldown.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/exporting.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/exporting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/exporting.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/exporting.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/funnel.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/funnel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/funnel.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/funnel.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/heatmap.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/heatmap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/heatmap.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/heatmap.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/map.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/map.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/map.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/no-data-to-display.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/no-data-to-display.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/modules/no-data-to-display.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/dark-blue.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/dark-blue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/dark-green.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/dark-green.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/gray.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/gray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/grid.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/skies.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/highcharts/themes/skies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/jquery-1.10.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/jquery-1.10.2.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/font/vjs.svg" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/font/vjs.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video-js.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video-js.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video-js.min.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video-js.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video.dev.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/video-js/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.css" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.custom.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.flashonly.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.flashonly.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.flashonly.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.flashonly.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.html5only.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.html5only.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.html5only.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.html5only.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.withoutimage.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.withoutimage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/webuploader/webuploader.withoutimage.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/zeroclipboard/ZeroClipboard.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/zeroclipboard/ZeroClipboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/third-party/zeroclipboard/ZeroClipboard.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.all.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.all.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.all.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.config.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.parse.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.parse.min.js" afterPath="$PROJECT_DIR$/admin/web/js/uedit/ueditor.parse.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/robots.txt" afterPath="$PROJECT_DIR$/admin/web/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/bootstrap.php" afterPath="$PROJECT_DIR$/common/config/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/main.php" afterPath="$PROJECT_DIR$/common/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/params.php" afterPath="$PROJECT_DIR$/common/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/extensions/Curl.php" afterPath="$PROJECT_DIR$/common/extensions/Curl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/mail/layouts/html.php" afterPath="$PROJECT_DIR$/common/mail/layouts/html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/mail/layouts/text.php" afterPath="$PROJECT_DIR$/common/mail/layouts/text.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/mail/passwordResetToken-html.php" afterPath="$PROJECT_DIR$/common/mail/passwordResetToken-html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/mail/passwordResetToken-text.php" afterPath="$PROJECT_DIR$/common/mail/passwordResetToken-text.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/Admin.php" afterPath="$PROJECT_DIR$/common/models/Admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/AgentTeam.php" afterPath="$PROJECT_DIR$/common/models/AgentTeam.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/LoginForm.php" afterPath="$PROJECT_DIR$/common/models/LoginForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/User.php" afterPath="$PROJECT_DIR$/common/models/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/module/admin.php" afterPath="$PROJECT_DIR$/common/module/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/module/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/common/module/controllers/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/module/views/default/index.php" afterPath="$PROJECT_DIR$/common/module/views/default/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/widgets/Alert.php" afterPath="$PROJECT_DIR$/common/widgets/Alert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/widgets/MyActionColumn.php" afterPath="$PROJECT_DIR$/common/widgets/MyActionColumn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/config/bootstrap.php" afterPath="$PROJECT_DIR$/console/config/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/config/main-local.php" afterPath="$PROJECT_DIR$/console/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/config/main.php" afterPath="$PROJECT_DIR$/console/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/config/params-local.php" afterPath="$PROJECT_DIR$/console/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/config/params.php" afterPath="$PROJECT_DIR$/console/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/backend/config/main-local.php" afterPath="$PROJECT_DIR$/environments/dev/backend/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/backend/config/params-local.php" afterPath="$PROJECT_DIR$/environments/dev/backend/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/backend/web/index-test.php" afterPath="$PROJECT_DIR$/environments/dev/backend/web/index-test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/backend/web/index.php" afterPath="$PROJECT_DIR$/environments/dev/backend/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/common/config/main-local.php" afterPath="$PROJECT_DIR$/environments/dev/common/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/common/config/params-local.php" afterPath="$PROJECT_DIR$/environments/dev/common/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/console/config/main-local.php" afterPath="$PROJECT_DIR$/environments/dev/console/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/console/config/params-local.php" afterPath="$PROJECT_DIR$/environments/dev/console/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/frontend/config/main-local.php" afterPath="$PROJECT_DIR$/environments/dev/frontend/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/frontend/config/params-local.php" afterPath="$PROJECT_DIR$/environments/dev/frontend/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/frontend/web/index-test.php" afterPath="$PROJECT_DIR$/environments/dev/frontend/web/index-test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/frontend/web/index.php" afterPath="$PROJECT_DIR$/environments/dev/frontend/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/tests/codeception/config/config-local.php" afterPath="$PROJECT_DIR$/environments/dev/tests/codeception/config/config-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/dev/yii" afterPath="$PROJECT_DIR$/environments/dev/yii" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/index.php" afterPath="$PROJECT_DIR$/environments/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/backend/config/main-local.php" afterPath="$PROJECT_DIR$/environments/prod/backend/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/backend/config/params-local.php" afterPath="$PROJECT_DIR$/environments/prod/backend/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/backend/web/index.php" afterPath="$PROJECT_DIR$/environments/prod/backend/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/common/config/main-local.php" afterPath="$PROJECT_DIR$/environments/prod/common/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/common/config/params-local.php" afterPath="$PROJECT_DIR$/environments/prod/common/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/console/config/main-local.php" afterPath="$PROJECT_DIR$/environments/prod/console/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/console/config/params-local.php" afterPath="$PROJECT_DIR$/environments/prod/console/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/frontend/config/main-local.php" afterPath="$PROJECT_DIR$/environments/prod/frontend/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/frontend/config/params-local.php" afterPath="$PROJECT_DIR$/environments/prod/frontend/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/frontend/web/index.php" afterPath="$PROJECT_DIR$/environments/prod/frontend/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/tests/codeception/config/config-local.php" afterPath="$PROJECT_DIR$/environments/prod/tests/codeception/config/config-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/environments/prod/yii" afterPath="$PROJECT_DIR$/environments/prod/yii" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/assets/AppAsset.php" afterPath="$PROJECT_DIR$/frontend/assets/AppAsset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/bootstrap.php" afterPath="$PROJECT_DIR$/frontend/config/bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/main-local.php" afterPath="$PROJECT_DIR$/frontend/config/main-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/main.php" afterPath="$PROJECT_DIR$/frontend/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/params-local.php" afterPath="$PROJECT_DIR$/frontend/config/params-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/params.php" afterPath="$PROJECT_DIR$/frontend/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/frontend/controllers/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/UserController.php" afterPath="$PROJECT_DIR$/frontend/controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/Article.php" afterPath="$PROJECT_DIR$/frontend/models/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/ContactForm.php" afterPath="$PROJECT_DIR$/frontend/models/ContactForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php" afterPath="$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/ResetPasswordForm.php" afterPath="$PROJECT_DIR$/frontend/models/ResetPasswordForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/SignupForm.php" afterPath="$PROJECT_DIR$/frontend/models/SignupForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/Test.php" afterPath="$PROJECT_DIR$/frontend/models/Test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/common/right.php" afterPath="$PROJECT_DIR$/frontend/views/common/right.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/about.php" afterPath="$PROJECT_DIR$/frontend/views/site/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/contact.php" afterPath="$PROJECT_DIR$/frontend/views/site/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/error.php" afterPath="$PROJECT_DIR$/frontend/views/site/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/index.php" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/login.php" afterPath="$PROJECT_DIR$/frontend/views/site/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php" afterPath="$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/resetPassword.php" afterPath="$PROJECT_DIR$/frontend/views/site/resetPassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/signup.php" afterPath="$PROJECT_DIR$/frontend/views/site/signup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/css/site.css" afterPath="$PROJECT_DIR$/frontend/web/css/site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/index.php" afterPath="$PROJECT_DIR$/frontend/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/js/controllers/site-index.js" afterPath="$PROJECT_DIR$/frontend/web/js/controllers/site-index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/js/jquery.min.js" afterPath="$PROJECT_DIR$/frontend/web/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/web/robots.txt" afterPath="$PROJECT_DIR$/frontend/web/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init" afterPath="$PROJECT_DIR$/init" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init.bat" afterPath="$PROJECT_DIR$/init.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/note/note.txt" afterPath="$PROJECT_DIR$/note/note.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.php" afterPath="$PROJECT_DIR$/requirements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/codeception/config/config-local.php" afterPath="$PROJECT_DIR$/tests/codeception/config/config-local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yii.bat" afterPath="$PROJECT_DIR$/yii.bat" />
+    </list>
+    <ignored path="eage.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="eage" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CateController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/controllers/CateController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#85#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site-index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/web/js/controllers/site-index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/controllers/BaseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/web/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admin/config/main.php" />
+        <option value="$PROJECT_DIR$/admin/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/admin/controllers/CateController.php" />
+        <option value="$PROJECT_DIR$/frontend/web/js/controllers/site-index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c8fed25-1430-4d30-b408-715719f985c6" name="Default" comment="" />
+      <created>1486134444049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1486134444049</updated>
+      <workItem from="1486134445876" duration="491000" />
+      <workItem from="1486136324098" duration="840000" />
+      <workItem from="1486216836773" duration="202000" />
+      <workItem from="1486300756609" duration="4504000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6037000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="768" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19650987" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761312" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controllers/CateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controllers/CateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controllers/CateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/web/js/controllers/site-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

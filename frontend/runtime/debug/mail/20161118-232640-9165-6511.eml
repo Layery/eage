@@ -1,0 +1,113 @@
+Message-ID: <2641e06fa33688824de69489837a56d5@yii.cc>
+Date: Fri, 18 Nov 2016 23:26:40 +0800
+Subject: New eage.com log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-11-18 23:26:40 [127.0.0.1][-][-][error][error] test log=20
+2016-11-18 =
+23:26:40
+[127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::loadFallback=
+Messages]
+The message file for category 'yii' does not exist:
+E:\www\ea=
+ge\vendor\yiisoft\yii2/messages/zh-CH/yii.php Fallback file
+does not exis=
+t as well:
+E:\www\eage\vendor\yiisoft\yii2/messages/zh/yii.php
+2016-11-=
+18 23:26:40 [127.0.0.1][-][-][info][application] $_COOKIE =3D [
+    '_csr=
+f-frontend' =3D>
+'f6f04750f5ed3f7f3e7ef97b1ecf75b7955dc44b3337dace6180ac3=
+b1f6d92cca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"WdvGxMeoqb82EBqykppa9E=
+kU5-IB5CTm\";}'
+    'frontend' =3D> 'qa67f87aumtbc2mpom6vidfb70'
+]
+=
+
+$_SESSION =3D [
+    '__flash' =3D> []
+    '__captcha/site/captcha' =
+=3D> 'wimeyp'
+    '__captcha/site/captchacount' =3D> 1
+]
+
+$_SERVER =
+=3D [
+    'HTTP_HOST' =3D> 'yii.cc'
+    'HTTP_CONNECTION' =3D> 'keep-al=
+ive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_USER_AGENT=
+' =3D> 'Mozilla/5.0 (Windows NT 10.0)
+AppleWebKit/537.36 (KHTML, like Gec=
+ko) Chrome/52.0.2743.116
+Safari/537.36'
+    'HTTP_ACCEPT' =3D>
+'text/=
+html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,*/*;q=3D0.8'=
+
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, sdch'
+    'HTTP_ACCEPT=
+_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_COOKIE' =3D>
+'_csrf-fronte=
+nd=3Df6f04750f5ed3f7f3e7ef97b1ecf75b7955dc44b3337dace6180ac3b1f6d92cca%3A2%=
+3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22WdvGxMeoqb=
+82EBqykppa9EkU5-IB5CTm%22%3B%7D;
+frontend=3Dqa67f87aumtbc2mpom6vidfb70'=
+
+    'PATH' =3D>
+'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System=
+32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\phpStudy\\MyS=
+QL\\bin;D:\\phpStudy\\php55;D:\\memcache\\memcached-1.2.6-win32-bin;D:\\Git=
+\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Pthon\\Scripts\\;D:\\Pthon\\;=
+C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\=
+\bin'
+    'SystemRoot' =3D> 'C:\\WINDOWS'
+    'COMSPEC' =3D> 'C:\\WINDO=
+WS\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VB=
+E;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\WINDOWS'
+    'SERVER_=
+SIGNATURE' =3D> ''
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) Open=
+SSL/1.0.2e
+PHP/5.5.30'
+    'SERVER_NAME' =3D> 'yii.cc'
+    'SERVER_AD=
+DR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'REMOTE_ADDR' =3D>=
+ '127.0.0.1'
+    'DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'R=
+EQUEST_SCHEME' =3D> 'http'
+    'CONTEXT_PREFIX' =3D> ''
+    'CONTEXT_DO=
+CUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'SERVER_ADMIN' =3D> 'adm=
+in@phpStudy.net'
+    'SCRIPT_FILENAME' =3D> 'E:/www/eage/frontend/web/ind=
+ex.php'
+    'REMOTE_PORT' =3D> '61115'
+    'GATEWAY_INTERFACE' =3D> 'CG=
+I/1.1'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'REQUEST_METHOD' =3D> =
+'GET'
+    'QUERY_STRING' =3D> ''
+    'REQUEST_URI' =3D> '/'
+    'SCRI=
+PT_NAME' =3D> '/index.php'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUES=
+T_TIME_FLOAT' =3D> 1479482800.582
+    'REQUEST_TIME' =3D> 1479482800
+]

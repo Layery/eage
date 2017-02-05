@@ -1,0 +1,123 @@
+Message-ID: <6f99b995c335e0fc415276f6231b69d9@yii.cc>
+Date: Wed, 07 Dec 2016 16:28:05 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 16:28:05
+[127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::l=
+oadFallbackMessages]
+The message file for category 'yii' does not exist:=
+
+E:\www\eage\vendor\yiisoft\yii2/messages/zh-CH/yii.php Fallback file
+d=
+oes not exist as well:
+E:\www\eage\vendor\yiisoft\yii2/messages/zh/yii.ph=
+p
+2016-12-07 16:28:05 [127.0.0.1][-][-][info][application] $_GET =3D [
+=
+    'r' =3D> 'site/index'
+]
+
+$_COOKIE =3D [
+    'frontend' =3D> 'i4=
+l18q1jj1654cunteisr33os4'
+    '_csrf-frontend' =3D>
+'4ddd34b6bbf51ec868=
+cf76f5d6e8a90889cc7d1170edafcc39b5bbc57cf6edfaa:2:{i:0;s:14:\"_csrf-fronten=
+d\";i:1;s:32:\"6VrdDAhps4wB6y0nMTZvzB8gcnJ7kOgI\";}'
+]
+
+$_SESSION =3D=
+ [
+    '__flash' =3D> []
+]
+
+$_SERVER =3D [
+    'PATH' =3D>
+'C:\=
+\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\Sys=
+tem32\\WindowsPowerShell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php=
+55;D:\\memcache\\memcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\Co=
+mposerSetup\\bin;D:\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts=
+\\;D:\\Pthon\\;C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Co=
+mposer\\vendor\\bin'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =
+=3D> 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BA=
+T;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'=
+
+    'PHP_FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/=
+php70n'
+    '_FCGI_SHUTDOWN_EVENT_' =3D> '2232'
+    'SCRIPT_NAME' =3D> =
+'/index.php'
+    'REQUEST_URI' =3D> '/index.php?r=3Dsite%2Findex'
+    '=
+QUERY_STRING' =3D> 'r=3Dsite%2Findex'
+    'REQUEST_METHOD' =3D> 'GET'
+ =
+   'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.=
+1'
+    'REMOTE_PORT' =3D> '51768'
+    'SCRIPT_FILENAME' =3D> 'E:/www/ea=
+ge/frontend/web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'=
+
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'CONTE=
+XT_PREFIX' =3D> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT'=
+ =3D> 'E:/www/eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+   =
+ 'SERVER_PORT' =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER=
+_NAME' =3D> 'yii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) Op=
+enSSL/1.0.2e
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'Sys=
+temRoot' =3D> 'C:\\Windows'
+    'HTTP_COOKIE' =3D> 'frontend=3Di4l18q1jj1=
+654cunteisr33os4;
+_csrf-frontend=3D4ddd34b6bbf51ec868cf76f5d6e8a90889cc7d=
+1170edafcc39b5bbc57cf6edfaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%=
+3Bi%3A1%3Bs%3A32%3A%226VrdDAhps4wB6y0nMTZvzB8gcnJ7kOgI%22%3B%7D'
+    'HTT=
+P_CONNECTION' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'HTTP_ACCE=
+PT_ENCODING' =3D> 'gzip, deflate'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0=
+ (Windows NT 10.0)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.248=
+6.0
+Safari/537.36 Edge/13.10586'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-CN=
+'
+    'HTTP_REFERER' =3D> 'http://yii.cc/index.php?r=3Dsite%2Findex'
+  =
+  'HTTP_ACCEPT' =3D> 'text/html, application/xhtml+xml, image/jxr,
+*/*'=
+
+    'FCGI_ROLE' =3D> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.php'
+  =
+  'REQUEST_TIME_FLOAT' =3D> 1481128085.3734
+    'REQUEST_TIME' =3D> 14811=
+28085
+]

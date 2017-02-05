@@ -1,0 +1,103 @@
+Message-ID: <8b62d95c6229a2e9c60555ad3db4d5cf@yii.cc>
+Date: Wed, 07 Dec 2016 16:38:21 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 16:38:21
+[127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::l=
+oadFallbackMessages]
+The message file for category 'yii' does not exist:=
+
+E:\www\eage\vendor\yiisoft\yii2/messages/zh-CH/yii.php Fallback file
+d=
+oes not exist as well:
+E:\www\eage\vendor\yiisoft\yii2/messages/zh/yii.ph=
+p
+2016-12-07 16:38:21 [127.0.0.1][-][-][info][application] $_SESSION =3D =
+[
+    '__flash' =3D> []
+]
+
+$_SERVER =3D [
+    'PATH' =3D>
+'C:\\=
+Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\Syst=
+em32\\WindowsPowerShell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php5=
+5;D:\\memcache\\memcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\Com=
+poserSetup\\bin;D:\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts\=
+\;D:\\Pthon\\;C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Com=
+poser\\vendor\\bin'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =
+=3D> 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BA=
+T;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'=
+
+    'PHP_FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/=
+php70n'
+    '_FCGI_SHUTDOWN_EVENT_' =3D> '2232'
+    'SCRIPT_NAME' =3D> =
+'/index.php'
+    'REQUEST_URI' =3D> '/'
+    'QUERY_STRING' =3D> ''
+  =
+  'REQUEST_METHOD' =3D> 'GET'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+   =
+ 'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'REMOTE_PORT' =3D> '52155'
+    =
+'SCRIPT_FILENAME' =3D> 'E:/www/eage/frontend/web/index.php'
+    'SERVER_A=
+DMIN' =3D> 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'E:/www/=
+eage/frontend/web'
+    'CONTEXT_PREFIX' =3D> ''
+    'REQUEST_SCHEME' =
+=3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'RE=
+MOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'SERVER_ADD=
+R' =3D> '127.0.0.1'
+    'SERVER_NAME' =3D> 'yii.cc'
+    'SERVER_SOFTWAR=
+E' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e
+mod_fcgid/2.3.9'
+    'SER=
+VER_SIGNATURE' =3D> ''
+    'SystemRoot' =3D> 'C:\\Windows'
+    'HTTP_AC=
+CEPT_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_ACCEPT_ENCODING' =3D> 'g=
+zip, deflate, sdch'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml=
++xml,application/xml;q=3D0.9,image/webp,*/*;q=3D0.8'
+    'HTTP_USER_AGENT=
+' =3D> 'Mozilla/5.0 (Windows NT 10.0)
+AppleWebKit/537.36 (KHTML, like Gec=
+ko) Chrome/52.0.2743.116
+Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQU=
+ESTS' =3D> '1'
+    'HTTP_CONNECTION' =3D> 'close'
+    'HTTP_HOST' =3D> =
+'yii.cc'
+    'FCGI_ROLE' =3D> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.p=
+hp'
+    'REQUEST_TIME_FLOAT' =3D> 1481128701.4216
+    'REQUEST_TIME' =
+=3D> 1481128701
+]

@@ -1,0 +1,145 @@
+Message-ID: <b86b5a6e441916190010d1b83f046446@yii.cc>
+Date: Wed, 07 Dec 2016 15:47:40 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 15:47:40
+[127.0.0.1][-][-][warning][yii\log\Dispatcher::dispat=
+ch] Unable to
+send log via yii\debug\LogTarget: Exception 'Exception' wit=
+h message
+'Serialization of 'Closure' is not allowed'=20
+
+in E:\www\eag=
+e\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\www\=
+eage\vendor\yiisoft\yii2-debug\LogTarget.php(58):
+serialize(Array)
+#1 E=
+:\www\eage\vendor\yiisoft\yii2-debug\LogTarget.php(112):
+yii\debug\LogTar=
+get->export()
+#2 E:\www\eage\vendor\yiisoft\yii2\log\Dispatcher.php(183):=
+
+yii\debug\LogTarget->collect(Array, true)
+#3 E:\www\eage\vendor\yiisof=
+t\yii2\log\Logger.php(173):
+yii\log\Dispatcher->dispatch(Array, true)
+#=
+4 E:\www\eage\vendor\yiisoft\yii2\base\ErrorHandler.php(111):
+yii\log\Log=
+ger->flush(true)
+#5 [internal function]:
+yii\base\ErrorHandler->handleE=
+xception(Object(Error))
+#6 {main}
+2016-12-07 15:47:39 [127.0.0.1][-][-]=
+[info][application] $_GET =3D [
+    'r' =3D> 'site/index'
+]
+
+$_COOK=
+IE =3D [
+    '_csrf-frontend' =3D>
+'0680f9c3ffb16432b640272ab5d041ba0cb=
+e8da99df837d526517ec1926f12dca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"GU=
+IpdD0nUXEn7LyJgB6rXlxJsxs93hcW\";}'
+    'frontend' =3D> '9n8r29j81lvv0gko=
+rbjpvms5u1'
+]
+
+$_SERVER =3D [
+    'PATH' =3D>
+'C:\\Windows\\syste=
+m32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsP=
+owerShell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php55;D:\\memcache=
+\\memcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\ComposerSetup\\bi=
+n;D:\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts\\;D:\\Pthon\\;=
+C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\=
+\bin'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\\Windo=
+ws\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VB=
+E;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    'PHP_FCG=
+I_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/php70n'
+    '=
+_FCGI_SHUTDOWN_EVENT_' =3D> '2164'
+    'SCRIPT_NAME' =3D> '/index.php'
+=
+    'REQUEST_URI' =3D> '/index.php?r=3Dsite%2Findex'
+    'QUERY_STRING' =
+=3D> 'r=3Dsite%2Findex'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SERVER_PRO=
+TOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'REMO=
+TE_PORT' =3D> '51075'
+    'SCRIPT_FILENAME' =3D> 'E:/www/eage/frontend/we=
+b/index.php'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    'CONTEXT_=
+DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'CONTEXT_PREFIX' =3D> =
+''
+    'REQUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'E:/www/ea=
+ge/frontend/web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =
+=3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_NAME' =3D> 'yi=
+i.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e
+=
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'SystemRoot' =3D> '=
+C:\\Windows'
+    'HTTP_COOKIE' =3D>
+'_csrf-frontend=3D0680f9c3ffb16432b=
+640272ab5d041ba0cbe8da99df837d526517ec1926f12dca%3A2%3A%7Bi%3A0%3Bs%3A14%3A=
+%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22GUIpdD0nUXEn7LyJgB6rXlxJsxs93hcW=
+%22%3B%7D;
+frontend=3D9n8r29j81lvv0gkorbjpvms5u1'
+    'HTTP_ACCEPT_LANG=
+UAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, defl=
+ate, sdch'
+    'HTTP_REFERER' =3D> 'http://yii.cc/index.php?r=3Dsite%2Fab=
+out'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,applicatio=
+n/xml;q=3D0.9,image/webp,*/*;q=3D0.8'
+    'HTTP_USER_AGENT' =3D> 'Mozilla=
+/5.0 (Windows NT 10.0)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0=
+.2743.116
+Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'=
+
+    'HTTP_CACHE_CONTROL' =3D> 'max-age=3D0'
+    'HTTP_CONNECTION' =3D>=
+ 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'FCGI_ROLE' =3D> 'RESPONDER'=
+
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 1481125=
+659.6934
+    'REQUEST_TIME' =3D> 1481125659
+]

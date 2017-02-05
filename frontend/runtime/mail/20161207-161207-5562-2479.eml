@@ -1,0 +1,161 @@
+Message-ID: <bde57b4f78eb2240b4be500c79a0e1b9@yii.cc>
+Date: Wed, 07 Dec 2016 16:12:07 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 16:12:07
+[127.0.0.1][-][i4l18q1jj1654cunteisr33os4][error][yii=
+\base\ErrorException:8]
+yii\base\ErrorException: Array to string conversi=
+on in
+E:\www\eage\frontend\views\layouts\main.php:70
+Stack trace:
+#0 =
+E:\www\eage\frontend\views\layouts\main.php(70):
+yii\base\ErrorHandler->h=
+andleError(8, 'Array to string...',
+'E:\\www\\eage\\fro...', 70, Array)=
+
+#1 E:\www\eage\vendor\yiisoft\yii2\base\View.php(325):
+require('E:\\ww=
+w\\eage\\fro...')
+#2 E:\www\eage\vendor\yiisoft\yii2\base\View.php(247):=
+
+yii\base\View->renderPhpFile('E:\\www\\eage\\fro...', Array)
+#3 E:\www=
+\eage\vendor\yiisoft\yii2\base\Controller.php(392):
+yii\base\View->render=
+File('E:\\www\\eage\\fro...', Array,
+Object(frontend\controllers\SiteCont=
+roller))
+#4 E:\www\eage\frontend\controllers\SiteController.php(94):
+yi=
+i\base\Controller->renderContent(Array)
+#5 [internal function]:
+fronten=
+d\controllers\SiteController->actionIndex()
+#6 E:\www\eage\vendor\yiisoft=
+\yii2\base\InlineAction.php(55):
+call_user_func_array(Array, Array)
+#7 =
+E:\www\eage\vendor\yiisoft\yii2\base\Controller.php(154):
+yii\base\Inline=
+Action->runWithParams(Array)
+#8 E:\www\eage\vendor\yiisoft\yii2\base\Modu=
+le.php(454):
+yii\base\Controller->runAction('', Array)
+#9 E:\www\eage\v=
+endor\yiisoft\yii2\web\Application.php(84):
+yii\base\Module->runAction(''=
+, Array)
+#10 E:\www\eage\vendor\yiisoft\yii2\base\Application.php(375):=
+
+yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\www=
+\eage\frontend\web\index.php(20):
+yii\base\Application->run()
+#12 {main=
+}
+2016-12-07 16:12:07
+[127.0.0.1][-][i4l18q1jj1654cunteisr33os4][info][=
+application] $_COOKIE
+=3D [
+    'frontend' =3D> 'i4l18q1jj1654cunteisr3=
+3os4'
+    '_csrf-frontend' =3D>
+'4ddd34b6bbf51ec868cf76f5d6e8a90889cc7d=
+1170edafcc39b5bbc57cf6edfaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"6VrdD=
+Ahps4wB6y0nMTZvzB8gcnJ7kOgI\";}'
+]
+
+$_SESSION =3D [
+    '__flash' =
+=3D> []
+]
+
+$_SERVER =3D [
+    'PATH' =3D>
+'C:\\Windows\\system32;=
+C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPower=
+Shell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php55;D:\\memcache\\me=
+mcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:=
+\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts\\;D:\\Pthon\\;C:\\=
+Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\\bin=
+'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\\Windows\\=
+system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.J=
+S;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    'PHP_FCGI_MA=
+X_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/php70n'
+    '_FCG=
+I_SHUTDOWN_EVENT_' =3D> '1936'
+    'SCRIPT_NAME' =3D> '/index.php'
+    =
+'REQUEST_URI' =3D> '/'
+    'QUERY_STRING' =3D> ''
+    'REQUEST_METHOD' =
+=3D> 'GET'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE=
+' =3D> 'CGI/1.1'
+    'REMOTE_PORT' =3D> '51575'
+    'SCRIPT_FILENAME' =
+=3D> 'E:/www/eage/frontend/web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@=
+phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'=
+
+    'CONTEXT_PREFIX' =3D> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'D=
+OCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127=
+.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'=
+
+    'SERVER_NAME' =3D> 'yii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4=
+.18 (Win32) OpenSSL/1.0.2e
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D>=
+ ''
+    'SystemRoot' =3D> 'C:\\Windows'
+    'HTTP_COOKIE' =3D> 'fronten=
+d=3Di4l18q1jj1654cunteisr33os4;
+_csrf-frontend=3D4ddd34b6bbf51ec868cf76f5=
+d6e8a90889cc7d1170edafcc39b5bbc57cf6edfaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csr=
+f-frontend%22%3Bi%3A1%3Bs%3A32%3A%226VrdDAhps4wB6y0nMTZvzB8gcnJ7kOgI%22%3B%=
+7D'
+    'HTTP_CONNECTION' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+=
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate'
+    'HTTP_USER_AGENT' =3D=
+> 'Mozilla/5.0 (Windows NT 10.0)
+AppleWebKit/537.36 (KHTML, like Gecko) C=
+hrome/46.0.2486.0
+Safari/537.36 Edge/13.10586'
+    'HTTP_ACCEPT_LANGUAG=
+E' =3D> 'zh-CN'
+    'HTTP_ACCEPT' =3D> 'text/html, application/xhtml+xml,=
+ image/jxr,
+*/*'
+    'FCGI_ROLE' =3D> 'RESPONDER'
+    'PHP_SELF' =3D>=
+ '/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 1481127127.2568
+    'REQUES=
+T_TIME' =3D> 1481127127
+]

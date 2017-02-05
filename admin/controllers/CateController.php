@@ -47,3 +47,25 @@ class CateController extends BaseController
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

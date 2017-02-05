@@ -1,0 +1,164 @@
+Message-ID: <a94ada57f6d7b6a8ecc4228a52e381c2@yii.cc>
+Date: Wed, 07 Dec 2016 15:54:06 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 15:54:05
+[127.0.0.1][-][-][error][yii\i18n\PhpMessageSource::l=
+oadFallbackMessages]
+The message file for category 'yii' does not exist:=
+
+E:\www\eage\vendor\yiisoft\yii2/messages/zh-CH/yii.php Fallback file
+d=
+oes not exist as well:
+E:\www\eage\vendor\yiisoft\yii2/messages/zh/yii.ph=
+p
+2016-12-07 15:54:05 [127.0.0.1][-][-][info][application] $_GET =3D [
+=
+    'r' =3D> 'gii/default/view'
+    'id' =3D> 'model'
+]
+
+$_POST =3D=
+ [
+    '_csrf-frontend' =3D>
+'RWdGczREdGcCMg8DUABECRA/Ax0DCA0tIiVwAWwoD=
+C02HzVKBywXMA=3D=3D'
+    'Generator' =3D> [
+        'tableName' =3D> 'b=
+_article'
+        'modelClass' =3D> ''
+        'ns' =3D> 'app\\models'=
+
+        'baseClass' =3D> 'yii\\db\\ActiveRecord'
+        'db' =3D> 'db=
+'
+        'useTablePrefix' =3D> '0'
+        'generateRelations' =3D> '1=
+'
+        'generateLabelsFromComments' =3D> '0'
+        'generateQuery'=
+ =3D> '0'
+        'queryNs' =3D> 'app\\models'
+        'queryClass' =3D=
+> ''
+        'queryBaseClass' =3D> 'yii\\db\\ActiveQuery'
+        'enab=
+leI18N' =3D> '0'
+        'messageCategory' =3D> 'app'
+        'template=
+' =3D> 'default'
+    ]
+    'preview' =3D> ''
+]
+
+$_COOKIE =3D [
+=
+    '_csrf-frontend' =3D>
+'0680f9c3ffb16432b640272ab5d041ba0cbe8da99df837=
+d526517ec1926f12dca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"GUIpdD0nUXEn7=
+LyJgB6rXlxJsxs93hcW\";}'
+    'frontend' =3D> '9n8r29j81lvv0gkorbjpvms5u1'=
+
+]
+
+$_SERVER =3D [
+    'PATH' =3D>
+'C:\\Windows\\system32;C:\\Win=
+dows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\=
+v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php55;D:\\memcache\\memcached=
+-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\easyB=
+ackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts\\;D:\\Pthon\\;C:\\Users\\=
+=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\\bin'
+   =
+ 'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\\Windows\\system3=
+2\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;=
+.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUE=
+STS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/php70n'
+    '_FCGI_SHUTD=
+OWN_EVENT_' =3D> '2040'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'REQUES=
+T_URI' =3D> '/index.php?r=3Dgii%2Fdefault%2Fview&id=3Dmodel'
+    'QUERY_S=
+TRING' =3D> 'r=3Dgii%2Fdefault%2Fview&id=3Dmodel'
+    'REQUEST_METHOD' =
+=3D> 'POST'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFAC=
+E' =3D> 'CGI/1.1'
+    'REMOTE_PORT' =3D> '51181'
+    'SCRIPT_FILENAME' =
+=3D> 'E:/www/eage/frontend/web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@=
+phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'=
+
+    'CONTEXT_PREFIX' =3D> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'D=
+OCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127=
+.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'=
+
+    'SERVER_NAME' =3D> 'yii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4=
+.18 (Win32) OpenSSL/1.0.2e
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D>=
+ ''
+    'SystemRoot' =3D> 'C:\\Windows'
+    'HTTP_COOKIE' =3D>
+'_csrf=
+-frontend=3D0680f9c3ffb16432b640272ab5d041ba0cbe8da99df837d526517ec1926f12d=
+ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22GUI=
+pdD0nUXEn7LyJgB6rXlxJsxs93hcW%22%3B%7D;
+frontend=3D9n8r29j81lvv0gkorbjpvm=
+s5u1'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_ACCE=
+PT_ENCODING' =3D> 'gzip, deflate'
+    'HTTP_REFERER' =3D>
+'http://yii.c=
+c/index.php?r=3Dgii%2Fdefault%2Fview&id=3Dmodel'
+    'HTTP_ACCEPT' =3D>=
+
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,image/webp,*/*;=
+q=3D0.8'
+    'CONTENT_TYPE' =3D> 'application/x-www-form-urlencoded'
+  =
+  'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0)
+AppleWebKit/537.3=
+6 (KHTML, like Gecko) Chrome/52.0.2743.116
+Safari/537.36'
+    'HTTP_UPG=
+RADE_INSECURE_REQUESTS' =3D> '1'
+    'HTTP_ORIGIN' =3D> 'http://yii.cc'=
+
+    'HTTP_CACHE_CONTROL' =3D> 'max-age=3D0'
+    'CONTENT_LENGTH' =3D> =
+'637'
+    'HTTP_CONNECTION' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'=
+
+    'FCGI_ROLE' =3D> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.php'
+  =
+  'REQUEST_TIME_FLOAT' =3D> 1481126045.5007
+    'REQUEST_TIME' =3D> 14811=
+26045
+]

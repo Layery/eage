@@ -1,0 +1,136 @@
+Message-ID: <5b94ca875696fc657fbbb4f4db6c901b@yii.cc>
+Date: Wed, 07 Dec 2016 15:55:57 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 15:55:57
+[127.0.0.1][-][-][warning][yii\log\Dispatcher::dispat=
+ch] Unable to
+send log via yii\debug\LogTarget: Exception 'Exception' wit=
+h message
+'Serialization of 'Closure' is not allowed'=20
+
+in E:\www\eag=
+e\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\www\=
+eage\vendor\yiisoft\yii2-debug\LogTarget.php(58):
+serialize(Array)
+#1 E=
+:\www\eage\vendor\yiisoft\yii2-debug\LogTarget.php(112):
+yii\debug\LogTar=
+get->export()
+#2 E:\www\eage\vendor\yiisoft\yii2\log\Dispatcher.php(183):=
+
+yii\debug\LogTarget->collect(Array, true)
+#3 E:\www\eage\vendor\yiisof=
+t\yii2\log\Logger.php(173):
+yii\log\Dispatcher->dispatch(Array, true)
+#=
+4 E:\www\eage\vendor\yiisoft\yii2\base\ErrorHandler.php(111):
+yii\log\Log=
+ger->flush(true)
+#5 [internal function]:
+yii\base\ErrorHandler->handleE=
+xception(Object(Error))
+#6 {main}
+2016-12-07 15:55:57 [127.0.0.1][-][-]=
+[info][application] $_COOKIE =3D [
+    '_csrf-frontend' =3D>
+'0680f9c3f=
+fb16432b640272ab5d041ba0cbe8da99df837d526517ec1926f12dca:2:{i:0;s:14:\"_csr=
+f-frontend\";i:1;s:32:\"GUIpdD0nUXEn7LyJgB6rXlxJsxs93hcW\";}'
+    'fronte=
+nd' =3D> '9n8r29j81lvv0gkorbjpvms5u1'
+]
+
+$_SERVER =3D [
+    'PATH' =
+=3D>
+'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\W=
+indows\\System32\\WindowsPowerShell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\ph=
+pStudy\\php55;D:\\memcache\\memcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\Prog=
+ramData\\ComposerSetup\\bin;D:\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pth=
+on\\Scripts\\;D:\\Pthon\\;C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\=
+Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+   =
+ 'COMSPEC' =3D> 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.C=
+OM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C=
+:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D=
+:/phpStudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' =3D> '2040'
+    'SCRIPT_=
+NAME' =3D> '/index.php'
+    'REQUEST_URI' =3D> '/'
+    'QUERY_STRING' =
+=3D> ''
+    'REQUEST_METHOD' =3D> 'GET'
+    'SERVER_PROTOCOL' =3D> 'HTT=
+P/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'REMOTE_PORT' =3D> '5=
+1234'
+    'SCRIPT_FILENAME' =3D> 'E:/www/eage/frontend/web/index.php'
+ =
+   'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' =
+=3D> 'E:/www/eage/frontend/web'
+    'CONTEXT_PREFIX' =3D> ''
+    'REQUE=
+ST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web=
+'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    =
+'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_NAME' =3D> 'yii.cc'
+    'SER=
+VER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e
+mod_fcgid/2.3.9'=
+
+    'SERVER_SIGNATURE' =3D> ''
+    'SystemRoot' =3D> 'C:\\Windows'
+ =
+   'HTTP_COOKIE' =3D>
+'_csrf-frontend=3D0680f9c3ffb16432b640272ab5d041ba0=
+cbe8da99df837d526517ec1926f12dca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-fronten=
+d%22%3Bi%3A1%3Bs%3A32%3A%22GUIpdD0nUXEn7LyJgB6rXlxJsxs93hcW%22%3B%7D;
+fro=
+ntend=3D9n8r29j81lvv0gkorbjpvms5u1'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-C=
+N,zh;q=3D0.8'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate, sdch'
+   =
+ 'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D=
+0.9,image/webp,*/*;q=3D0.8'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Wind=
+ows NT 10.0)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116=
+
+Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'HT=
+TP_CONNECTION' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'FCGI_ROL=
+E' =3D> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_=
+FLOAT' =3D> 1481126157.4353
+    'REQUEST_TIME' =3D> 1481126157
+]

@@ -1,0 +1,147 @@
+Message-ID: <0f93a0af20c401f8620a798ce09798cd@yii.cc>
+Date: Wed, 07 Dec 2016 15:58:03 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 15:58:02 [127.0.0.1][-][-][error][Error] 'Error: Class
+\'front=
+end\\controllers\\AccessControl\' not found in
+E:\\www\\eage\\frontend\\c=
+ontrollers\\SiteController.php:24
+Stack trace:
+#0 E:\\www\\eage\\vendor=
+\\yiisoft\\yii2\\base\\Component.php(646):
+frontend\\controllers\\SiteCon=
+troller->behaviors()
+#1 E:\\www\\eage\\vendor\\yiisoft\\yii2\\base\\Compo=
+nent.php(529):
+yii\\base\\Component->ensureBehaviors()
+#2 E:\\www\\eage=
+\\vendor\\yiisoft\\yii2\\base\\Controller.php(269):
+yii\\base\\Component-=
+>trigger(\'beforeAction\',
+Object(yii\\base\\ActionEvent))
+#3 E:\\www\\=
+eage\\vendor\\yiisoft\\yii2\\web\\Controller.php(108):
+yii\\base\\Control=
+ler->beforeAction(Object(yii\\base\\InlineAction))
+#4 E:\\www\\eage\\vend=
+or\\yiisoft\\yii2\\base\\Controller.php(152):
+yii\\web\\Controller->befor=
+eAction(Object(yii\\base\\InlineAction))
+#5 E:\\www\\eage\\vendor\\yiisof=
+t\\yii2\\base\\Module.php(454):
+yii\\base\\Controller->runAction(\'\', Ar=
+ray)
+#6 E:\\www\\eage\\vendor\\yiisoft\\yii2\\web\\Application.php(84):=
+
+yii\\base\\Module->runAction(\'\', Array)
+#7 E:\\www\\eage\\vendor\\yi=
+isoft\\yii2\\base\\Application.php(375):
+yii\\web\\Application->handleReq=
+uest(Object(yii\\web\\Request))
+#8 E:\\www\\eage\\frontend\\web\\index.ph=
+p(20):
+yii\\base\\Application->run()
+#9 {main}'
+2016-12-07 15:58:02 [=
+127.0.0.1][-][-][info][application] $_COOKIE =3D [
+    '_csrf-frontend' =
+=3D>
+'0680f9c3ffb16432b640272ab5d041ba0cbe8da99df837d526517ec1926f12dca:2=
+:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"GUIpdD0nUXEn7LyJgB6rXlxJsxs93hcW\"=
+;}'
+    'frontend' =3D> '9n8r29j81lvv0gkorbjpvms5u1'
+]
+
+$_SERVER =
+=3D [
+    'PATH' =3D>
+'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\S=
+ystem32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\phpStudy=
+\\MySQL\\bin;D:\\phpStudy\\php55;D:\\memcache\\memcached-1.2.6-win32-bin;D:=
+\\Git\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\easyBackup\\AOMEI
+Back=
+upper
+3.5;D:\\Pthon\\Scripts\\;D:\\Pthon\\;C:\\Users\\=E6=9C=AA=E5=AE=
+=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' =
+=3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\\Windows\\system32\\cmd.exe'
+=
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC=
+'
+    'WINDIR' =3D> 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' =3D> '100=
+0'
+    'PHPRC' =3D> 'D:/phpStudy/php70n'
+    '_FCGI_SHUTDOWN_EVENT_' =
+=3D> '2040'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'REQUEST_URI' =3D> =
+'/'
+    'QUERY_STRING' =3D> ''
+    'REQUEST_METHOD' =3D> 'GET'
+    'S=
+ERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+=
+    'REMOTE_PORT' =3D> '51295'
+    'SCRIPT_FILENAME' =3D> 'E:/www/eage/fr=
+ontend/web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    =
+'CONTEXT_DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'CONTEXT_PREF=
+IX' =3D> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT' =3D> '=
+E:/www/eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'SERVE=
+R_PORT' =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_NAME' =
+=3D> 'yii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1=
+.0.2e
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'SystemRoot=
+' =3D> 'C:\\Windows'
+    'HTTP_COOKIE' =3D>
+'_csrf-frontend=3D0680f9c3f=
+fb16432b640272ab5d041ba0cbe8da99df837d526517ec1926f12dca%3A2%3A%7Bi%3A0%3Bs=
+%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22GUIpdD0nUXEn7LyJgB6rXlxJ=
+sxs93hcW%22%3B%7D;
+frontend=3D9n8r29j81lvv0gkorbjpvms5u1'
+    'HTTP_ACC=
+EPT_LANGUAGE' =3D> 'zh-CN,zh;q=3D0.8'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gz=
+ip, deflate, sdch'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+=
+xml,application/xml;q=3D0.9,image/webp,*/*;q=3D0.8'
+    'HTTP_USER_AGENT'=
+ =3D> 'Mozilla/5.0 (Windows NT 10.0)
+AppleWebKit/537.36 (KHTML, like Geck=
+o) Chrome/52.0.2743.116
+Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUE=
+STS' =3D> '1'
+    'HTTP_CACHE_CONTROL' =3D> 'max-age=3D0'
+    'HTTP_CON=
+NECTION' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'FCGI_ROLE' =3D=
+> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_FLOAT'=
+ =3D> 1481126282.6751
+    'REQUEST_TIME' =3D> 1481126282
+]

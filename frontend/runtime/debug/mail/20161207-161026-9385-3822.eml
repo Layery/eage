@@ -1,0 +1,180 @@
+Message-ID: <feecf59b12b6af62c4e24043266a2bd4@yii.cc>
+Date: Wed, 07 Dec 2016 16:10:26 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 16:10:26 [127.0.0.1][-][-][error][yii\db\Exception]
+PDOExcepti=
+on: SQLSTATE[42S02]: Base table or view not found: 1146
+Table 'blog.fy_ad=
+min' doesn't exist in
+E:\www\eage\vendor\yiisoft\yii2\db\Command.php:840=
+
+Stack trace:
+#0 E:\www\eage\vendor\yiisoft\yii2\db\Command.php(840):=
+
+PDOStatement->execute()
+#1 E:\www\eage\vendor\yiisoft\yii2\db\Command.=
+php(376):
+yii\db\Command->queryInternal('fetch', NULL)
+#2 E:\www\eage\f=
+rontend\controllers\SiteController.php(81):
+yii\db\Command->queryOne()
+=
+#3 [internal function]:
+frontend\controllers\SiteController->actionIndex(=
+)
+#4 E:\www\eage\vendor\yiisoft\yii2\base\InlineAction.php(55):
+call_us=
+er_func_array(Array, Array)
+#5 E:\www\eage\vendor\yiisoft\yii2\base\Contr=
+oller.php(154):
+yii\base\InlineAction->runWithParams(Array)
+#6 E:\www\e=
+age\vendor\yiisoft\yii2\base\Module.php(454):
+yii\base\Controller->runAct=
+ion('', Array)
+#7 E:\www\eage\vendor\yiisoft\yii2\web\Application.php(84)=
+:
+yii\base\Module->runAction('', Array)
+#8 E:\www\eage\vendor\yiisoft\y=
+ii2\base\Application.php(375):
+yii\web\Application->handleRequest(Object(=
+yii\web\Request))
+#9 E:\www\eage\frontend\web\index.php(20): yii\base\App=
+lication->run()
+#10 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: B=
+ase table or view not found:
+1146 Table 'blog.fy_admin' doesn't exist
+T=
+he SQL being executed was: select * from fy_admin in
+E:\www\eage\vendor\y=
+iisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 E:\www\eage\vendor\yiisof=
+t\yii2\db\Command.php(855):
+yii\db\Schema->convertException(Object(PDOExc=
+eption), 'select * from
+f...')
+#1 E:\www\eage\vendor\yiisoft\yii2\db\Co=
+mmand.php(376):
+yii\db\Command->queryInternal('fetch', NULL)
+#2 E:\www\=
+eage\frontend\controllers\SiteController.php(81):
+yii\db\Command->queryOn=
+e()
+#3 [internal function]:
+frontend\controllers\SiteController->action=
+Index()
+#4 E:\www\eage\vendor\yiisoft\yii2\base\InlineAction.php(55):
+c=
+all_user_func_array(Array, Array)
+#5 E:\www\eage\vendor\yiisoft\yii2\base=
+\Controller.php(154):
+yii\base\InlineAction->runWithParams(Array)
+#6 E:=
+\www\eage\vendor\yiisoft\yii2\base\Module.php(454):
+yii\base\Controller->=
+runAction('', Array)
+#7 E:\www\eage\vendor\yiisoft\yii2\web\Application.p=
+hp(84):
+yii\base\Module->runAction('', Array)
+#8 E:\www\eage\vendor\yii=
+soft\yii2\base\Application.php(375):
+yii\web\Application->handleRequest(O=
+bject(yii\web\Request))
+#9 E:\www\eage\frontend\web\index.php(20): yii\ba=
+se\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] =3D> 42S02
+    [1] =3D> 1146
+    [2] =3D> Table 'bl=
+og.fy_admin' doesn't exist
+)
+
+2016-12-07 16:10:26 [127.0.0.1][-][-][i=
+nfo][application] $_SERVER =3D [
+    'PATH' =3D>
+'C:\\Windows\\system32=
+;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowe=
+rShell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php55;D:\\memcache\\m=
+emcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\ComposerSetup\\bin;D=
+:\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts\\;D:\\Pthon\\;C:\=
+\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vendor\\bi=
+n'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\\Windows\=
+\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.=
+JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    'PHP_FCGI_M=
+AX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/php70n'
+    '_FC=
+GI_SHUTDOWN_EVENT_' =3D> '1936'
+    'SCRIPT_NAME' =3D> '/index.php'
+   =
+ 'REQUEST_URI' =3D> '/'
+    'QUERY_STRING' =3D> ''
+    'REQUEST_METHOD'=
+ =3D> 'GET'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFAC=
+E' =3D> 'CGI/1.1'
+    'REMOTE_PORT' =3D> '51567'
+    'SCRIPT_FILENAME' =
+=3D> 'E:/www/eage/frontend/web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@=
+phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'=
+
+    'CONTEXT_PREFIX' =3D> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'D=
+OCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127=
+.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'=
+
+    'SERVER_NAME' =3D> 'yii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4=
+.18 (Win32) OpenSSL/1.0.2e
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D>=
+ ''
+    'SystemRoot' =3D> 'C:\\Windows'
+    'HTTP_CONNECTION' =3D> 'clo=
+se'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip=
+, deflate'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0)
+Ap=
+pleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0
+Safari/537.36 Edg=
+e/13.10586'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-CN'
+    'HTTP_ACCEPT' =
+=3D> 'text/html, application/xhtml+xml, image/jxr,
+*/*'
+    'FCGI_ROLE'=
+ =3D> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_FL=
+OAT' =3D> 1481127026.5973
+    'REQUEST_TIME' =3D> 1481127026
+]

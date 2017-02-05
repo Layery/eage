@@ -1,0 +1,215 @@
+Message-ID: <cdb2e8eab441398bffb4c01ce4b13260@yii.cc>
+Date: Wed, 07 Dec 2016 16:21:29 +0000
+Subject: New yii.cc log message
+From: 
+To: weidingyi@aliyun.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+2016-12-07 16:21:29 [127.0.0.1][-][-][error][yii\db\Exception]
+PDOExcepti=
+on: SQLSTATE[42S02]: Base table or view not found: 1146
+Table 'blog.fy_ag=
+ent_team' doesn't exist in
+E:\www\eage\vendor\yiisoft\yii2\db\Command.php=
+:840
+Stack trace:
+#0 E:\www\eage\vendor\yiisoft\yii2\db\Command.php(840=
+):
+PDOStatement->execute()
+#1 E:\www\eage\vendor\yiisoft\yii2\db\Comman=
+d.php(362):
+yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\www\e=
+age\vendor\yiisoft\yii2\db\Query.php(210):
+yii\db\Command->queryAll()
+#=
+3 E:\www\eage\common\models\AgentTeam.php(66): yii\db\Query->all()
+#4 E:\=
+www\eage\frontend\controllers\SiteController.php(235):
+common\models\Agen=
+tTeam->getDataList()
+#5 [internal function]:
+frontend\controllers\SiteC=
+ontroller->actionAbout()
+#6 E:\www\eage\vendor\yiisoft\yii2\base\InlineAc=
+tion.php(55):
+call_user_func_array(Array, Array)
+#7 E:\www\eage\vendor\=
+yiisoft\yii2\base\Controller.php(154):
+yii\base\InlineAction->runWithPara=
+ms(Array)
+#8 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(454):
+yii\=
+base\Controller->runAction('about', Array)
+#9 E:\www\eage\vendor\yiisoft\=
+yii2\web\Application.php(84):
+yii\base\Module->runAction('site/about', Ar=
+ray)
+#10 E:\www\eage\vendor\yiisoft\yii2\base\Application.php(375):
+yii=
+\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\www\eage\=
+frontend\web\index.php(20):
+yii\base\Application->run()
+#12 {main}
+=
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found:
+=
+1146 Table 'blog.fy_agent_team' doesn't exist
+The SQL being executed was:=
+ SELECT * FROM `fy_agent_team` in
+E:\www\eage\vendor\yiisoft\yii2\db\Sche=
+ma.php:628
+Stack trace:
+#0 E:\www\eage\vendor\yiisoft\yii2\db\Command.p=
+hp(855):
+yii\db\Schema->convertException(Object(PDOException), 'SELECT * =
+FROM
+`...')
+#1 E:\www\eage\vendor\yiisoft\yii2\db\Command.php(362):
+y=
+ii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\www\eage\vendor\yiis=
+oft\yii2\db\Query.php(210):
+yii\db\Command->queryAll()
+#3 E:\www\eage\c=
+ommon\models\AgentTeam.php(66): yii\db\Query->all()
+#4 E:\www\eage\fronte=
+nd\controllers\SiteController.php(235):
+common\models\AgentTeam->getDataL=
+ist()
+#5 [internal function]:
+frontend\controllers\SiteController->acti=
+onAbout()
+#6 E:\www\eage\vendor\yiisoft\yii2\base\InlineAction.php(55):=
+
+call_user_func_array(Array, Array)
+#7 E:\www\eage\vendor\yiisoft\yii2\=
+base\Controller.php(154):
+yii\base\InlineAction->runWithParams(Array)
+#=
+8 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(454):
+yii\base\Controll=
+er->runAction('about', Array)
+#9 E:\www\eage\vendor\yiisoft\yii2\web\Appl=
+ication.php(84):
+yii\base\Module->runAction('site/about', Array)
+#10 E:=
+\www\eage\vendor\yiisoft\yii2\base\Application.php(375):
+yii\web\Applicat=
+ion->handleRequest(Object(yii\web\Request))
+#11 E:\www\eage\frontend\web\=
+index.php(20):
+yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] =3D> 42S02
+    [1] =3D> 1146
+    [2] =3D> Table 'bl=
+og.fy_agent_team' doesn't exist
+)
+
+2016-12-07 16:21:29 [127.0.0.1][-]=
+[-][info][application] $_GET =3D [
+    'r' =3D> 'site/about'
+]
+
+$_C=
+OOKIE =3D [
+    'frontend' =3D> 'i4l18q1jj1654cunteisr33os4'
+    '_csrf=
+-frontend' =3D>
+'4ddd34b6bbf51ec868cf76f5d6e8a90889cc7d1170edafcc39b5bbc5=
+7cf6edfaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"6VrdDAhps4wB6y0nMTZvzB8=
+gcnJ7kOgI\";}'
+]
+
+$_SERVER =3D [
+    'PATH' =3D>
+'C:\\Windows\\sy=
+stem32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\Windo=
+wsPowerShell\\v1.0\\;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php55;D:\\memca=
+che\\memcached-1.2.6-win32-bin;D:\\Git\\bin;C:\\ProgramData\\ComposerSetup\=
+\bin;D:\\easyBackup\\AOMEI
+Backupper
+3.5;D:\\Pthon\\Scripts\\;D:\\Pthon=
+\\;C:\\Users\\=E6=9C=AA=E5=AE=9A=E4=B9=89\\AppData\\Roaming\\Composer\\vend=
+or\\bin'
+    'SYSTEMROOT' =3D> 'C:\\Windows'
+    'COMSPEC' =3D> 'C:\\Wi=
+ndows\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;=
+.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\Windows'
+    'PHP_=
+FCGI_MAX_REQUESTS' =3D> '1000'
+    'PHPRC' =3D> 'D:/phpStudy/php70n'
+  =
+  '_FCGI_SHUTDOWN_EVENT_' =3D> '1936'
+    'SCRIPT_NAME' =3D> '/index.php'=
+
+    'REQUEST_URI' =3D> '/index.php?r=3Dsite%2Fabout'
+    'QUERY_STRING=
+' =3D> 'r=3Dsite%2Fabout'
+    'REQUEST_METHOD' =3D> 'GET'
+    'SERVER_P=
+ROTOCOL' =3D> 'HTTP/1.1'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'RE=
+MOTE_PORT' =3D> '51658'
+    'SCRIPT_FILENAME' =3D> 'E:/www/eage/frontend/=
+web/index.php'
+    'SERVER_ADMIN' =3D> 'admin@phpStudy.net'
+    'CONTEX=
+T_DOCUMENT_ROOT' =3D> 'E:/www/eage/frontend/web'
+    'CONTEXT_PREFIX' =3D=
+> ''
+    'REQUEST_SCHEME' =3D> 'http'
+    'DOCUMENT_ROOT' =3D> 'E:/www/=
+eage/frontend/web'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT'=
+ =3D> '80'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_NAME' =3D> 'y=
+ii.cc'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e=
+
+mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' =3D> ''
+    'SystemRoot' =3D=
+> 'C:\\Windows'
+    'HTTP_COOKIE' =3D> 'frontend=3Di4l18q1jj1654cunteisr3=
+3os4;
+_csrf-frontend=3D4ddd34b6bbf51ec868cf76f5d6e8a90889cc7d1170edafcc39=
+b5bbc57cf6edfaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%=
+3A32%3A%226VrdDAhps4wB6y0nMTZvzB8gcnJ7kOgI%22%3B%7D'
+    'HTTP_CONNECTION=
+' =3D> 'close'
+    'HTTP_HOST' =3D> 'yii.cc'
+    'HTTP_ACCEPT_ENCODING'=
+ =3D> 'gzip, deflate'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT=
+ 10.0)
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0
+Safari=
+/537.36 Edge/13.10586'
+    'HTTP_ACCEPT_LANGUAGE' =3D> 'zh-CN'
+    'HTT=
+P_REFERER' =3D> 'http://yii.cc/index.php?r=3Dsite%2Findex'
+    'HTTP_ACCE=
+PT' =3D> 'text/html, application/xhtml+xml, image/jxr,
+*/*'
+    'FCGI_R=
+OLE' =3D> 'RESPONDER'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIM=
+E_FLOAT' =3D> 1481127689.0137
+    'REQUEST_TIME' =3D> 1481127689
+]
