@@ -1,10 +1,10 @@
 <?php
 
-namespace admin\models;
+namespace common\models;
 
 use Yii;
 use yii\db\Query;
-
+use common\models\Base;
 
 /**
  * This is the model class for table "{{%b_article}}".
@@ -61,34 +61,4 @@ class Article extends Base
             'dateline' => '创建时间',
         ];
     }
-
-    /**
-     * 获取首页文章
-     */
-    public function getArticle()
-    {
-        $query = new Query();
-        $rs = $query->select('*')
-            ->from(self::tableName())
-            ->all();
-        return $rs;
-    }
-
-
-
-    public function getDetail()
-    {
-        $id = Yii::$app->request->post('id');
-        $query = new Query();
-        $rs = $query->select('*')
-            ->from(self::tableName())
-            ->where(['id' => $id])
-            ->all();
-        return $rs;
-
-    }
-
-
-
-
 }

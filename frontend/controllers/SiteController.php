@@ -2,7 +2,7 @@
 namespace frontend\controllers;
 
 use common\extensions\Curl;
-use frontend\models\Article;
+use frontend\models\PArticle;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\db\Query;
@@ -77,19 +77,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-//        $rs = Yii::$app->getDb()->createCommand('select * from fy_admin')->queryOne();
-//        $query = new Query();
-//        $rs = $query->select('id, name')
-//            ->where(['in', 'id', [15, 16, 17]])
-//            ->from('fy_admin')
-//            ->offset(0)
-//            ->limit(3)
-//            ->all();
-//
-//        $rs = ArrayHelper::map($rs,'name','id');
-//        Yii::error('test log ', 'error');
+        // 测试两种查询方式
+        // $result = (new PArticle())->testSelect();
+
         if (IS_AJAX) {
-            $result = (new Article())->getArticle();
+            $result = (new PArticle())->getArticle();
             echo json_encode($result);
             Yii::$app->end();
         }

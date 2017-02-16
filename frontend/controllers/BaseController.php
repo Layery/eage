@@ -6,7 +6,7 @@
  * Time: 14:51
  */
 
-namespace admin\controllers;
+namespace frontend\controllers;
 use yii;
 use yii\web\Controller;
 use yii\base\Action;
