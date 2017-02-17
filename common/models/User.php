@@ -5,7 +5,7 @@ namespace common\models;
 use Yii;
 
 /**
- * This is the model class for table "{{%user}}".
+ * This is the model class for table "{{%b_user}}".
  *
  * @property integer $id
  * @property integer $pid
@@ -27,7 +27,7 @@ class User extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return '{{%user}}';
+        return '{{%b_user}}';
     }
 
     /**
@@ -63,4 +63,21 @@ class User extends \yii\db\ActiveRecord
             'update_password' => 'Update Password',
         ];
     }
+
+    /**
+     * @return bool
+     */
+    public function setPassword()
+    {
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function generateAuthKey()
+    {
+        return true;
+    }
+
 }

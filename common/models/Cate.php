@@ -1,9 +1,10 @@
 <?php
 
-namespace admin\models;
+namespace common\models;
 
 use Yii;
 use yii\db\Query;
+use common\models\Base;
 
 /**
  * This is the model class for table "b_category".
