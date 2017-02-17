@@ -9,7 +9,7 @@
 namespace admin\controllers;
 
 use yii;
-use admin\models\Cate;
+use admin\models\PCate;
 
 class CateController extends BaseController
 {
@@ -24,7 +24,7 @@ class CateController extends BaseController
     public function actionList()
     {
         if (IS_AJAX) {
-            $rs = (new Cate())->getList();
+            $rs = (new PCate())->getList();
             return json_encode($rs);
         }
         return $this->render('list');
@@ -38,7 +38,7 @@ class CateController extends BaseController
                 'parent_id' => yii::$app->request->post('parent_id'),
                 'dateline' => intval(time())
             ];
-            $cate = new Cate();
+            $cate = new PCate();
             $result = $cate->create($data);
             return $result;
         }

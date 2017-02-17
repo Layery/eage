@@ -5,7 +5,7 @@
  * Time: 16:25
  */
 
-namespace admin\models;
+namespace common\models;
 
 use yii;
 use yii\db\ActiveRecord;

@@ -5,7 +5,7 @@ use admin\models\Base;
 use Yii;
 use yii\db\Query;
 use yii\web\Controller;
-use frontend\models\Article;
+use frontend\models\PArticle;
 use yii\data\ArrayDataProvider;
 
 class ArticleController extends BaseController
@@ -20,14 +20,14 @@ class ArticleController extends BaseController
     {
         if (IS_AJAX) {
             $id = Yii::$app->getRequest()->post('id');
-            $result = Article::model()->getDetail($id);
+            $result = (new PArticle())->getDetail($id);
             echo json_encode($result);
         }
     }
 
     public function actionList()
     {
-        $rs = (new Article())->getList();
+        $rs = (new PArticle())->getList();
         return $this->render('list', ['data' => $rs]);
     }
 
