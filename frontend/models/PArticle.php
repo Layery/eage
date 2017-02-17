@@ -4,7 +4,6 @@ namespace frontend\models;
 
 use Yii;
 use yii\db\Query;
-use yii\db\ActiveRecord;
 use common\models\Article;
 use yii\helpers\ArrayHelper;
 
@@ -20,7 +19,7 @@ class PArticle extends Article
 {
     /**
      * 获取文章详情
-     * @return [type] [description]
+     * @return array $data
      */
     public function getArticle()
     {

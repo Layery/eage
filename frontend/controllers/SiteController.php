@@ -12,6 +12,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\data\ArrayDataProvider;
+use common\models\User;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
@@ -95,7 +96,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        $user = new User();
+        // isGuest 是否是访客,为真代表处于访客模式，未登录状态
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -155,6 +156,8 @@ class SiteController extends Controller
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
+                $rs = Yii::$app;
+
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->goHome();
                 }
@@ -224,17 +227,9 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        $agentTeam = new AgentTeam();
-        $rs = $agentTeam->getDataList();
-        $dataProvider = new ArrayDataProvider(
-            [
-                'allModels' => $rs,
-                'pagination' => [
-                    'pageSize' => 10,
-                ],
-            ]
-        );
-        return $this->render('about', ['data' => $dataProvider]);
+        $rs = (new PArticle())->getDetail();
+        p($rs);
+        return $this->render('about', ['data' => $rs]);
     }
 
 

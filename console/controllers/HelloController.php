@@ -8,6 +8,7 @@ class HelloController extends Controller
 	public function actionIndex($message = 'Hello World')
     {
         echo $message . "\n";
+        echo 'console和web应用一样, 不同的是console应用需要引用框架中console下的controller';
     }
 
     public function actionDate()
@@ -37,11 +38,6 @@ class HelloController extends Controller
 			}
 		}
 	}
-
-    public function actionIndex()
-    {
-        echo 'console和web应用一样, 不同的是console应用需要引用框架中console下的controller';
-    }
 
     public function actionNow()
     {

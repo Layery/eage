@@ -3,7 +3,7 @@ $(function(){
     //    $(".body-content").html(back);
     //})
     $.ajax({
-        url : '/site/index',
+        url : '?r=site/index',
         type : 'GET',
         dataType : 'json'
         //data : {}
@@ -23,7 +23,7 @@ $(function(){
 
 
 function detail(id) {
-    var url = '/article/detail';
+    var url = '?r=article/detail';
     $.post(url, {id : id}, function(back){
         var html = jQuery.parseJSON(back);
         alert(html);

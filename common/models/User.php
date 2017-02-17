@@ -2,26 +2,50 @@
 
 namespace common\models;
 
-use Yii;
+use yii;
+use yii\db\ActiveRecord;
+use yii\web\IdentityInterface;
 
 /**
- * This is the model class for table "{{%b_user}}".
- *
- * @property integer $id
- * @property integer $pid
- * @property string $username
- * @property string $password
- * @property integer $type
- * @property integer $created_time
- * @property integer $updated_time
- * @property integer $status
- * @property string $login_ip
- * @property integer $login_time
- * @property integer $login_count
- * @property integer $update_password
+ * Class User
+ * @package common\models
  */
-class User extends \yii\db\ActiveRecord
+class User extends ActiveRecord implements IdentityInterface
 {
+    /**
+     * @var user
+     */
+    private static $_user;
+    const STATUS_DELETED = 0;
+    const STATUS_ACTIVE = 10;
+
+
+    public function validateAuthKey($authKey)
+    {
+        // TODO: Implement validateAuthKey() method.
+    }
+
+    public static function findIdentity($id)
+    {
+        // TODO: Implement findIdentity() method.
+        return static::findOne(['id' => $id, 'status' => self::STATUS_ACTIVE]);
+    }
+
+    public static function findIdentityByAccessToken($token, $type = null)
+    {
+        // TODO: Implement findIdentityByAccessToken() method.
+    }
+
+    public function getAuthKey()
+    {
+        // TODO: Implement getAuthKey() method.
+    }
+
+    public function getId()
+    {
+        return $this->getPrimaryKey();
+    }
+
     /**
      * @inheritdoc
      */
@@ -36,10 +60,7 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['pid', 'type', 'created_time', 'updated_time', 'status', 'login_time', 'login_count', 'update_password'], 'integer'],
-            [['username', 'password', 'created_time', 'updated_time', 'login_ip', 'login_time'], 'required'],
-            [['username', 'password'], 'string', 'max' => 70],
-            [['login_ip'], 'string', 'max' => 20],
+            [['created_at', 'updated_at'], 'default', 'value' => time()],
         ];
     }
 
@@ -50,34 +71,52 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'pid' => 'Pid',
             'username' => 'Username',
-            'password' => 'Password',
-            'type' => 'Type',
-            'created_time' => 'Created Time',
-            'updated_time' => 'Updated Time',
-            'status' => 'Status',
-            'login_ip' => 'Login Ip',
-            'login_time' => 'Login Time',
-            'login_count' => 'Login Count',
-            'update_password' => 'Update Password',
+            'auth_key' => 'Auth Key',
+            'password_hash' => 'Password Hash',
+            'password_reset_token' => 'Password Reset Token',
+            'email' => 'Email',
+            'status' => 'Satus',
+            'create_at' => 'Create Time',
+            'update_at' => 'Update Time',
         ];
     }
 
     /**
-     * @return bool
+     * set user password
+     *
+     * @param $password
      */
-    public function setPassword()
+    public function setPassword($password)
     {
-        return true;
+        if (!empty($password)) {
+            $this->password_hash = Yii::$app->security->generatePasswordHash($password);
+        }
     }
 
     /**
+     * set remember
+     *
      * @return bool
      */
     public function generateAuthKey()
     {
-        return true;
+        $this->auth_key = Yii::$app->security->generateRandomString();
     }
 
+    /**
+     * @param $userName
+     * @return array|User|null|ActiveRecord
+     */
+    public static function findByUsername($userName)
+    {
+        if (self::$_user = User::find()->where(['username' => $userName])->one()) {
+            return self::$_user;
+        }
+    }
+
+    public function validatePassword()
+    {
+        return true;
+    }
 }

@@ -41,4 +41,13 @@ class Base extends ActiveRecord
         return json_encode(['code' => 0 , 'msg' => 'ok']);
     }
 
+    /**
+     *
+     * @param Query $query
+     */
+    public function detail(Query $query)
+    {
+        self::find()->where($query);
+    }
+
 }
