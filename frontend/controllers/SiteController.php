@@ -1,12 +1,13 @@
 <?php
 namespace frontend\controllers;
 
+use admin\models\PCate;
 use common\extensions\Curl;
 use frontend\models\PArticle;
 use Yii;
 use yii\base\InvalidParamException;
+use yii\data\ActiveDataProvider;
 use yii\db\Query;
-use yii\helpers\ArrayHelper;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -227,9 +228,13 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        $rs = (new PArticle())->getDetail();
-        p($rs);
-        return $this->render('about', ['data' => $rs]);
+        $data = new ActiveDataProvider([
+            'query'         => PCate::find(),
+            'pagination'    => [
+                'pagesize' => 5,
+            ],
+        ]);
+        return $this->render('about', ['data' => $data]);
     }
 
 

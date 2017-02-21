@@ -17,7 +17,7 @@ use common\widgets\Alert;
         <th data-options="field:'name',width:100">Name</th>
         <th data-options="field:'introduce',width:100,align:'right'">Introduce</th>
         <th data-options="field:'parent_id',width:80,align:'right'">ParentId</th>
-        <th data-options="field:'dateline',width:240">Dateline</th>
+        <th data-options="field:'dateline',width:240,formatter:Common.DateFormatter">Dateline</th>
     </tr>
     </thead>
 </table>
@@ -31,7 +31,11 @@ use common\widgets\Alert;
         'handler' : function(){
             window.location.href = "index.php?r=cate/create";
         }
-    }]
+    }];
+
+    var Common = {
+        DateFormatter: function ($dateline)
+    };
 </script>
 
 
