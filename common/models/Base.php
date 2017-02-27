@@ -11,6 +11,7 @@ use yii;
 use yii\db\ActiveRecord;
 use yii\db\Query;
 use yii\helpers\Json;
+use yii\data\Pagination;
 
 class Base extends ActiveRecord
 {
@@ -25,10 +26,18 @@ class Base extends ActiveRecord
 
     public function getList()
     {
-        $query = new Query();
-        $rs = $query->select('*')
-                    ->from($this->table)
-                    ->all();
+        $data = self::find()->select('*');
+        $page = new Pagination([
+            'totalCount' => $data->count(),
+            'pageSize' => $_POST['rows'],
+        ]);
+        $rs = $data->offset($page->offset)->limit($page->limit)->asArray()->all();
+        $rs = array_map(function($rs){
+           if ($rs['dateline'] != '') {
+               $rs['dateline'] = date('Y-m-d', $rs['dateline']);
+           }
+           return $rs;
+        },$rs);
         return $rs;
     }
 
