@@ -32,12 +32,6 @@ class Base extends ActiveRecord
             'pageSize' => $_POST['rows'],
         ]);
         $rs = $data->offset($page->offset)->limit($page->limit)->asArray()->all();
-        $rs = array_map(function($rs){
-           if ($rs['dateline'] != '') {
-               $rs['dateline'] = date('Y-m-d', $rs['dateline']);
-           }
-           return $rs;
-        },$rs);
         return $rs;
     }
 

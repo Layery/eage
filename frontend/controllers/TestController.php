@@ -7,6 +7,8 @@
  */
 namespace frontend\controllers;
 
+use yii;
+use common\models\Redis;
 use frontend\controllers\BaseController;
 
 class TestController extends BaseController {
@@ -19,7 +21,7 @@ class TestController extends BaseController {
         $this->str = $str;
     }
 
-    public function actionIndex()
+    public function actionStrpos()
     {
         $mystring = 'sssabc';
         $findme   = 'sss';
@@ -34,4 +36,39 @@ class TestController extends BaseController {
 
 
     }
+    
+	public function actionIndex()
+	{
+        $redis = new Redis();
+        $rs = $redis->set('name', 'llf');
+
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

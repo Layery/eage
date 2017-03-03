@@ -34,12 +34,7 @@ use common\widgets\Alert;
         url : '<?= Url::toRoute("cate/list") ?>',
         method : 'post',
         toolbar : 'toolbar',
-//        rowStyle: function (index, row) {
-//            console.log(index);
-//            if (index > 10) {
-//                return 'background-color:pink;color:blue;font-weight:bold;';
-//            }
-//        },
+        fitColumns: true,
         columns : [[
             {field : 'id', title : 'ID', width : 80},
             {field : 'name', title : 'NAME', width : 100, align : 'right'},
