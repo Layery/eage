@@ -40,9 +40,6 @@ class TestController extends BaseController {
 	public function actionIndex()
 	{
         $redis = new Redis();
-        $rs = $redis->set('name', 'llf');
-
-
     }
     
     
