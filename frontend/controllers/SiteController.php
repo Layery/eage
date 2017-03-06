@@ -1,7 +1,6 @@
 <?php
 namespace frontend\controllers;
 
-use admin\models\PCate;
 use common\extensions\Curl;
 use frontend\models\PArticle;
 use Yii;
@@ -15,6 +14,7 @@ use yii\filters\AccessControl;
 use yii\data\ArrayDataProvider;
 use common\models\User;
 use common\models\LoginForm;
+use frontend\models\PCate;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
@@ -228,12 +228,17 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        $data = new ActiveDataProvider([
+       /* $data = new ActiveDataProvider([
             'query'         => PCate::find(),
             'pagination'    => [
                 'pagesize' => 5,
             ],
-        ]);
+        ]);*/
+        $data = (new PCate())->getList();
+        $redis = Yii::$app->redis;
+        $rs = $redis->hMset('test', $data);
+        p($redis->hget('test', 4), 1);
+
         return $this->render('about', ['data' => $data]);
     }
 

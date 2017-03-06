@@ -29,7 +29,7 @@ class Base extends ActiveRecord
         $data = self::find()->select('*');
         $page = new Pagination([
             'totalCount' => $data->count(),
-            'pageSize' => $_POST['rows'],
+            'pageSize' => isset($_POST['rows']) ? $_POST['rows'] : 10
         ]);
         $rs = $data->offset($page->offset)->limit($page->limit)->asArray()->all();
         return $rs;

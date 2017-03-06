@@ -87,6 +87,7 @@ class Redis
         if (isset($this->_keyLocateIndex[strtolower($this->_name)])) {
             $index = $this->_keyLocateIndex[strtolower($this->_name)];
         }
+
         return $index;
     }
 
@@ -100,7 +101,6 @@ class Redis
     private function checkAllowFunction($name, $arguments)
     {
         $name = strtolower($name);
-
         try {
             if ($name == 'keys') {//单独检测下 keys函数
                 $pos = strpos($arguments[0],":");
@@ -126,7 +126,7 @@ class Redis
      * @param $key string 键名
      * @throws CException
      */
-    private function connect($key)
+    private function connect_bak($key)
     {
         $this->setKey($key);
         if ($this->_active[$this->_key]) {
@@ -154,6 +154,28 @@ class Redis
 
     }
 
+    private function connect($key)
+    {
+        $this->setKey($key);
+        $conf = Yii::$app->params['redis'][$this->_key];
+        $redis = new \Redis();
+        $conf['timeout'] = isset($conf['timeout']) ? $conf['timeout'] : 10;
+        if (isset($conf['pconnect'])) {
+            $flag = $redis->pconnect($conf['host'],$conf['port'],$conf['timeout']);
+        } else {
+            $flag = $redis->connect($conf['host'],$conf['port'],$conf['timeout']);
+        }
+        if (isset($conf['auth'])) {
+            $redis->auth($conf['auth']);
+        }
+        if (!$flag) {
+            throw new CException('redis connect failed');
+        } else {
+            isset($conf['database']) && $redis->select($conf['database']);
+            $this->_redis = $this->_active[$this->_key] = $redis;
+        }
+    }
+
     /**
      * @use php 魔术方法 自动调用 redis中的函数
      *
@@ -165,10 +187,8 @@ class Redis
     public function __call($name, $arguments)
     {
         if ($this->checkAllowFunction($name, $arguments)) {
-
             $key = $arguments[$this->getKeyLocateIndex()];
             $key && $this->connect($key);
-
             try {
                 if (!$this->_redis) {
                     throw new CException("参数中缺少键名,无法判断需要连接的redis实例<br/>");
