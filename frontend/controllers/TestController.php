@@ -9,9 +9,8 @@ namespace frontend\controllers;
 
 use yii;
 use common\models\Redis;
-use frontend\controllers\BaseController;
-
-class TestController extends BaseController {
+use yii\web\controller;
+class TestController extends Controller {
     public $str;
 
     public function init()
@@ -39,7 +38,7 @@ class TestController extends BaseController {
     
 	public function actionIndex()
 	{
-        $redis = new Redis();
+        return $this->render('index');
     }
     
     

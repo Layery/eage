@@ -10,3 +10,9 @@
 
 		# ...其它设置...
 		</Directory>
+
+2: 注册静态资源的两种方式:
+        1: 在app\assets路径下添加自定义的asset文件,需要继承自yii\web\AssetBundle类, 然后视图文件中可以直接
+           asset::register($this),实现全局调用
+        2: 直接在视图文件中$this->registerJsfile('资源路径') / $this->registerCssFile('资源路径')
+

@@ -10,7 +10,7 @@ use common\widgets\Alert;
 
 ?>
 
-<table class="easyui-datagrid" style="width:100%;height: 100%;">
+<table class="easyui-datagrid" style="width:100%;height: 100%;" >
     <thead>
         <tr>
             <th field="id" width="80">ID</th>
@@ -23,6 +23,16 @@ use common\widgets\Alert;
 </table>
 
 
+<div id="toolbar">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="javascript:$('#dg').edatagrid('addRow')">New</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="javascript:$('#dg').edatagrid('destroyRow')">Destroy</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="javascript:$('#dg').edatagrid('saveRow')">Save</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-undo" plain="true" onclick="javascript:$('#dg').edatagrid('cancelRow')">Cancel</a>
+</div>
+
+
+
+
 
 <script type="text/javascript">
     // 初始化dategrid
@@ -33,7 +43,7 @@ use common\widgets\Alert;
         singleSelect : true,
         url : '<?= Url::toRoute("cate/list") ?>',
         method : 'post',
-        toolbar : 'toolbar',
+        toolbar : $('#toolbar'),
         fitColumns: true,
         columns : [[
             {field : 'id', title : 'ID', width : 80},

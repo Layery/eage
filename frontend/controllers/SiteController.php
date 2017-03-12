@@ -228,16 +228,12 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-       /* $data = new ActiveDataProvider([
+        $data = new ActiveDataProvider([
             'query'         => PCate::find(),
             'pagination'    => [
                 'pagesize' => 5,
             ],
-        ]);*/
-        $data = (new PCate())->getList();
-        $redis = Yii::$app->redis;
-        $rs = $redis->hMset('test', $data);
-        p($redis->hget('test', 4), 1);
+        ]);
 
         return $this->render('about', ['data' => $data]);
     }
