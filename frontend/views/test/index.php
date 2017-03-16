@@ -2,9 +2,7 @@
 use yii\helpers\Html;  
 use frontend\assets\TestAsset;  
 TestAsset::register($this);
-$this->registerJsFile('@web/js/controllers/site-index.js');
 $this->registerCssFile('@web/css/site.css');
-
 ?>
 <div class="container">
     <div class="row">
