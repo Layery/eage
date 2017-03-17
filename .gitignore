@@ -35,6 +35,9 @@ phpunit.phar
 
 
 /frontend/runtime
+/frontend/web/assets
+/admin/web/assets
+
 
 
 

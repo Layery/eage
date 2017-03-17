@@ -13,3 +13,24 @@
 
 2: lamp安装redis扩展：
     １
+3: 注册静态资源的两种方式:
+        1: 在app\assets路径下添加自定义的asset文件,需要继承自yii\web\AssetBundle类, 然后视图文件中可以直接
+           asset::register($this),实现全局调用
+        2: 直接在视图文件中$this->registerJsfile('资源路径') / $this->registerCssFile('资源路径')
+
+4: function test()
+   { 
+        $a = 2;
+        $b = 5;
+        if ($a = 5 || $b = 3) 
+        {
+            $a++;
+            $b++;
+            echo $a . '----' . $b . "\n";
+
+            $str = "为什么会输出1--6? 因为if条件中逻辑运算符||优先级要高于赋值运算=, 所以$a = bool(true)
+             而, bool类型是不支持自增或者自减运算的,所以$a被输出为bool类型的1, 而$b由于||运算符的
+             短路运算导致没有被赋值为3, 所以他还是5, 自增运算过后变为了6
+            ";
+        }
+    }

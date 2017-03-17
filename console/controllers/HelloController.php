@@ -89,19 +89,77 @@ class HelloController extends Controller
         echo date('T') . "\n";
     }
 
+    /**
+     * 求三数最大值
+     * @param  [type] $a [description]
+     * @param  [type] $b [description]
+     * @param  [type] $c [description]
+     * @return [type]    [description]
+     */
+    public function actionMax($a, $b, $c)
+    {
+        //if ($a > $b) {
+        //    if ($a > $c) {
+        //        echo $a;
+        //    } else {
+        //        echo $c;
+        //    }
+        //} else {
+        //    echo $b > $c ? $b : $c;
+        //}
+        echo $a > $b ? ($a > $c ? $a : $c) : ($b > $c ? $b : $c);
+    }
 
 
 
+    public function actionTesta()
+    {
+        header( 'Content-Type:text/html;charset=utf8');
+        $a = 2;
+        $b = 5;
+        if ($a = 5 || $b = 3) 
+        {
+            $a++;
+            $b++;
+            echo $a . '----' . $b . "\n";
+        }
+    }
+
+    // 判断是否是多维数组
+    public function actionArrayIsSimple($arr)
+    {
+        if (!is_array($arr)) return false;
+        $simple = 1;
+        foreach ($arr as $key => $val) {
+            if (is_array($val) && (false != $this->actionArrayIsSimple($val))) {
+                $simple = 2;
+            }
+        }
+        return $simple;
+    }
 
 
 
-
-
-
-
-
-
-
+    public function actionGetInsertSql($arr)
+    {
+        $simple = arrayIsSimple($arr);
+        if ($simple == 2) {  // 如果数组是多维数组
+            $keys = "('". implode("','", array_keys($arr[0])). "') ";
+            $valueStr = '';
+            $value = [];
+            foreach ($arr as $k => &$v) {
+                if (is_array($v)) {
+                    $value[] = implode("','", $v);
+                }
+            }
+            $valueStr = "('". implode("'),('", $value). "')";
+        } else {
+            $keys = "('". implode("','", array_keys($arr)). "') ";
+            $valueStr = "('". implode("','", array_values($arr)). "')";
+        }
+        $sql = "insert into table ". $keys. "values ". $valueStr;
+        echo $sql;
+    }
 
 
 

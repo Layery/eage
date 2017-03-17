@@ -9,6 +9,9 @@ return [
         'redis' => [
             'class' => 'common\models\Redis'
         ],
+        'curl' => [
+            'class' => 'common\extensions\Curl',
+        ]
     ],
     'params' => [
         'redis'=>[

@@ -40,6 +40,7 @@ AppAsset::register($this);
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Test', 'url' => ['/test/index']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Curl', 'url' => ['/test/curl']],
         ];
         if (Yii::$app->user->isGuest) {
             $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
@@ -84,12 +85,12 @@ AppAsset::register($this);
 
 
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+<footer class="">
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
+<!--        <p class="pull-left">&copy; My Company --><?//= date('Y') ?><!--</p>-->
+<!---->
+<!--        <p class="pull-right">--><?//= Yii::powered() ?><!--</p>-->
+
 </footer>
 
 <?php $this->endBody() ?>

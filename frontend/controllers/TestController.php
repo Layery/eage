@@ -9,9 +9,8 @@ namespace frontend\controllers;
 
 use yii;
 use common\models\Redis;
-use frontend\controllers\BaseController;
-
-class TestController extends BaseController {
+use yii\web\controller;
+class TestController extends Controller {
     public $str;
 
     public function init()
@@ -39,11 +38,20 @@ class TestController extends BaseController {
     
 	public function actionIndex()
 	{
-        $redis = new Redis();
+        return $this->render('index');
     }
     
-    
-    
+    public function actionCurl()
+    {
+       $url = 'http://apis.haoservice.com/weather';
+       $curl = curl_init();
+       $curl = yii::$app->curl;
+       $curl->setOption('cityname', '北京');
+       $curl->setOption('dtype', 'json');
+       $curl->setOption('key', 'f2fbad4fc2abe247368fe18ba836a75b');
+       $rs = $curl->get($url);
+       p($rs);
+    }
     
     
     
