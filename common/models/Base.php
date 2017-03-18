@@ -36,12 +36,12 @@ class Base extends ActiveRecord
     }
 
     public function create(Array $data = []) {
-        if ($this->setAttributes($data)) {
-            $error = $this->getErrors();
-            return $error;
+        if ($this->setAttributes($data) && $this->save()) {
+            return ['code' => 0, 'msg' => 'ok', 'data' => []];
+        } else {
+            $errors = $this->getFirstErrors();
+            return ['code' => 10001, 'msg' => '操作失败', 'data' => $errors];
         }
-        $this->save();
-        return json_encode(['code' => 0 , 'msg' => 'ok']);
     }
 
     /**

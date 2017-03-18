@@ -41,4 +41,29 @@ class BaseController extends Controller
         return $this->render('list', ['data' => $rs]);
     }
 
+    public function autoReturn($data)
+    {
+        if (!is_array($data)) return false;
+        $result = [];
+        if (isset($data['code']) && $data['code'] == 0) {
+            $result = [
+                'code' => $data['code'],
+                'msg' => $data['msg']
+            ];
+        } else {
+            if (is_array($data['data'])) {
+                $msg = '';
+                foreach ($data['data'] as $k => $v) {
+                    $v .= "\n";
+                    $msg .= $v;
+                }
+                $result = [
+                    'code' => $data['code'],
+                    'msg' => $data['msg'],
+                    'errors' => $msg,
+                ];
+            }
+         }
+         return json_encode($result);
+    }
 }

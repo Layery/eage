@@ -9,7 +9,8 @@ namespace frontend\controllers;
 
 use yii;
 use common\models\Redis;
-use yii\web\controller;
+use yii\web\Controller;
+
 class TestController extends Controller {
     public $str;
 

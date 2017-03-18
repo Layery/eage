@@ -42,9 +42,10 @@ class Article extends Base
     public function rules()
     {
         return [
-            [['name', 'post', 'dateline'], 'required'],
+            [['name', 'post', 'dateline', 'cate_id'], 'required'],
             [['post'], 'string'],
             [['name'], 'string', 'max' => 30],
+            [['cate_id'], 'number'],
             [['dateline'], 'string', 'max' => 10]
         ];
     }
@@ -59,6 +60,26 @@ class Article extends Base
             'name' => '文章标题',
             'post' => '文章内容',
             'dateline' => '创建时间',
+            'cate_id' => '所属栏目'
         ];
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
