@@ -12,7 +12,6 @@ use yii;
 
 class ArticleController extends BaseController
 {
-    public $enableCsrfValidation = false;
     public $js = [];
     public function init()
     {
@@ -31,14 +30,16 @@ class ArticleController extends BaseController
 
     public function actionCreate()
     {
-        if (IS_POST && !empty($data = $_POST)) {
+
+        if (!empty($data = $_POST)) {
 			$params = [
 			    'name' => $data['name'],
-                'cateId' => $data['cate_id'],
+                'cate_id' => (int) $data['cate_id'],
                 'post' => $data['ueditor'],
                 'dateline' => time()
             ];
-            $rs = (new Article())->create($params);
+            p($params);
+            $rs = (new Article())->articleCreate($params);
             echo $this->autoReturn($rs);
         }
         return $this->render('_add');

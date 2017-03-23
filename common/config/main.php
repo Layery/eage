@@ -11,6 +11,9 @@ return [
         ],
         'curl' => [
             'class' => 'common\extensions\Curl',
+        ],
+        'request' => [
+            'enableCsrfValidation' => false, // 关闭csrf验证
         ]
     ],
     'params' => [

@@ -16,12 +16,6 @@ use common\models\Base;
  */
 class Article extends Base
 {
-
-    public function __construct()
-    {
-        $this->table = self::tableName();
-    }
-
     public static function model()
     {
         return new self();
@@ -42,11 +36,6 @@ class Article extends Base
     public function rules()
     {
         return [
-            [['name', 'post', 'dateline', 'cate_id'], 'required'],
-            [['post'], 'string'],
-            [['name'], 'string', 'max' => 30],
-            [['cate_id'], 'number'],
-            [['dateline'], 'string', 'max' => 10]
         ];
     }
 
@@ -62,6 +51,21 @@ class Article extends Base
             'dateline' => '创建时间',
             'cate_id' => '所属栏目'
         ];
+    }
+
+    /**
+     * 新增文章
+     *
+     * @param $data
+     */
+    public function articleCreate($data)
+    {
+        $this->setAttributes($data);
+        if ($this->save()) {
+            echo 'ok';
+        } else {
+            echo 'false';
+        }
     }
 }
 

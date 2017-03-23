@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use common\extensions\Curl;
+use common\models\Cate;
 use frontend\models\PArticle;
 use Yii;
 use yii\base\InvalidParamException;
@@ -228,16 +229,22 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+        $cateQuery = Cate::find();
+        if (!empty(Yii::$app->request->post())) {
+            $cateQuery->select('*')
+                ->from(Cate::tableName())
+                ->introduce($_POST)
+                ->cateName($_POST)
+                ->myLimit(null, 1, 2);
+        }
         $data = new ActiveDataProvider([
-            'query'         => PCate::find(),
+            'query'         => $cateQuery,
             'pagination'    => [
                 'pagesize' => 5,
             ],
         ]);
-
         return $this->render('about', ['data' => $data]);
     }
-
 
     public function actionView()
     {

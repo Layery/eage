@@ -68,23 +68,9 @@ $rs = Url::toRoute('cate/list');
 					return false;
         		}
         	},
-        	success: function(data){
-        	    var result = jQuery.parseJSON(data);
-                var status = (result.code == '0' ? 1 : 0);
-                if (status == 1) {
-                    $.messager.show({
-                        title: '消息提醒',
-                        msg: 'ok',
-                        timeout: 2000
-                    });
-                } else {
-                    $.messager.show({
-                        title: '消息提醒',
-                        msg: result.errors,
-                        timeout: 3000
-                    });
-                }
-        	}
+        	success: function(data) {
+                alert(data);
+            }
         });
 		
 		

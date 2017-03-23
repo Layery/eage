@@ -17,12 +17,6 @@ use common\models\Base;
  */
 class Cate extends Base
 {
-
-    public function __construct()
-    {
-        $this->table = self::tableName();
-    }
-
     public static function tableName()
     {
         return '{{%b_category}}';
