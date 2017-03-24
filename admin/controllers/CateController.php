@@ -9,23 +9,21 @@
 namespace admin\controllers;
 
 use yii;
-use admin\models\PCate;
+use common\models\Cate;
 
 class CateController extends BaseController
 {
     // 配置关闭csrf验证
-    public $enableCsrfValidation = false;
-
-    public function init()
-    {
-        parent::init();
-    }
+    //public $enableCsrfValidation = false;
+    private  $model;
 
     public function actionList()
     {
         if (IS_AJAX) {
-            $rs = (new PCate())->getList();
-            return json_encode($rs);
+            $params = !empty($_POST) ? $_POST : [];
+            p($this->model);
+            $result = $this->model->dataList($params);
+            return $this->autoReturn($result, false);
         }
         return $this->render('list');
     }

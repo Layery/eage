@@ -2,9 +2,11 @@
 
 namespace common\models;
 
+use common\query\cateQuery;
 use Yii;
 use yii\db\Query;
 use common\models\Base;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "b_category".
@@ -46,6 +48,16 @@ class Cate extends Base
             'parent_id' => '上级栏目',
             'dateline' => '添加时间',
         ];
+    }
+
+    public function dataList($search)
+    {
+        $query = new cateQuery(get_called_class());
+        $query = $query->cateName($search)
+                       ->introduce($search)
+                       ->offset(ArrayHelper::getValue($search, 'page'))
+                       ->limit(ArrayHelper::getValue($search, 'rows'));
+        return $this->returnData($query);
     }
 
 }

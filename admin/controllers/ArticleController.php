@@ -24,8 +24,12 @@ class ArticleController extends BaseController
     }
     public function actionList()
     {
-        $data = (new Article())->getList();
-        return $this->render('list', ['data' => $data]);
+        $search = !empty($_POST) ? $_POST : [];
+        $rs = $this->model->dataList($search);
+        if (IS_AJAX) {
+            return $this->autoReturn($rs, false);
+        }
+        return $this->render('list');
     }
 
     public function actionCreate()
@@ -38,9 +42,8 @@ class ArticleController extends BaseController
                 'post' => $data['ueditor'],
                 'dateline' => time()
             ];
-            p($params);
             $rs = (new Article())->articleCreate($params);
-            echo $this->autoReturn($rs);
+            return $rs;
         }
         return $this->render('_add');
     }

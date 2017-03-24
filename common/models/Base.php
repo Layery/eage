@@ -20,7 +20,7 @@ class Base extends ActiveRecord
     public static function find()
     {
         $classPath = explode('\\', get_called_class());
-        $classQuery = COMMON. DIRECTORY_SEPARATOR. 'query'. DIRECTORY_SEPARATOR. strtolower(end($classPath)).'Query.php';
+        $classQuery = COMMON . DIRECTORY_SEPARATOR . 'query' . DIRECTORY_SEPARATOR . strtolower(end($classPath)) . 'Query.php';
         if (file_exists($classQuery)) {
             try {
                 $class = basename($classQuery, '.php');
@@ -34,6 +34,41 @@ class Base extends ActiveRecord
         }
     }
 
+    /**
+     * 初始化并返回数据
+     *
+     * @param ActiveQuery $query
+     * @return array
+     */
+    public function returnData($query)
+    {
+        $data = self::initReturnData();
+        if ($query->count()) {
+            $data = [
+                'code' => 0,
+                'msg' => 'ok',
+                'data' => $query->asArray()->all(),
+                'page' => [
+                    'pageNow' => 0,
+                    'pageTotal' => $query->count()
+                ]
+            ];
+        }
+        return $data;
+    }
+
+    public static function initReturnData()
+    {
+        return $data = [
+            'code' => '',
+            'msg'  => '',
+            'page' => [
+                'pageNow' => 0,
+                'pageTotal' => 0,
+            ],
+            'data' => []
+        ];
+    }
 //
 //    public function getList()
 //    {

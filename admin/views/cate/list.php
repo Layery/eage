@@ -38,29 +38,29 @@ use common\widgets\Alert;
     // 初始化dategrid
     $(".easyui-datagrid").datagrid({
         pagination : true,
-        pageNumber: 1,
+        pageNumber: 2,
         pageSize: 10,
         singleSelect : true,
         url : '<?= Url::toRoute("cate/list") ?>',
         method : 'post',
         toolbar : $('#toolbar'),
-        fitColumns: true,
-        columns : [[
-            {field : 'id', title : 'ID', width : 80},
-            {field : 'name', title : 'NAME', width : 100, align : 'right'},
-            {field : 'introduce', title : 'Introduce', width : 200, align : 'right'},
-            {field : 'parent_id', title : 'ParentId', width : 80, align : 'right'},
-            {
-                field : 'dateline', title : 'Dateline', width: 300, align: 'right',
-                formatter: function(value, row, index) {
-                    var date = new Date(parseInt(value)*1000);
-                    var y = date.getFullYear();
-                    var m = date.getMonth()+1;
-                    var d = date.getDate();
-                    return y + '-' + m + '-' +d;
-                }
-            }
-        ]]
+        fitColumns: true
+//        columns : [[
+//            {field : 'id', title : 'ID', width : 80},
+//            {field : 'name', title : 'NAME', width : 100, align : 'right'},
+//            {field : 'introduce', title : 'Introduce', width : 200, align : 'right'},
+//            {field : 'parent_id', title : 'ParentId', width : 80, align : 'right'},
+//            {
+//                field : 'dateline', title : 'Dateline', width: 300, align: 'right',
+//                formatter: function(value, row, index) {
+//                    var date = new Date(parseInt(value)*1000);
+//                    var y = date.getFullYear();
+//                    var m = date.getMonth()+1;
+//                    var d = date.getDate();
+//                    return y + '-' + m + '-' +d;
+//                }
+//            }
+//        ]]
     });
 
     var toolbar = [{
@@ -87,6 +87,8 @@ use common\widgets\Alert;
 
     };
 </script>
+
+
 
 
 

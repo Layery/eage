@@ -12,6 +12,15 @@ use yii\db\ActiveQuery;
 class baseQuery extends ActiveQuery
 {
 
+    public function checkSearchData($search)
+    {
+        if (!is_array($search) || empty($search))
+            return $this;
+        else
+            return $this;
+    }
+
+
     /**
      * 调试程序
      */

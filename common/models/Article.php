@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use common\query\articleQuery;
 use Yii;
 use yii\db\Query;
 use common\models\Base;
@@ -36,6 +37,7 @@ class Article extends Base
     public function rules()
     {
         return [
+            [['id', 'name', 'post', 'dateline', 'cate_id'], 'safe']
         ];
     }
 
@@ -53,18 +55,23 @@ class Article extends Base
         ];
     }
 
-    /**
-     * 新增文章
-     *
-     * @param $data
-     */
+
+    public function dataList($search)
+    {
+        $query = new articleQuery(get_called_class());
+        $query =  $query->findByTitle($search);
+        return $this->returnData($query);
+    }
+
+
+
     public function articleCreate($data)
     {
         $this->setAttributes($data);
         if ($this->save()) {
-            echo 'ok';
+            return 'ok';
         } else {
-            echo 'false';
+            return false;
         }
     }
 }
