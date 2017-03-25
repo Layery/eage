@@ -7,6 +7,7 @@
  */
 
 namespace admin\controllers;
+use admin\assets\AppAsset;
 use common\models\Article;
 use SebastianBergmann\Comparator\ExceptionComparatorTest;
 use yii;
@@ -23,34 +24,10 @@ class BaseController extends Controller
     // 初始化引入所有的js , css文件
     public function init()
     {
-        $this->layout = 'admin';
+//        $this->layout = 'admin';
+        $this->layout = 'amaze';
     }
 
-    public function __get($name)
-    {
-        if ($name == 'model') {
-            $controller = yii::$app->controller->id;
-            return new $controller;
-        } else {
-            echo $name. 'undefined';
-            return false;
-        }
-        // TODO: Implement __get() method.
-    }
-
-    public function beforeAction( $action)
-    {
-        $this->controller = ucfirst(strtolower(Yii::$app->controller->id));
-        $this->action = Yii::$app->controller->action->id;
-        return parent::beforeAction($action);
-    }
-
-    public function actionList()
-    {
-
-        $rs = (new $this->controller())->getList();
-        return $this->render('list', ['data' => $rs]);
-    }
 
     /**
      * 默认返回分页信息, $status设置为false只返回data

@@ -119,4 +119,9 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return true;
     }
+
+    public function dataList()
+    {
+        return self::find()->asArray()->all();
+    }
 }

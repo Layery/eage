@@ -13,8 +13,11 @@ use yii;
 class ArticleController extends BaseController
 {
     public $js = [];
+
+    private $model;
     public function init()
     {
+        $this->model = new Article();
         parent::init();
     }
 
@@ -25,8 +28,8 @@ class ArticleController extends BaseController
     public function actionList()
     {
         $search = !empty($_POST) ? $_POST : [];
-        $rs = $this->model->dataList($search);
         if (IS_AJAX) {
+            $rs = $this->model->dataList($search);
             return $this->autoReturn($rs, false);
         }
         return $this->render('list');

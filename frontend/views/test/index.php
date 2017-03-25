@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use frontend\assets\TestAsset;  
 TestAsset::register($this);
 $this->registerCssFile('@web/css/site.css');
+TestAsset::addJs($this,'@web/js/test.js');
 ?>
 <div class="container">
     <div class="row">

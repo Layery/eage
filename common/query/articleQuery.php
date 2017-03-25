@@ -20,4 +20,8 @@ class articleQuery extends baseQuery
     {
         $this->checkSearchData($search);
     }
+
+    public function recResult()
+    {
+    }
 }
