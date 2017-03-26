@@ -22,7 +22,7 @@ use common\widgets\Alert;
             </div>
             <div class="am-u-sm-12 am-u-md-3">
                 <div class="am-form-group">
-                    <select data-am-selected="{btnSize: 'sm'}">
+                    <select data-am-selected="{btnSize: 'sm'}" id="am-form-select">
                         <option value="option1">所有类别</option>
                         <option value="option2">IT业界</option>
                         <option value="option3">数码产品</option>
@@ -120,6 +120,18 @@ use common\widgets\Alert;
         $("#am-btn-create").click(function(){
             window.location.href = "index.php?r=cate/create";
         });
+        $.ajax({
+            url: 'index.php?r=cate/list',
+            type: 'POST',
+            dataType: 'json',
+            success: function(result) {
+                var htmlStr = '';
+                $.each(result, function(i) {
+                    htmlStr += "<option value='"+ result[i]['parent_id']+"'>"+ result[i]['name']+"</option>";
+                });
+                $("#am-form-select").html(htmlStr);
+            }
+        })
     });
 </script>
 <script type="text/javascript">

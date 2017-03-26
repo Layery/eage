@@ -7,6 +7,8 @@
  */
 namespace frontend\controllers;
 
+use common\models\BCreate;
+use common\util\CommonUtil;
 use yii;
 use common\models\Redis;
 use yii\web\Controller;
@@ -44,18 +46,33 @@ class TestController extends Controller {
     
     public function actionCurl()
     {
-       $url = 'http://apis.haoservice.com/weather';
-       $curl = curl_init();
-       $curl = yii::$app->curl;
-       $curl->setOption('cityname', '北京');
-       $curl->setOption('dtype', 'json');
-       $curl->setOption('key', 'f2fbad4fc2abe247368fe18ba836a75b');
-       $rs = $curl->get($url);
-       p($rs);
+        if (!empty($_POST)) {
+            $data = [
+                'name' => CommonUtil::post('name'),
+                'age' => CommonUtil::post('age', 'int'),
+                'sex' => CommonUtil::post('sex', 'int'),
+                'address' => CommonUtil::post('address', 'string'),
+                'mobile' => CommonUtil::post('mobile', 'string'),
+                'create_at' => time(),
+                'update_at' => time()
+            ];
+            $BCreate = new BCreate();
+            $BCreate->setAttributes($data);
+            $BCreate->setScenario(BCreate::CREATE_TEST);
+            if ($BCreate->save()) {
+                return 'ok';
+            }
+            return $this->render('create', ['model' => $BCreate]);
+        }
+        return $this->render('create');
     }
-    
-    
-    
+
+
+    public function actionMyAr()
+    {
+        p('bbbb');
+        return $this->render('create');
+    }
     
     
     
