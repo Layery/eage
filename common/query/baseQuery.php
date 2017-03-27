@@ -9,7 +9,7 @@ namespace common\query;
 
 use yii\db\ActiveQuery;
 
-class baseQuery extends ActiveQuery
+class BaseQuery extends ActiveQuery
 {
 
     public function checkSearchData($search)

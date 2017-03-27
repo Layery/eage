@@ -35,7 +35,7 @@ class CateController extends BaseController
             return $this->autoReturn($result, false);
         }
         $data = new ArrayDataProvider([
-            'allModels' => (new Query())->from(Cate::tableName())->all()
+            'allModels' => Cate::find()->all()
         ]);
         return $this->render('list', ['data' => $data]);
     }

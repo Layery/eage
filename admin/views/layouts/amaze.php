@@ -24,9 +24,17 @@ AppAsset::register($this);
     <?php $this->beginBody() ?>
     <?= $this->render('_header') ?>
     <?= $this->render('_left') ?>
-    <p></p>
-    <br/>
-    <?= $content ?>
+    <hr>
+    <div class="admin-content">
+        <div class="am-cf am-padding am-padding-bottom-0">
+            <div class="am-fl am-cf">
+                <strong class="am-text-primary am-text-lg">breadLink</strong> /
+                <small>breadLink</small>
+            </div>
+        </div>
+        <hr>
+        <?= $content ?>
+    </div>
     <?php $this->endBody() ?>
     </body>
 </html>

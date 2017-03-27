@@ -8,7 +8,6 @@ use common\widgets\Alert;
 
 ?>
 
-<div class="admin-content">
     <div class="admin-content-body">
         <hr>
         <div class="am-g">
@@ -74,8 +73,7 @@ use common\widgets\Alert;
                                         'class'=>'yii\grid\CheckboxColumn',
                                         'checkboxOptions' => function($model){
                                             return ['class' => 'gridview-check'];
-                                        }
-
+                                        },
                                     ],
                                     'id',
                                     'name',
@@ -85,8 +83,12 @@ use common\widgets\Alert;
                                         'attribute'=>'dateline',
                                         'value'=> function($data) {return date('Y-m-d', $data['dateline']);},
                                     ],
+                                    [
+                                        'class' => 'yii\grid\ActionColumn',
+                                        'template' => '{update} {delete}',
+                                    ]
                                 ],
-                                'layout' => '{items}{pager}'
+                                'layout' => '{items}  {pager}'
                             ]);
                             ?>
                         </tr>
@@ -112,7 +114,6 @@ use common\widgets\Alert;
 
         </div>
     </div>
-</div>
 
 
 <script>

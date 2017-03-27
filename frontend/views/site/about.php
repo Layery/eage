@@ -34,3 +34,13 @@ $this->params['breadcrumbs'][] = $this->title;
        ],
     ]);
 ?>
+
+<?php
+    echo GridView::widget([
+        'dataProvider' => $dataProvider,
+        'columns' => [
+            'id',
+            'name'
+        ]
+    ]);
+?>

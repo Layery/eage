@@ -71,14 +71,15 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             'id' => 'ID',
-            'username' => 'Username',
+            'username' => '用户名',
             'auth_key' => 'Auth Key',
             'password_hash' => 'Password Hash',
             'password_reset_token' => 'Password Reset Token',
-            'email' => 'Email',
-            'status' => 'Satus',
-            'create_at' => 'Create Time',
-            'update_at' => 'Update Time',
+            'email' => '邮箱',
+            'status' => '状态',
+            'role' => '角色',
+            'created_at' => '创建时间',
+            'updated_at' => '维护时间',
         ];
     }
 
@@ -123,5 +124,10 @@ class User extends ActiveRecord implements IdentityInterface
     public function dataList()
     {
         return self::find()->asArray()->all();
+    }
+
+    public static function model()
+    {
+        return new self();
     }
 }

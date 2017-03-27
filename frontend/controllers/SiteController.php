@@ -20,6 +20,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use common\models\Auth;
 
 /**
  * Site controller
@@ -243,7 +244,13 @@ class SiteController extends Controller
                 'pagesize' => 5,
             ],
         ]);
-        return $this->render('about', ['data' => $data]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => Auth::find(),
+            'pagination' => [
+                'pagesize' => 5,
+            ],
+        ]);
+        return $this->render('about', ['data' => $data, 'dataProvider' => $dataProvider]);
     }
 
     public function actionView()

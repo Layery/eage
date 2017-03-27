@@ -22,10 +22,17 @@ use yii\helpers\Url;
 
             </li>
             <li class="admin-parent">
-                <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-file"></span> 博文管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+                <a class="am-cf" data-am-collapse="{target: '#collapse-nav-blog'}"><span class="am-icon-file"></span> 博文管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav-blog">
                     <li><a href="<?= Url::toRoute('cate/list') ?>" class="am-cf"><span class="am-icon-check"></span> 栏目管理<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
                     <li><a href="<?= Url::toRoute('article/list') ?>"><span class="am-icon-file"></span> 文章管理</a></li>
+                </ul>
+            </li>
+            <li class="admin-parent">
+                <a class="am-cf" data-am-collapse="{target: '#collapse-nav-user'}"><span class="am-icon-file"></span> 用户管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav-user">
+                    <li><a href="<?= Url::toRoute('auth/list') ?>" class="am-cf"><span class="am-icon-check"></span> 权限列表<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
+                    <li><a href="<?= Url::toRoute('user/list') ?>"><span class="am-icon-file"></span> 用户列表</a></li>
                 </ul>
             </li>
            <!-- <li><a href="admin-table.html"><span class="am-icon-table"></span> 表格</a></li>
