@@ -60,4 +60,18 @@ class Cate extends Base
         return $this->returnData($query);
     }
 
+    public function cateDelete($id)
+    {
+        if (strpos(',',trim($id, ','))) {
+            p('ok');
+        } else {
+            $cate = self::findOne($id);
+            if (!empty($cate)) {
+                return boolval($cate->delete());
+            } else {
+                return false;
+            }
+        }
+    }
+
 }

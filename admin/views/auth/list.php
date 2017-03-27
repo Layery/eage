@@ -14,7 +14,7 @@ use common\widgets\Alert;
 use common\models\User;
 $this->title = 'AuthManage';
 $this->params['breadcrumbs'][] = $this->title;
-
+$Bright = yii::$app->right;
 $user = User::model();
 ?>
 
@@ -58,16 +58,19 @@ $user = User::model();
                                 ],
                                 'id',
                                 'name',
-                                'actions',
                                 [
-                                    'attribute' => 'uid',
-                                    'value' => function($model) use($user){
-                                        return $user->findOne($model->uid)->username;
+                                    'attribute' => 'actions',
+                                    'value' => function($model) use($Bright){
+                                        return $Bright->authCode2Name($model->actions);
                                     }
                                 ],
                                 [
-                                    'attribute' => 'create_at',
-                                    'value' => function($model) { return date('Y-m-d H:m', $model->create_at);}
+                                    'attribute' => 'execute_id',
+                                    'value' => function($model) use ($user) { return $user->findOne($model->execute_id)->username;}
+                                ],
+                                [
+                                    'attribute' => 'created_at',
+                                    'value' => function($model) { return date('Y-m-d H:m', $model->created_at);}
                                 ],
                                 [
                                     'class' => 'yii\grid\ActionColumn',

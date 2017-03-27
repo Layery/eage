@@ -8,6 +8,7 @@
 
 namespace admin\controllers;
 
+use common\util\CommonUtil;
 use yii;
 use yii\db\Query;
 use yii\data\ArrayDataProvider;
@@ -56,4 +57,11 @@ class CateController extends BaseController
         return $this->render('_add');
     }
 
+    public function actionDelete()
+    {
+       if (IS_AJAX) {
+           $id = CommonUtil::post('id', 'int');
+           return $this->model->cateDelete($id);
+       }
+    }
 }

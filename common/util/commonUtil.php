@@ -33,4 +33,11 @@ class CommonUtil
         }
         return $data;
     }
+
+    public static function authErrorMsg()
+    {
+        $jsScript = "";
+        $jsScript .= "<script>alert('对不起,您没有权限');</script>";
+        return $jsScript;
+    }
 }

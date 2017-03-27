@@ -9,11 +9,14 @@
 namespace admin\controllers;
 use admin\assets\AppAsset;
 use common\models\Article;
+use common\util\CommonUtil;
 use SebastianBergmann\Comparator\ExceptionComparatorTest;
 use yii;
 use yii\web\Controller;
 use yii\base\Action;
-use common\models\Base;
+use common\models\Auth;
+use common\models\User;
+
 class BaseController extends Controller
 {
     public $js = [];
@@ -43,5 +46,15 @@ class BaseController extends Controller
             return json_encode($data['data']);
         }
         return json_encode($data);
+    }
+//
+    public function beforeAction($action){
+        $status = yii::$app->right->checkUserAuth($uid, $this, $action);
+        $status = false;
+        if ($status === false) {
+            echo CommonUtil::authErrorMsg();
+            p('asdfasdf');
+            return $this->goBack('http://www.baidu.com');
+        }
     }
 }

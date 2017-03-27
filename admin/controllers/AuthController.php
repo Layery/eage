@@ -31,8 +31,15 @@ class AuthController extends BaseController
     public function actionCreate()
     {
         if (!empty(yii::$app->request->post())) {
-            p($_POST);
-
+            $params = [
+                'name' => CommonUtil::post('name'),
+                'status' => CommonUtil::post('status'),
+                'actions' => json_encode(CommonUtil::post('actions')),
+                'uid' => 1,
+                'created_at' => time(),
+                'updated_at' => time()
+            ];
+            $rs = (new Auth())->AuthCreate($params);
         }
         return $this->render('_add', [
             'authModel' => new Auth(),

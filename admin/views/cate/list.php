@@ -85,7 +85,19 @@ use common\widgets\Alert;
                                     ],
                                     [
                                         'class' => 'yii\grid\ActionColumn',
-                                        'template' => '{update} {delete}',
+//                                        'template' => '{update} {delete}',
+                                        'template' => '{detail}{update} {delete}',
+                                        'header' => '操作',
+                                        'buttons' => [
+                                            'detail' => function($url, $model, $key) {
+                                                return Html::a('详情', 'javascript:;', ['onclick' => 'getDetail('.$model->id.')']);
+                                            },
+
+                                            'delete' => function($url, $model, $key) {
+                                                $url = Url::toRoute('cate/delete');
+                                                return Html::a('删除', 'javascript:;', ['onclick' => 'deleteById('.$model->id.')']);
+                                            }
+                                        ]
                                     ]
                                 ],
                                 'layout' => '{items}  {pager}'
@@ -134,6 +146,30 @@ use common\widgets\Alert;
             }
         })
     });
+
+    function getDetail(id)
+    {
+        $.ajax({
+            url: url,
+            type: 'POST',
+            dataType: 'json',
+            success: function(data) {
+                alert(data);
+            }
+        })
+    }
+
+    function deleteById(id)
+    {
+        $.post('index.php?r=cate/delete',{id:id},function(data){
+            if (data) {
+                alert('删除成功');
+
+            } else {
+                alert('删除失败');
+            }
+        },'json');
+    }
 </script>
 <script type="text/javascript">
     /* 初始化dategrid
@@ -171,4 +207,4 @@ use common\widgets\Alert;
 
 
 
-
+<tr data-key="0"><td><input type="checkbox" class="gridview-check" name="selection[]" value="1"></td><td>1</td><td>ceshi</td><td>asdf</td><td>0</td><td>1970-01-01</td><td><a href="/index.php?r=cate%2Fupdate&amp;id=0" title="Update" aria-label="Update" data-pjax="0"><span class="glyphicon glyphicon-pencil"></span></a> <a href="javascript:;" onclick="getDetail(cate/list,1)">删除</a></td></tr>

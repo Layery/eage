@@ -78,6 +78,7 @@ class User extends ActiveRecord implements IdentityInterface
             'email' => '邮箱',
             'status' => '状态',
             'role' => '角色',
+            'execute_id' => '操作人id',
             'created_at' => '创建时间',
             'updated_at' => '维护时间',
         ];

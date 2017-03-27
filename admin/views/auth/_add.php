@@ -41,11 +41,11 @@ use yii\helpers\Url;
                     </div>
                 </div>
             </div>
-            </form>
+<!--            </form>-->
         </div>
 
         <div class="am-tab-panel am-fade" id="tab2">
-            <form class="am-form" action="<?= Url::toRoute('auth/create');?>" method="post" id="am-form-2">
+<!--            <form class="am-form" action="--><?//= Url::toRoute('auth/create');?><!--" method="post" id="am-form-2">-->
                 <?php foreach ($authAction->data as $controller => $row):?>
                 <div class="am-g am-margin-top">
                     <div class="am-u-sm-4 am-u-md-2 am-text-right">
@@ -74,9 +74,7 @@ use yii\helpers\Url;
     $(function(){
         $("#am-btn-submit").click(function(){
             $("#am-form-1").submit();
-            $("#am-form-2").submit();
         });
-
         $("#am-btn-clean").click(function(){
             alert('取消');
         });
