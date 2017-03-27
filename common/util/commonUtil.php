@@ -11,12 +11,10 @@ use yii;
 
 class CommonUtil
 {
-    public static function post($params, $type = NULL, $default = '')
+    public static function post($params = NULL, $type = NULL, $default = '')
     {
         $post = yii::$app->request->post();
-        if (false == $params || !isset($post[$params])) {
-            return $default ? $default : '';
-        }
+        if (empty($params)) return $post;
         $data = yii::$app->request->post($params);
         if (!is_array($data)) {
             switch ($type) {

@@ -7,7 +7,9 @@
  */
 namespace admin\controllers;
 
+use yii;
 use common\models\Auth;
+use common\util\CommonUtil;
 use yii\data\ActiveDataProvider;
 use yii\data\ArrayDataProvider;
 
@@ -28,9 +30,13 @@ class AuthController extends BaseController
 
     public function actionCreate()
     {
+        if (!empty(yii::$app->request->post())) {
+            p($_POST);
+
+        }
         return $this->render('_add', [
             'authModel' => new Auth(),
-
+            'authAction' => yii::$app->right
         ]);
     }
 

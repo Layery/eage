@@ -17,6 +17,10 @@ return [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'layery',
         ],
+        'right' => [
+            'class' => 'admin\models\Bright',
+
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
