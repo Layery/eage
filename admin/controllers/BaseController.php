@@ -47,14 +47,21 @@ class BaseController extends Controller
         }
         return json_encode($data);
     }
-//
+
     public function beforeAction($action){
+        parent::beforeAction($action);
+        $uid =
+        $uid = 8;  // 编辑
+
         $status = yii::$app->right->checkUserAuth($uid, $this, $action);
-        $status = false;
         if ($status === false) {
             echo CommonUtil::authErrorMsg();
-            p('asdfasdf');
-            return $this->goBack('http://www.baidu.com');
+            $this->goBack();
         }
+        return true;
+    }
+
+    public function actionTest(){
+        $this->beforeAction();
     }
 }

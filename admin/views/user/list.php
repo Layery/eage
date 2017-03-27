@@ -9,7 +9,6 @@ use yii\grid\GridView;
 use common\models\Auth;
 
 $auth = new Auth();
-
 ?>
 
 <div class="admin-content-body">
@@ -52,8 +51,8 @@ $auth = new Auth();
                             'email',
                             [
                                 'attribute' => 'role',
-                                'value' => function($model) use ($auth) {
-                                    return $auth->findOne($model->role)->name;
+                                'value' => function($model) use($auth) {
+                                    return $model->role;
                                 }
                             ],
 

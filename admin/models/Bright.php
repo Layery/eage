@@ -68,7 +68,6 @@ class Bright extends Model
         if (in_array($roteUrl, $this->allowMap)) {
             return true;
         }
-
         if (!array_key_exists($controller->id, $actions)) {
             return false;
         }
