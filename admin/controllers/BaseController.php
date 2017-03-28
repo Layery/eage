@@ -37,7 +37,7 @@ class BaseController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['create','delete', 'update', 'list'],
+                'only' => ['create','delete', 'update', 'list', 'error404', 'log', 'detail', 'index'],
                 'rules' => [
                     [
                         'allow' => true,
