@@ -26,6 +26,9 @@ return [
             'enableAutoLogin' => true,
 //            'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
 //        'session' => [
 //            // this is the name of the session cookie used for login on the frontend
 //            'name' => 'admin',
@@ -49,7 +52,7 @@ return [
         //     ],
         // ],
         'errorHandler' => [
-            'errorAction' => 'admin/error',
+            'errorAction' => 'site/error',
         ],
 
         // url美化

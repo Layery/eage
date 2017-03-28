@@ -38,3 +38,9 @@
 5: Html::to($params1, $params2, $params3) , 此方法, 如果第二个参数是一个数组, 将会创建出完整的url路径来
 
 6: 控制器中的beforeAction 方法, 重写此方法时, 一定要先初始化父类的beforeAction , 并且注意,此函数返回bool值, 用来决定程序是否向下执行
+
+7: csrf验证导致的400错误解决办法:
+   一: 视图表单中手动添加Html::csrfMetaTage()方法
+   二: 在表单中增加隐藏的验证字段
+      <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
+   三: 配置文件中, 或者控制器中屏蔽csrf验证

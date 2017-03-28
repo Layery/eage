@@ -5,6 +5,8 @@
  * Date: 2017/3/25
  * Time: 17:29
  */
+
+use yii\helpers\Url;
 ?>
 
 <header class="am-topbar am-topbar-inverse admin-header">
@@ -24,7 +26,7 @@
                 <ul class="am-dropdown-content">
                     <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
                     <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-                    <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                    <li><a href=<?= Url::toRoute('site/logout') ?>><span class="am-icon-power-off"></span> 退出</a></li>
                 </ul>
             </li>
             <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>

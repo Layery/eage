@@ -36,6 +36,16 @@ class AppAsset extends AssetBundle
     public static function addScript($view, $jsfile) {
         $view->registerJsFile($jsfile, [AppAsset::className(), 'depends' => 'admin\assets\AppAsset']);
     }
+
+    /**
+     * 定义按需加载css文件
+     *
+     * @param $view
+     * @param $cssFile
+     */
+    public static function addCssFile($view, $cssFile) {
+        $view->registerCssFile($cssFile, [AppAsset::className(), 'depends' => 'admin\assets\AppAsset']);
+    }
 }
 
 

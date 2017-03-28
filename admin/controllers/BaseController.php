@@ -10,12 +10,13 @@ namespace admin\controllers;
 use admin\assets\AppAsset;
 use common\models\Article;
 use common\util\CommonUtil;
-use SebastianBergmann\Comparator\ExceptionComparatorTest;
 use yii;
 use yii\web\Controller;
 use yii\base\Action;
 use common\models\Auth;
 use common\models\User;
+use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 class BaseController extends Controller
 {
@@ -31,6 +32,34 @@ class BaseController extends Controller
         $this->layout = 'amaze';
     }
 
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['create','delete', 'update', 'list'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+                'denyCallback' => function ($rule, $action) {
+                    if (yii::$app->user->isGuest) {  // 如果是访客
+                        return yii::$app->user->loginRequired();
+                    } else {
+                        echo CommonUtil::authErrorMsg();
+                    }
+                }
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+//                    'logout' => ['post'],
+                ],
+            ],
+        ];
+    }
 
     /**
      * 默认返回分页信息, $status设置为false只返回data
@@ -48,20 +77,16 @@ class BaseController extends Controller
         return json_encode($data);
     }
 
-    public function beforeAction($action){
+   /* public function beforeAction($action)
+    {
         parent::beforeAction($action);
-        $uid =
-        $uid = 8;  // 编辑
-
+        $uid = 9;
+        if ($uid == 9) return true;
         $status = yii::$app->right->checkUserAuth($uid, $this, $action);
         if ($status === false) {
             echo CommonUtil::authErrorMsg();
             $this->goBack();
         }
         return true;
-    }
-
-    public function actionTest(){
-        $this->beforeAction();
-    }
+    }*/
 }

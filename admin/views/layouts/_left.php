@@ -15,9 +15,9 @@ use yii\helpers\Url;
             <li class="admin-parent">
                 <a class="am-cf" data-am-collapse="{target: '#collapse-nav-system'}"><span class="am-icon-file"></span> 系统设置<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
                 <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav-system">
-                    <li><a href="admin-user.html" class="am-cf"><span class="am-icon-check"></span> 个人资料<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
-                    <li><a href="admin-log.html"><span class="am-icon-calendar"></span> 系统日志</a></li>
-                    <li><a href="admin-404.html"><span class="am-icon-bug"></span> 404</a></li>
+                    <li><a href="<?= Url::toRoute('user/detail')?>" class="am-cf"><span class="am-icon-check"></span> 个人资料<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
+                    <li><a href="<?= Url::toRoute('system/log') ?>"><span class="am-icon-calendar"></span> 系统日志</a></li>
+                    <li><a href="<?= Url::toRoute('system/error404') ?>"><span class="am-icon-bug"></span> 404</a></li>
                 </ul>
 
             </li>

@@ -8,6 +8,7 @@
 namespace admin\controllers;
 
 use admin\assets\AppAsset;
+use yii;
 use common\models\User;
 use yii\data\ActiveDataProvider;
 use yii\data\ArrayDataProvider;
@@ -32,5 +33,14 @@ class UserController extends BaseController
             ]
         ]);
         return $this->render('list', ['dataProvider' => $dataProvider]);
+    }
+
+    /**
+     * @return string
+     */
+    public function actionDetail()
+    {
+        return $this->renderContent('用户详情');
+
     }
 }

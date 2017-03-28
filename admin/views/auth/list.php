@@ -16,6 +16,7 @@ $this->title = 'AuthManage';
 $this->params['breadcrumbs'][] = $this->title;
 $Bright = yii::$app->right;
 $user = User::model();
+
 ?>
 
 
@@ -59,15 +60,17 @@ $user = User::model();
                                 'id',
                                 'name',
                                 [
+                                    'attribute' => 'status',
+                                    'value' => function ($model) { return $model->status == 1 ? '正常' : '禁用';}
+                                ],
+                                [
                                     'attribute' => 'actions',
                                     'value' => function($model) use($Bright){
                                         return $Bright->authCode2Name($model->actions);
-                                    }
+                                    },
                                 ],
-                                [
-                                    'attribute' => 'execute_id',
-                                    'value' => function($model) use ($user) { return $user->findOne($model->execute_id)->username;}
-                                ],
+
+                                'execute_id',
                                 [
                                     'attribute' => 'created_at',
                                     'value' => function($model) { return date('Y-m-d H:m', $model->created_at);}
