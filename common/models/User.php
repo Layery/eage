@@ -90,4 +90,14 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return Yii::$app->security->validatePassword($password, $this->password_hash);
     }
+
+    /**
+     * 渲染密码
+     * 
+     * @param [type] $password [description]
+     */
+    public function setPassword($password)
+    {
+        // return 
+    }
 }

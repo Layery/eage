@@ -2943,3 +2943,5 @@ $_SERVER = [
 [28-Mar-2017 03:23:49 UTC] PHP Notice:  Undefined variable: message in E:\www\eage\admin\views\site\error.php on line 16
 [28-Mar-2017 03:23:54 UTC] PHP Notice:  Undefined variable: name in E:\www\eage\admin\views\site\error.php on line 9
 [28-Mar-2017 03:23:54 UTC] PHP Notice:  Undefined variable: message in E:\www\eage\admin\views\site\error.php on line 16
+[05-Apr-2017 14:33:07 UTC] PHP Notice:  Undefined variable: name in E:\www\eage\admin\views\site\error.php on line 9
+[05-Apr-2017 14:33:07 UTC] PHP Notice:  Undefined variable: message in E:\www\eage\admin\views\site\error.php on line 16

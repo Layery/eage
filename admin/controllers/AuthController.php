@@ -47,4 +47,13 @@ class AuthController extends BaseController
         ]);
     }
 
+    public function actionPermissionCreate()
+    {   
+        $name = CommonUtil::post('permissionName');
+        $auth = Yii::$app->authManager;    
+        $createPost = $auth->createPermission($name);    
+        $createPost->description = '创建了 ' . $name. ' 权限';    
+        $auth->add($createPost);
+    }
+
 }

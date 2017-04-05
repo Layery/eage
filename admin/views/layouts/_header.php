@@ -7,6 +7,7 @@
  */
 
 use yii\helpers\Url;
+
 ?>
 
 <header class="am-topbar am-topbar-inverse admin-header">
@@ -21,7 +22,9 @@ use yii\helpers\Url;
         <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
             <li class="am-dropdown" data-am-dropdown>
                 <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-                    <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+                    <span class="am-icon-users"></span>
+                    管理员
+                    <span class="am-icon-caret-down"></span>
                 </a>
                 <ul class="am-dropdown-content">
                     <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>

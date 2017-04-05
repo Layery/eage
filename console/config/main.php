@@ -13,6 +13,7 @@ $mainConfig = [
         'urlManager' => [
             'cache' => false,
         ],
+    
         // 'log' => [
         //     'targets' => [
         //         [

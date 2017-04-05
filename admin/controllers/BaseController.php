@@ -35,23 +35,22 @@ class BaseController extends Controller
     public function behaviors()
     {
         return [];
-        /*return [
+        return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['create','delete', 'update', 'list', 'error404', 'log', 'detail', 'index'],
+                'only' => ['login', 'signUp', 'logout'],
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['@'],
+                        'actions' => ['login', 'signup'],
+                        'roles' => ['?'],
                     ],
+                    [
+                        'allow' => true,
+                        'actions' => ['logout'],
+                        'roles' => ['@'],
+                    ]
                 ],
-                'denyCallback' => function ($rule, $action) {
-                    if (yii::$app->user->isGuest) {  // 如果是访客
-                        return yii::$app->user->loginRequired();
-                    } else {
-                        echo CommonUtil::authErrorMsg();
-                    }
-                }
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
@@ -59,7 +58,7 @@ class BaseController extends Controller
 //                    'logout' => ['post'],
                 ],
             ],
-        ];*/
+        ];
     }
 
     /**

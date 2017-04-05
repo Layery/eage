@@ -5,6 +5,7 @@ use yii\console\Controller;
 
 class HelloController extends Controller
 {
+    public $enableCsrfValidation = false;
 	public function actionIndex($message = 'Hello World')
     {
         echo $message . "\n";
