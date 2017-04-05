@@ -44,3 +44,6 @@
    二: 在表单中增加隐藏的验证字段
       <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
    三: 配置文件中, 或者控制器中屏蔽csrf验证
+
+8: 框架中的renderPartial方法, 默认不使用布局, 由此带来的问题就是他不会加载必需的js/css文件, 所以我们需要在视图文件中手动把
+   静态资源加载进来, 使用Html::cssFile('@web/css/temp.css');  Html::jsFile('@web/js/jquery.min.js');

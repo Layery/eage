@@ -38,19 +38,19 @@ class SiteController extends BaseController
             return $this->goHome();
         }
         $model = new LoginForm();
-        $params = [
-            'email' => CommonUtil::post('email'),
-            'password' => CommonUtil::post('password')
-        ];
-        $model->password = $params['password'];
-        $model->email = $params['email'];
-        if ($model->login()) {
-            return $this->goBack();
-        } else {
-            return $this->renderPartial('login', [
-                'model' => $model,
-            ]);
+        if (Yii::$app->request->post()) {
+            $model->password = CommonUtil::post('password');
+            $model->email = CommonUtil::post('email');
+            if ($model->login()) {
+                return $this->goBack();
+            } else {
+                return $this->renderPartial('login', [
+                    'model' => $model,
+                    'status' => 1   // 是否登录过, 为0时代表没有登录过
+                ]);
+            }
         }
+        return $this->renderPartial('login', ['model' => $model, 'status' => 0]);
     }
 
     /**

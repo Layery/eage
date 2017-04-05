@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 echo Html::cssFile('@web/css/amaze/amazeui.min.css');
+echo Html::jsFile('@web/js/easyui/jquery.min.js');
 
 ?>
 <!DOCTYPE html>
@@ -50,10 +51,13 @@ echo Html::cssFile('@web/css/amaze/amazeui.min.css');
 
         <form method="post" class="am-form" action="<?= Url::toRoute('site/login');?>">
             <label for="email">邮箱:</label>
-            <input type="email" name="email" id="email" value="">
+            <input type="email" name="email" id="email" value="<?= $status ? $model->email : ''; ?>">
+            <span class="errorMsg"><?= $model->getFirstError('email') ?></span>
+
             <br>
             <label for="password">密码:</label>
-            <input type="password" name="password" id="password" value="">
+            <input type="password" name="password" id="password" value="<?= $status ? $model->password : ''; ?>">
+            <span class="errorMsg"><?= $model->getFirstError('password') ?></span>
             <br>
             <label for="remember-me">
                 <input id="remember-me" type="checkbox" name="remember">
@@ -70,4 +74,9 @@ echo Html::cssFile('@web/css/amaze/amazeui.min.css');
     </div>
 </div>
 </body>
+<script>
+    $(function(){
+       $(".errorMsg").css('color', 'deepPink');
+    });
+</script>
 </html>

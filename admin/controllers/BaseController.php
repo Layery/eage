@@ -34,7 +34,8 @@ class BaseController extends Controller
 
     public function behaviors()
     {
-        return [
+        return [];
+        /*return [
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['create','delete', 'update', 'list', 'error404', 'log', 'detail', 'index'],
@@ -58,7 +59,7 @@ class BaseController extends Controller
 //                    'logout' => ['post'],
                 ],
             ],
-        ];
+        ];*/
     }
 
     /**
