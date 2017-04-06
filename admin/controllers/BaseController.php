@@ -77,9 +77,14 @@ class BaseController extends Controller
         return json_encode($data);
     }
 
-   /* public function beforeAction($action)
+    public function beforeAction($action)
     {
         parent::beforeAction($action);
+        if (yii::$app->user->can($action)) {
+            p('ok');
+        } else {
+            p('false');
+        }
         $uid = 9;
         if ($uid == 9) return true;
         $status = yii::$app->right->checkUserAuth($uid, $this, $action);
@@ -88,5 +93,5 @@ class BaseController extends Controller
             $this->goBack();
         }
         return true;
-    }*/
+    }
 }

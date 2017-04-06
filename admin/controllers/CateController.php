@@ -30,7 +30,6 @@ class CateController extends BaseController
 
     public function actionList()
     {
-        $auth = yii::$app->authManager;
         if (IS_AJAX) {
             $params = !empty($_POST) ? $_POST : [];
             $result = $this->model->dataList($params);

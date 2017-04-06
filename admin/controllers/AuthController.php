@@ -19,8 +19,6 @@ class AuthController extends BaseController
 
     public function actionList()
     {
-        $user = yii::$app->user->identity;
-        p($user);
         $dataProvider = new ActiveDataProvider([
             'query' => Auth::find(),
             'pagination' => [
