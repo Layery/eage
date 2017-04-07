@@ -47,3 +47,52 @@
 
 8: 框架中的renderPartial方法, 默认不使用布局, 由此带来的问题就是他不会加载必需的js/css文件, 所以我们需要在视图文件中手动把
    静态资源加载进来, 使用Html::cssFile('@web/css/temp.css');  Html::jsFile('@web/js/jquery.min.js');
+
+9: php导出大数据excel方法:
+    require('./db.class.php');
+    $DB = new db();
+    $DB->connect();//数据库链接
+
+    header("Content-Type: text/csv");
+    header("Content-Disposition:filename=php100.csv");
+    $sql = "select order_sn,consignee,address,tel,mobile,email,order_amount,add_time from order_info";//查询数据
+    $order = $DB->fetch_all($sql);
+
+    // 打开PHP文件句柄，php://output 表示直接输出到浏览器
+    $fp = fopen('php://output', 'a');
+    // 输出Excel列名信息
+
+    foreach($order[0] as $key=>$value){
+        $head[] = iconv('utf-8', 'gbk', $key);//头信息
+    }
+
+    // 将数据通过fputcsv写到文件句柄
+    //fputcsv($fp, $head);
+
+    // 计数器
+    $cnt = 0;
+    // 每隔$limit行，刷新一下输出buffer，不要太大，也不要太小
+    $limit = 100000;
+
+    // 逐行取出数据，不浪费内存
+    $count = count($order);
+
+    for($t=0;$t<$count;$t++) {
+
+        $cnt ++;
+        if ($limit == $cnt) { //刷新一下输出buffer，防止由于数据过多造成问题
+            ob_flush();
+            flush();
+            $cnt = 0;
+        }
+        foreach ($order[$t] as $i => $v) {
+            if($i == 'add_time') {
+                $row[$i] = iconv('utf-8', 'gbk', date('Y-m-d H:i:s',$v));
+            }else{
+                $row[$i] = iconv('utf-8', 'gbk', $v);
+            }
+        }
+        fputcsv($fp, $row);
+        unset($row);
+    }
+
