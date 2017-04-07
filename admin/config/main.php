@@ -24,10 +24,8 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['default/login']
 //            'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
-        ],
-        'authManager' => [
-            'class' => 'yii\rbac\DbManager',
         ],
 //        'session' => [
 //            // this is the name of the session cookie used for login on the frontend
@@ -61,6 +59,7 @@ return [
 //            'showScriptName' => false,
 //            'suffix' => '.html',
 //            'rules' => [
+//                '' => 'cate/list'
 //            ],
 //        ],
 

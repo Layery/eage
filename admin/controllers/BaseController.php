@@ -28,13 +28,11 @@ class BaseController extends Controller
     // 初始化引入所有的js , css文件
     public function init()
     {
-//        $this->layout = 'admin';
         $this->layout = 'amaze';
     }
 
     public function behaviors()
     {
-        return [];
         return [
             'access' => [
                 'class' => AccessControl::className(),
@@ -42,7 +40,7 @@ class BaseController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['login', 'signup'],
+                        'actions' => ['login', 'signUp'],
                         'roles' => ['?'],
                     ],
                     [
@@ -51,13 +49,7 @@ class BaseController extends Controller
                         'roles' => ['@'],
                     ]
                 ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-//                    'logout' => ['post'],
-                ],
-            ],
+            ]
         ];
     }
 
@@ -77,21 +69,23 @@ class BaseController extends Controller
         return json_encode($data);
     }
 
+    /**
+     * 初始化action操作
+     *
+     * @param Action $action
+     * @return string
+     */
     public function beforeAction($action)
     {
-        parent::beforeAction($action);
-        if (yii::$app->user->can($action)) {
-            p('ok');
+        if (!parent::beforeAction($action)) {
+            return false;
+        }
+        if (yii::$app->user->can($action->id)) {
+            return 'aaa';
         } else {
-            p('false');
+            return 'bbb';
         }
-        $uid = 9;
-        if ($uid == 9) return true;
-        $status = yii::$app->right->checkUserAuth($uid, $this, $action);
-        if ($status === false) {
-            echo CommonUtil::authErrorMsg();
-            $this->goBack();
-        }
-        return true;
     }
+
+
 }

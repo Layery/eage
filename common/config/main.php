@@ -17,6 +17,15 @@ return [
         ],
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
+            'itemTable' => '{{%b_item}}',
+            'itemChildTable' => '{{%b_itemChildTable}}',
+            'assignmentTable' => '{{%b_assignmentTable}}',
+            'ruleTable' => '{{%b_ruleTable}}',
+            /*
+              设定默认角色
+              'defaultRoles' => [
+                'admin', 'editor'
+            ]*/
         ],
 
     ],
