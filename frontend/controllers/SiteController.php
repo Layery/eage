@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use common\extensions\Curl;
 use common\models\Cate;
+use common\util\CommonUtil;
 use frontend\models\PArticle;
 use Yii;
 use yii\base\InvalidParamException;

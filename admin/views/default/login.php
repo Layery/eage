@@ -49,7 +49,7 @@ echo Html::jsFile('@web/js/easyui/jquery.min.js');
         <br>
         <br>
 
-        <form method="post" class="am-form" action="<?= Url::toRoute('site/login');?>">
+        <form method="post" class="am-form" action="<?= Url::toRoute('default/login');?>">
             <label for="email">邮箱:</label>
             <input type="email" name="email" id="email" value="<?= $status ? $model->email : ''; ?>">
             <span class="errorMsg"><?= $model->getFirstError('email') ?></span>

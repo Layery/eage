@@ -36,18 +36,12 @@ class BaseController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['login', 'signUp', 'logout'],
                 'rules' => [
                     [
                         'allow' => true,
                         'actions' => ['login', 'signUp'],
                         'roles' => ['?'],
                     ],
-                    [
-                        'allow' => true,
-                        'actions' => ['logout'],
-                        'roles' => ['@'],
-                    ]
                 ],
             ]
         ];

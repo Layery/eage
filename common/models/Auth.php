@@ -15,7 +15,7 @@ use Yii;
  * @property integer $created_at
  * @property integer $updated_at
  */
-class Auth extends \common\models\base
+class Auth extends \common\models\Base
 {
     /**
      * @inheritdoc
