@@ -36,13 +36,21 @@ class BaseController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
+                'only' => ['login', 'sigUp', 'logOut'],
                 'rules' => [
                     [
                         'allow' => true,
                         'actions' => ['login', 'signUp'],
                         'roles' => ['?'],
                     ],
+                    [
+                        'allow' => true,
+                        'roles' => ['@']
+                    ]
                 ],
+                'denyCallback' => function ($rule, $action) {
+                    echo CommonUtil::authErrorMsg();
+                }
             ]
         ];
     }
@@ -71,13 +79,16 @@ class BaseController extends Controller
      */
     public function beforeAction($action)
     {
+        if (yii::$app->user->isGuest) {
+            return yii::$app->user->loginRequired();
+        }
         if (!parent::beforeAction($action)) {
             return false;
         }
         if (yii::$app->user->can($action->id)) {
             return 'aaa';
         } else {
-            return 'bbb';
+            echo CommonUtil::authErrorMsg();
         }
     }
 

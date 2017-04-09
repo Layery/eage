@@ -20,7 +20,7 @@ class RbacController extends Controller
 
         // 为用户指派角色。其中 1 和 2 是由 IdentityInterface::getId() 返回的id （译者注：user表的id）
         // 通常在你的 User 模型中实现这个函数。
-        $auth->assign($editor, 12);  // id为17的用户指派为editor角色
+        $auth->assign($editor, 17);  // id为17的用户指派为editor角色
     }
 
 
