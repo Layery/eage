@@ -17,6 +17,7 @@ use common\models\Auth;
 use common\models\User;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use \ReflectionClass;
 
 class BaseController extends Controller
 {
@@ -77,20 +78,26 @@ class BaseController extends Controller
      * @param Action $action
      * @return string
      */
-    public function beforeAction($action)
-    {
-        if (yii::$app->user->isGuest) {
-            return yii::$app->user->loginRequired();
-        }
-        if (!parent::beforeAction($action)) {
-            return false;
-        }
-        if (yii::$app->user->can($action->id)) {
-            return 'aaa';
-        } else {
-            echo CommonUtil::authErrorMsg();
-        }
-    }
+//    public function beforeAction($action)
+//    {
+//        if (yii::$app->user->isGuest) {
+//            return yii::$app->user->loginRequired();
+//        }
+//        if (!parent::beforeAction($action)) {
+//            return false;
+//        }
+//        if (yii::$app->user->can($action->id)) {
+//            return 'aaa';
+//        } else {
+//            echo CommonUtil::authErrorMsg();
+//        }
+//    }
 
+    public function actionTest()
+    {
+        $reflection = new ReflectionClass(get_called_class());
+        p(APPLICATION_PATH . DIRECTORY_SEPARATOR. 'admin'. DIRECTORY_SEPARATOR. 'controllers');
+        return $this->renderContent('hahahah');
+    }
 
 }

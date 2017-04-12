@@ -12,11 +12,16 @@ use common\models\Auth;
 use common\util\CommonUtil;
 use yii\data\ActiveDataProvider;
 use yii\data\ArrayDataProvider;
+use \ReflectionClass;
 
 class AuthController extends BaseController
 {
 
-
+    /**
+     * 权限列表
+     *
+     * @return string
+     */
     public function actionList()
     {
         $dataProvider = new ActiveDataProvider([
@@ -28,6 +33,11 @@ class AuthController extends BaseController
         return $this->render('list', ['dataProvider' => $dataProvider]);
     }
 
+    /**
+     * 创建权限
+     *
+     * @return string
+     */
     public function actionCreate()
     {
         if (!empty(yii::$app->request->post())) {
@@ -47,6 +57,10 @@ class AuthController extends BaseController
         ]);
     }
 
+    /**
+     * Rbac创建权限
+     *
+     */
     public function actionPermissionCreate()
     {   
         $name = CommonUtil::post('permissionName');
@@ -56,4 +70,17 @@ class AuthController extends BaseController
         $auth->add($createPost);
     }
 
+    public function actionTest()
+    {
+        $reflectionObject = new ReflectionClass($this);
+        $controllerId = yii::$app->controller->id;
+        $methodList = $reflectionObject->getMethods(\ReflectionMethod::IS_PUBLIC);
+        $methodArray = [];
+        foreach ($methodList as $v) {
+            if ($v->class == $reflectionObject->name) {
+                $methodArray[] = $controllerId. '/'. str_replace('action', '', $v->name);
+            }
+        }
+        return $this->renderContent('rbactest');
+    }
 }
