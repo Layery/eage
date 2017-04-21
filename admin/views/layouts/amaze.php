@@ -22,8 +22,8 @@ AppAsset::register($this);
     </head>
     <body>
     <?php $this->beginBody() ?>
-    <?= $this->render('_header') ?>
-    <?= $this->render('_left') ?>
+    <?= $this->render('/common/amaze/_header') ?>
+    <?= $this->render('/common/amaze/_left') ?>
     <hr>
     <div class="admin-content">
         <div class="am-cf am-padding am-padding-bottom-0">

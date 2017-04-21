@@ -12,25 +12,6 @@ $auth = new Auth();
 ?>
 
 <div class="admin-content-body">
-    <hr>
-    <div class="am-g">
-        <div class="am-u-sm-12 am-u-md-6">
-            <div class="am-btn-toolbar">
-                <div class="am-btn-group am-btn-group-xs">
-                    <button type="button" class="am-btn am-btn-default" id="am-btn-create"><span class="am-icon-plus"></span> 新增</button>
-                    <button type="button" class="am-btn am-btn-default" id="am-btn-delete"><span class="am-icon-delete"></span> 删除选中</button>
-                </div>
-            </div>
-        </div>
-        <div class="am-u-sm-12 am-u-md-3">
-            <div class="am-input-group am-input-group-sm">
-                <input type="text" class="am-form-field">
-                <span class="am-input-group-btn">
-                    <button class="am-btn am-btn-default" type="button">搜索</button>
-                </span>
-            </div>
-        </div>
-    </div>
     <div class="am-g">
         <div class="am-u-sm-12">
             <table class="am-table am-table-striped am-table-hover table-main">

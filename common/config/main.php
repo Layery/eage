@@ -30,6 +30,8 @@ return [
 
     ],
     'params' => [
+        //视图布局主题
+        'layout' => 'ace',
         'redis'=>[
             'a:q'=>[//经纪人相关信息
                 'host'=>'127.0.0.1',
@@ -56,5 +58,6 @@ return [
                 'auth'=>'foryoudevelop',
             ],
         ],
+
     ]
 ];

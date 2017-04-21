@@ -29,7 +29,8 @@ class BaseController extends Controller
     // 初始化引入所有的js , css文件
     public function init()
     {
-        $this->layout = 'amaze';
+        $layout = yii::$app->params['layout'];
+        $this->layout = $layout;
     }
 
     public function behaviors()
