@@ -29,7 +29,8 @@ class BaseController extends Controller
     // 初始化引入所有的js , css文件
     public function init()
     {
-        $this->layout = 'amaze';
+//        $this->layout = 'amaze';
+        $this->layout = 'ace';
     }
 
     public function behaviors()
