@@ -7,7 +7,6 @@
  */
 use yii\helpers\Html;
 use admin\assets\AceAsset;
-use yii\helpers\Url;
 AceAsset::register($this);
 ?>
 
@@ -151,16 +150,16 @@ AceAsset::register($this);
                         size: size
                     });
                 })
-            
+
                 $('.sparkline').each(function(){
                     var $box = $(this).closest('.infobox');
                     var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
                     $(this).sparkline('html', {tagValuesAttribute:'data-values', type: 'bar', barColor: barColor , chartRangeMin:$(this).data('min') || 0} );
                 });
-            
-            
-            
-            
+
+
+
+
               var placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
               var data = [
                 { label: "social networks",  data: 38.7, color: "#68BC31"},
@@ -187,7 +186,7 @@ AceAsset::register($this);
                     },
                     legend: {
                         show: true,
-                        position: position || "ne", 
+                        position: position || "ne",
                         labelBoxBorderColor: null,
                         margin:[-30,15]
                     }
@@ -199,19 +198,19 @@ AceAsset::register($this);
                  })
              }
              drawPieChart(placeholder, data);
-            
+
              /**
              we saved the drawing function and the data to redraw with different position later when switching to RTL mode dynamically
              so that's not needed actually.
              */
              placeholder.data('chart', data);
              placeholder.data('draw', drawPieChart);
-            
-            
-            
+
+
+
               var $tooltip = $("<div class='tooltip top in'><div class='tooltip-inner'></div></div>").hide().appendTo('body');
               var previousPoint = null;
-            
+
               placeholder.on('plothover', function (event, pos, item) {
                 if(item) {
                     if (previousPoint != item.seriesIndex) {
@@ -224,30 +223,30 @@ AceAsset::register($this);
                     $tooltip.hide();
                     previousPoint = null;
                 }
-                
+
              });
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
                 var d1 = [];
                 for (var i = 0; i < Math.PI * 2; i += 0.5) {
                     d1.push([i, Math.sin(i)]);
                 }
-            
+
                 var d2 = [];
                 for (var i = 0; i < Math.PI * 2; i += 0.5) {
                     d2.push([i, Math.cos(i)]);
                 }
-            
+
                 var d3 = [];
                 for (var i = 0; i < Math.PI * 2; i += 0.2) {
                     d3.push([i, Math.tan(i)]);
                 }
-                
-            
+
+
                 var sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
                 $.plot("#sales-charts", [
                     { label: "Domains", data: d1 },
@@ -275,28 +274,28 @@ AceAsset::register($this);
                         borderColor:'#555'
                     }
                 });
-            
-            
+
+
                 $('#recent-box [data-rel="tooltip"]').tooltip({placement: tooltip_placement});
                 function tooltip_placement(context, source) {
                     var $source = $(source);
                     var $parent = $source.closest('.tab-content')
                     var off1 = $parent.offset();
                     var w1 = $parent.width();
-            
+
                     var off2 = $source.offset();
                     var w2 = $source.width();
-            
+
                     if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
                     return 'left';
                 }
-            
-            
+
+
                 $('.dialogs,.comments').slimScroll({
                     height: '300px'
                 });
-                
-                
+
+
                 //Android's default browser somehow is confused when tapping on label which will lead to dragging the task
                 //so disable dragging when clicking on label
                 var agent = navigator.userAgent.toLowerCase();
@@ -307,7 +306,7 @@ AceAsset::register($this);
                     var label = li.find('label.inline').get(0);
                     if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
                 });
-            
+
                 $('#tasks').sortable({
                     opacity:0.8,
                     revert:true,
@@ -325,8 +324,8 @@ AceAsset::register($this);
                     if(this.checked) $(this).closest('li').addClass('selected');
                     else $(this).closest('li').removeClass('selected');
                 });
-                
-            
+
+
             })
     </script>
 </html>

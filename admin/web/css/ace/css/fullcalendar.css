@@ -1,5 +1,9 @@
 /*!
+<<<<<<< HEAD
  * FullCalendar v1.6.1 Stylesheet
+=======
+ * FullCalendar v1.6.4 Stylesheet
+>>>>>>> d1cedff26764c774b56e6a2ac1d4fa000afad4f1
  * Docs & License: http://arshaw.com/fullcalendar/
  * (c) 2013 Adam Shaw
  */
@@ -102,10 +106,18 @@ html .fc,
 	
 .fc-content {
 	clear: both;
+<<<<<<< HEAD
 	}
 	
 .fc-view {
 	width: 100%; /* needed for view switching (when view is absolute) */
+=======
+	zoom: 1; /* for IE7, gives accurate coordinates for [un]freezeContentHeight */
+	}
+	
+.fc-view {
+	width: 100%;
+>>>>>>> d1cedff26764c774b56e6a2ac1d4fa000afad4f1
 	overflow: hidden;
 	}
 	
@@ -250,6 +262,18 @@ html .fc,
 
 /* Global Event Styles
 ------------------------------------------------------------------------*/
+<<<<<<< HEAD
+=======
+
+.fc-event-container > * {
+	z-index: 8;
+	}
+
+.fc-event-container > .ui-draggable-dragging,
+.fc-event-container > .ui-resizable-resizing {
+	z-index: 9;
+	}
+>>>>>>> d1cedff26764c774b56e6a2ac1d4fa000afad4f1
 	 
 .fc-event {
 	border: 1px solid #3a87ad; /* default BORDER color */

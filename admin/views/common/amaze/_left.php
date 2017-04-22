@@ -32,6 +32,7 @@ use yii\helpers\Url;
                 <a class="am-cf" data-am-collapse="{target: '#collapse-nav-user'}"><span class="am-icon-file"></span> 用户管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
                 <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav-user">
                     <li><a href="<?= Url::toRoute('auth/list') ?>" class="am-cf"><span class="am-icon-check"></span> 权限列表<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
+                    <li><a href="<?= Url::toRoute('role/list') ?>" class="am-cf"><span class="am-icon-check"></span> 角色列表<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
                     <li><a href="<?= Url::toRoute('user/list') ?>"><span class="am-icon-file"></span> 用户列表</a></li>
                 </ul>
             </li>
