@@ -50,7 +50,7 @@ use yii\helpers\Url;
                 <span class="menu-text"> 用户列表 </span>
             </a>
         </li>
-        <li>
+        <li class="active">
             <a href="#" class="dropdown-toggle">
                 <i class="icon-desktop"></i>
                 <span class="menu-text"> 权限管理 </span>
