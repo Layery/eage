@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+
 ?>
 <div class="sidebar" id="sidebar">
     <script type="text/javascript">
@@ -57,6 +58,12 @@ use yii\helpers\Url;
                 <b class="arrow icon-angle-down"></b>
             </a>
             <ul class="submenu">
+                <li>
+                    <a href="<?= Url::toRoute(['auth/create']) ?>">
+                        <i class="icon-double-angle-right"></i>
+                        节点管理
+                    </a>
+                </li>
                 <li>
                     <a href="<?= Url::toRoute('auth/list') ?>">
                         <i class="icon-double-angle-right"></i>

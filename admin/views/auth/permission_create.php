@@ -42,6 +42,16 @@ use yii\helpers\Url;
                 <div class="space-4"></div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly">
+                        操作描述
+                    </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="form-field-2" placeholder="Action introduce" class="col-xs-8 col-sm-5">
+                        <span class="help-inline col-xs-12 col-sm-7"></span>
+                    </div>
+                </div>
+                <div class="space-4"></div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly">
                         是否启用
                     </label>
                     <div class="col-xs-3">
@@ -60,6 +70,30 @@ use yii\helpers\Url;
                     </button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <div class="space-6"></div>
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+                <tr>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                </tr>
+                <tr>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                    <td>aaaaaaa</td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>

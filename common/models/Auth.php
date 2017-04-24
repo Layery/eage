@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use common\query\AuthQuery;
 use Yii;
 
 /**
@@ -74,4 +75,8 @@ class Auth extends \common\models\Base
         }
     }
 
+    public function dataList($params = [])
+    {
+        return $this->returnData(self::find());
+    }
 }
