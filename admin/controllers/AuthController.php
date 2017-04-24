@@ -44,24 +44,34 @@ class AuthController extends BaseController
     }
 
     /**
-     * 创建权限
+     * 创建权限节点
      *
      * @return string
      */
     public function actionCreate()
     {
+        $auth = yii::$app->authManager;
+        $error = ['name' => ''];
         if (!empty(yii::$app->request->post())) {
-            $params = [
-                'name' => CommonUtil::post('name'),
-                'status' => CommonUtil::post('status'),
-                'actions' => json_encode(CommonUtil::post('actions')),
-                'uid' => 1,
-                'created_at' => time(),
-                'updated_at' => time()
-            ];
-            $rs = (new Auth())->AuthCreate($params);
+            $controllerId = CommonUtil::post('controllerId', 'string');
+            $actionId = CommonUtil::post('actionId', 'string');
+
+            if (!$controllerId || !$actionId) {
+                $error['name'][] = '权限节点不允许为空';
+            }
+            $permissionString = trim($controllerId. '/' . $actionId);
+            if ($auth->getPermission($permissionString)) {
+                $error['name'][] = '此权限节点已经存在';
+            }
+            if (!count($error)) {
+                $permission = $auth->createPermission($permissionString);
+                $permission->description = CommonUtil::post('actionIntro');
+                $auth->add($permission);
+            }
         }
-        return $this->render('permission_create');
+        $permissionList = $auth->getPermissions();
+        $model = ['permission' => $permissionList, 'error' => $error];
+        return $this->render('permission_create', ['model' => $model]);
     }
 
     /**
