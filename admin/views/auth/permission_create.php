@@ -23,8 +23,8 @@ use yii\helpers\Url;
                     </label>
                     <div class="col-sm-9">
                         <input type="text" id="form-field-2" name="controllerId" class="col-xs-8 col-sm-5">
-                        <span class="help-inline col-xs-12 col-sm-7" style="color: blue;">
-
+                        <span class="help-inline col-xs-12 col-sm-7" style="color: #d84f4b;">
+                            <?= $model['error'] ?>
                         </span>
                     </div>
                 </div>
@@ -37,8 +37,8 @@ use yii\helpers\Url;
                     </label>
                     <div class="col-sm-9">
                         <input type="text" id="form-field-2" name="actionId" class="col-xs-8 col-sm-5">
-                        <span class="help-inline col-xs-12 col-sm-7" style="color: blue;">
-
+                        <span class="help-inline col-xs-12 col-sm-7" style="color: #d84f4b;">
+                            <?= $model['error'] ?>
                         </span>
                     </div>
                 </div>

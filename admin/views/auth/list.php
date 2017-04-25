@@ -12,14 +12,11 @@ use yii\helpers\Url;
 use yii\grid\GridView;
 use common\widgets\Alert;
 use common\models\User;
-
 $this->title = 'AuthManage';
 $this->params['breadcrumbs'][] = $this->title;
 $Bright = yii::$app->right;
 $user = User::model();
-
 ?>
-
 <div class="page-content">
     <div class="page-header">
         <div class="row" style="height: auto;">
@@ -48,7 +45,7 @@ $user = User::model();
                     <table class="table">
                         <tr>
                             <th class="center">
-                                <a href="<?= Url::toRoute('auth/create') ?>">
+                                <a href="<?= Url::to(['Auth/RoleCreate']) ?>">
                                     <button class="btn btn-info" type="button">
                                         <i class="icon-ok bigger-110"></i>
                                         新增
@@ -77,15 +74,17 @@ $user = User::model();
                                 <span class="lbl"></span>
                             </label>
                         </th>
-                        <th>Domain</th>
-                        <th>Price</th>
-                        <th class="hidden-480">Clicks</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th class="hidden-480">Description</th>
 
                         <th>
                             <i class="icon-time bigger-110 hidden-480"></i>
-                            Update
+                            Create_at
                         </th>
-                        <th class="hidden-480">Status</th>
+                        <th class="hidden-480">
+                            Update_at
+                        </th>
 
                         <th>
                             操作项
@@ -94,7 +93,7 @@ $user = User::model();
                     </thead>
 
                     <tbody>
-                        <?php foreach ($dataProvider['data'] as $v) :?>
+                        <?php foreach ($dataProvider as $k => $v) :?>
                         <tr>
                             <td class="center">
                                 <label>
@@ -104,25 +103,20 @@ $user = User::model();
                             </td>
 
                             <td>
-                                <a href="javascript:;"><?= $v['id'] ?></a>
+                                <a href="javascript:;">3</a>
                             </td>
                             <td>
-                                <?= $v['name'] ?>
+                                <?= $v->name ?>
                             </td>
                             <td class="hidden-480">
-                                <?php echo $Bright->authCode2Name($v['actions']); ?>
+                                <?= $v->description ? $v->description : $v->name ?>
                             </td>
                             <td>
-                                <?= date('Y-m-d', $v['created_at']) ?>
+                                <?= date('Y-m-d', $v->createdAt) ?>
                             </td>
-                            <td class="hidden-480">
-                                <a href="javascript:;" onclick="changeStatus(<?= $v['id'] ?>)">
-                                    <span class="label label-sm <?php echo $v['status'] == 1 ? 'label-success' : 'label-danger'; ?>">
-                                        <?= $v['status'] == 1 ? '启用' : '禁用'; ?>
-                                    </span>
-                                </a>
+                            <td>
+                                <?= date('Y-m-d', $v->updatedAt) ?>
                             </td>
-
                             <td>
                                 <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
                                     <button class="btn btn-xs btn-info">

@@ -2,9 +2,8 @@
 
 namespace common\models;
 
-use common\query\AuthQuery;
 use Yii;
-
+use common\util\CommonUtil;
 /**
  * This is the model class for table "{{%b_auth}}".
  *
@@ -16,15 +15,21 @@ use Yii;
  * @property integer $created_at
  * @property integer $updated_at
  */
-class Auth extends \common\models\Base
+class Auth extends \yii\rbac\DbManager
 {
+    public $itemTable = '{{%b_item}}';
     /**
-     * @inheritdoc
+     * @var string the name of the table storing authorization item hierarchy. Defaults to "auth_item_child".
      */
-    public static function tableName()
-    {
-        return '{{%b_auth}}';
-    }
+    public $itemChildTable = '{{%b_item_child}}';
+    /**
+     * @var string the name of the table storing authorization item assignments. Defaults to "auth_assignment".
+     */
+    public $assignmentTable = '{{%b_assignment}}';
+    /**
+     * @var string the name of the table storing rules. Defaults to "auth_rule".
+     */
+    public $ruleTable = '{{%b_rule}}';
 
     /**
      * @inheritdoc
@@ -32,10 +37,8 @@ class Auth extends \common\models\Base
     public function rules()
     {
         return [
-            [['status', 'actions', 'name',], 'required'],
-            [['status', 'execute_id', 'created_at', 'updated_at'], 'integer'],
-            [['actions'], 'string'],
-            [['name'], 'string', 'max' => 50]
+            [['name','description',], 'required'],
+            [['name'], 'string'],
         ];
     }
 
@@ -75,8 +78,44 @@ class Auth extends \common\models\Base
         }
     }
 
-    public function dataList($params = [])
+
+    /**
+     * 创建权限节点
+     *
+     * @param $params
+     * @return array|bool
+     */
+    public function createPermissions($params)
     {
-        return $this->returnData(self::find());
+        $error = [];
+        if (!$params['controllerId'] || !$params['actionId']) {
+            $error[] = '权限节点不允许为空';
+        }
+        extract($params); // 切割关联数组
+        $permissionString = strtolower(trim($controllerId. '/' . $actionId));
+        if ($this->getPermission($permissionString)) {
+            $error[] = '此权限节点已经存在';
+        }
+        if (empty($error)) {
+            $permission = $this->createPermission($permissionString);
+            $permission->description = CommonUtil::post('actionIntro');
+            $this->add($permission);
+            return true;
+        }
+        return $error;
+    }
+
+    /**
+     * 获取角色列表
+     *
+     * @param array $params
+     * @return null|\yii\rbac\Item|\yii\rbac\Item[]|\yii\rbac\Role|\yii\rbac\Role[]
+     */
+    public function getRoleList($params = [])
+    {
+        if (!empty($params)) {
+            return $this->getRole($params['name']);
+        }
+        return $this->getRoles();
     }
 }

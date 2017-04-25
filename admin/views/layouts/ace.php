@@ -11,8 +11,8 @@ AceAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>
- <!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
         <meta charset="utf-8" />
          <?= Html::csrfMetaTags() ?>

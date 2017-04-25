@@ -16,7 +16,7 @@ return [
             'enableCsrfValidation' => false, // 关闭csrf验证
         ],
         'authManager' => [
-            'class' => 'yii\rbac\DbManager',
+            'class' => 'common\models\Auth',
             'itemTable' => '{{%b_item}}',
             'itemChildTable' => '{{%b_itemChildTable}}',
             'assignmentTable' => '{{%b_assignmentTable}}',
