@@ -9,7 +9,7 @@
                     <a href="javascript:;" class="navbar-brand">
                         <small>
                             <i class="icon-leaf"></i>
-                            Layery Managed
+                            Layery
                         </small>
                     </a><!-- /.brand -->
                 </div>
