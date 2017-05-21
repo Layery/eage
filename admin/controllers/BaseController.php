@@ -96,7 +96,6 @@ class BaseController extends Controller
     public function actionTest()
     {
         $reflection = new ReflectionClass(get_called_class());
-        p(APPLICATION_PATH . DIRECTORY_SEPARATOR. 'admin'. DIRECTORY_SEPARATOR. 'controllers');
         return $this->renderContent('hahahah');
     }
 
