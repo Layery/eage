@@ -1,0 +1,1 @@
+[25-Jun-2017 13:49:42 UTC] PHP Fatal error:  Class 'yii\console\Controller' not found in E:\www\eage\console\controllers\HelloController.php on line 6

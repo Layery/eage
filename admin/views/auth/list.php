@@ -45,7 +45,7 @@ $user = User::model();
                     <table class="table">
                         <tr>
                             <th class="center">
-                                <a href="<?= Url::to(['Auth/RoleCreate']) ?>">
+                                <a href="<?= Url::toRoute(['auth/role']) ?>">
                                     <button class="btn btn-info" type="button">
                                         <i class="icon-ok bigger-110"></i>
                                         新增

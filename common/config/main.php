@@ -13,7 +13,7 @@ return [
             'class' => 'common\extensions\Curl',
         ],
         'request' => [
-            'enableCsrfValidation' => false, // 关闭csrf验证
+            'enableCsrfValidation' => true, // 关闭csrf验证
         ],
         'authManager' => [
             'class' => 'common\models\Auth',

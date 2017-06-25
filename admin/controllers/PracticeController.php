@@ -7,6 +7,7 @@
 namespace admin\controllers;
 
 use admin\controllers\BaseController;
+use common\util\CommonUtil;
 
 class PracticeController extends BaseController {
 
@@ -15,4 +16,12 @@ class PracticeController extends BaseController {
         return $this->render('iframe');
     }
 
+    public function actionUpload()
+    {
+        if (!$_POST) {
+            return $this->render('h5ajaxupload');
+        }
+        $post = CommonUtil::post();
+        p($post);
+    }
 }

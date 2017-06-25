@@ -42,11 +42,10 @@ class HelloController extends Controller
 
     /**
      * 测试strpos函数
-     *
      * 注意全等符号的使用　，　类似于strrpos方法
+     * 返回待查找字符串在母字符串中首次出现的位置，返回mix类型
      * @param $search
      * @param $string
-     * @return // 返回待查找字符串在母字符串中首次出现的位置，返回mix类型
      */
 	public function actionStrpos($search, $string)
     {
@@ -92,10 +91,10 @@ class HelloController extends Controller
 
     /**
      * 求三数最大值
-     * @param  [type] $a [description]
-     * @param  [type] $b [description]
-     * @param  [type] $c [description]
-     * @return [type]    [description]
+     *
+     * @param $a
+     * @param $b
+     * @param $c
      */
     public function actionMax($a, $b, $c)
     {

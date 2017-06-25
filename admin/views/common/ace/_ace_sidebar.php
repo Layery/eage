@@ -72,6 +72,21 @@ use yii\helpers\Url;
                 </li>
             </ul>
         </li>
+         <li class="active">
+            <a href="#" class="dropdown-toggle">
+                <i class="icon-desktop"></i>
+                <span class="menu-text"> 练习测试 </span>
+                <b class="arrow icon-angle-down"></b>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="<?= Url::toRoute(['practice/upload']) ?>">
+                        <i class="icon-double-angle-right"></i>
+                        H5上传
+                    </a>
+                </li>
+            </ul>
+        </li>
 
     </ul>
     <!-- #sidebar-shortcuts -->

@@ -64,11 +64,16 @@ class AuthController extends BaseController
         return $this->render('permission_create', ['model' => $model]);
     }
 
-    //
-    public function actionRoleCreate()
+    /**
+     * 创建角色
+     *
+     * @return string
+     */
+    public function actionRole()
     {
-        exit('asdfasf');
-//        $permissList = $this->model->getPermissions();
+        $permissionList = $this->model->getPermissions();
+
+        return $this->render('role_create', ['permission' => $permissionList]);
     }
 
 }
