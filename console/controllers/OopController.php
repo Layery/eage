@@ -1,13 +1,17 @@
 <?php
-namespace console\controllers;
-
+include('/home/layery/www/func.php');
 
 
 interface Worker {
 
 }
 
-echo 'asdfasd';
+
+
+$link = mysqli_connect('localhost', 'root', 'root');
+
+
+
 
 
 

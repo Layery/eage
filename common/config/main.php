@@ -12,9 +12,12 @@ return [
         'curl' => [
             'class' => 'common\extensions\Curl',
         ],
+	/*
         'request' => [
             'enableCsrfValidation' => true, // 关闭csrf验证
-        ],
+   	 ],
+	*/
+
         'authManager' => [
             'class' => 'common\models\Auth',
             'itemTable' => '{{%b_item}}',
