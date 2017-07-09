@@ -1,0 +1,26 @@
+1: 压缩文件：
+    	sudo tar -czvf 压缩后的文件名.tar.gz ./待压缩的文件1 待压缩的文件2 ..
+2: 解压缩文件：
+        sudo tar -zxvf 待解压缩的文件
+
+
+3: 查看当前用户所属组：
+	groups
+	id username
+
+4: 修改某个用户所属组
+	sudu usermod -g groupName userName  # 例: 将layery用户修改为root组 sudo usermod -g root layery
+	sudo usermod -G groupName userName  # 与上边用法差不多， 永久生效
+
+
+
+
+
+
+
+
+
+
+
+
+
