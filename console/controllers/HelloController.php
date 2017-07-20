@@ -8,8 +8,9 @@ class HelloController extends Controller
     public $enableCsrfValidation = false;
 	public function actionIndex($message = 'Hello World')
     {
-        echo $message . "\n";
-        echo 'console和web应用一样, 不同的是console应用需要引用框架中console下的controller' . "\n";
+        $message .= "\r\n";
+        $message .= 'console和web应用一样, 不同的是console应用需要引用框架中console下的controller' . "\n";
+        echo mb_convert_encoding($message, 'gbk', 'auto');
     }
 
     public function actionDate()
@@ -19,9 +20,9 @@ class HelloController extends Controller
         {
             if ($i == 10) break;
             if ($i == 4) {
-				echo '哈哈哈' . "\n";
+				echo mb_convert_encoding('哈哈哈', 'gbk', 'UTF-8') . "\r\n";
 			} else {		
-                echo date('Y-m-d H:m:s', time()) . "\n";
+                echo date('Y-m-d H:i:s', time()) . "\n";
 			}
             $i += 1;
             sleep(1);
@@ -30,7 +31,7 @@ class HelloController extends Controller
     
 	public function actionTest($first, $second = 10)
 	{
-		for ($i = 1; $i <= $first; $i++) 
+		for ($i = $first; $i <= $first; $i++) 
 		{
 	       for ($j = 1; $j <= $second; $j++) 
 			{
@@ -71,12 +72,12 @@ class HelloController extends Controller
 
     public function actionNow()
     {
-        echo date('Y-m-d H:m:s', time()). "\n";
+        echo date('Y-m-d H:i:s', time()). "\n";
     }
 
 	public function actionYesterday()
     {
-		echo date('Y-m-d H:m:s', strtotime('-1 day')). "\n";
+		echo date('Y-m-d H:i:s', strtotime('-1 day')). "\n";
 	}
 
     public function actionG()
@@ -163,4 +164,9 @@ class HelloController extends Controller
 
 
 
+    public function actionList()
+    {
+        //echo exec('dir');
+        echo (`dir`);
+    }
 }
