@@ -31,13 +31,11 @@ class HelloController extends Controller
     
 	public function actionTest($first, $second = 10)
 	{
-		for ($i = $first; $i <= $first; $i++) 
-		{
-	       for ($j = 1; $j <= $second; $j++) 
-			{
+		for ($i = $first; $i <= $first; $i++) {
+		    for ($j = 1; $j <= $second; $j++) {
 				echo $i . 'x' . $j . '=' . $i*$j . "\n";
                 sleep(1);
-			}
+            }
 		}
 	}
 
