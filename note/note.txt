@@ -100,10 +100,6 @@
 10: lamp环境中，安装mysql扩展： sudo apt-get install php7.0-mysql; sudo apt-get insall mysql-server;
 	sudo apt-get install mysql-client;
 
-11: linux下，配置alias永久生效，两条命令搞定：
-    1. sudo vi ~/.bashrc    # 在文件最后边直接编辑你的自定义别名，保存退出。
-    2. source .bashrc       # 这个命令貌似是加载最新的配置。
+11: set_time_limit(0);  配置当前php执行的脚本永不超时;
 
 
-12: linux 下临时修改屏幕亮度命令，但是下次重启会失效：
-    echo 600 > /sys/class/backlight/intel_backlight/brightness
