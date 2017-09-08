@@ -10,25 +10,18 @@ $this->title = 'H5 ajax upload';
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-<title><?= $this->title ?></title>
-</head>
-<body>
-    <form action="<?= Url::toRoute('practice/upload'); ?>" method="POST" id="form">
-        姓名: <input type="text" name="name"/><br>
-        头像: <input type="file" name="header">
-    </form>
-    <button id="submit" >提交</button>
-</body>
-</html>
+<div class="page-content">
+    <div class="row">
+        <div class="col-xl-12">
+            <form class="form-horizontal" role="form" action="<?= Url::toRoute('practice/upload'); ?>" method="POST" id="form">
+                姓名：
+                <div class="form-group">
+                    <div class="col-sm-9">
+                        <input type="text" id="form-field-1" placeholder="Username" class="col-xs-10 col-sm-5">
+                    </div>
+                </div>
 
-<script>
-    $(function(){
-        $("#submit").click(function(){
-            var FormObject = new FormData($("#form"));
-            console.log(FormObject);
-        });
-    });
-</script>
+            </form>
+        </div>
+    </div>  
+</div>

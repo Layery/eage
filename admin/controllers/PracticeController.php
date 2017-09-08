@@ -24,4 +24,9 @@ class PracticeController extends BaseController {
         $post = CommonUtil::post();
         p($post);
     }
+
+    public function actionForm()
+    {
+        return $this->render('form');
+    }
 }

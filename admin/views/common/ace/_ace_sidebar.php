@@ -85,6 +85,12 @@ use yii\helpers\Url;
                         H5上传
                     </a>
                 </li>
+                <li>
+                    <a href="<?= Url::toRoute(['practice/form']) ?>">
+                        <i class="icon-double-angle-right"></i>
+                        表单验证
+                    </a>
+                </li>
             </ul>
         </li>
 
