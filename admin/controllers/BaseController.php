@@ -7,7 +7,6 @@
  */
 
 namespace admin\controllers;
-use admin\assets\AppAsset;
 use common\models\Article;
 use common\util\CommonUtil;
 use yii;

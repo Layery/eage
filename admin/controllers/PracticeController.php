@@ -22,7 +22,6 @@ class PracticeController extends BaseController {
             return $this->render('h5ajaxupload');
         }
         $post = CommonUtil::post();
-        p($post);
     }
 
     public function actionForm()
