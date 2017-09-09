@@ -1,3 +1,8 @@
+<?php
+use admin\assets\AceAsset;
+use yii\helpers\Html;
+use yii\helpers\Url;
+?>
 
 <div class="page-content">
     <!--
@@ -14,66 +19,134 @@
     -->
     <div class="space"></div>
     <div class="row">
-        <form class="form-horizontal" role="form">
+        <form id="form" class="form-horizontal" role="form" action="javascript:;">
+            <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
             <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="form-field-name"> Name </label>
+                <label class="col-sm-3 control-label no-padding-right" for="name"> Name </label>
                 <div class="col-sm-9">
-                    <input type="text" id="form-field-name" placeholder="input..." name="name" />
+                    <input type="text" id="name" placeholder="input..." name="name" />
                 </div>
+                <span class = "form-error" id="form-error-name"></span>
+            </div>
+
+            <div class="space-4"></div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="phone"> Phone </label>
+                <div class="col-sm-9">
+                    <input type="text" id="phone" placeholder="input..." name="phone" />
+                </div>
+                <span class = "form-error" id="form-error-phone"></span>
             </div>
 
             <div class="space-4"></div>
 
             <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="form-field-email"> Email</label>
+                <label class="col-sm-3 control-label no-padding-right" for="email"> Email</label>
                 <div class="col-sm-9">
-                    <input type="email" id="form-field-email" placeholder="input..." name="email" />
+                    <input type="email" id="email" placeholder="input..." name="email" />
                 </div>
+                <span class = "form-error" id="form-error-email"></span>
             </div>
             <div class="space-4"></div>
-
              <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="form-field-password"> Password</label>
+                <label class="col-sm-3 control-label no-padding-right" for="password"> Password</label>
                 <div class="col-sm-9">
-                    <input type="password" id="form-field-password" placeholder="input..." name="password" />
+                    <input type="password" id="password" placeholder="input..." name="password" />
                 </div>
-            </div>
-            <div class="space-4"></div>
-
-
-
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> Readonly
-                    field
-                </label>
-                <div class="col-sm-9">
-                    <input type="text" readonly="" value="只读的文本框" name="">
-                </div>
+                <span class = "form-error" id="form-error-password"></span>
             </div>
 
             <div class="space-4"></div>
-
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="form-field-6">Tooltip and help
-                    button
-                </label>
-
-                <div class="col-sm-9">
-                    <input data-rel="tooltip" type="text" id="form-field-6" placeholder="Tooltip on hover" title="Hello Tooltip!" data-placement="bottom"/>
-                    <span class="help-button" data-rel="popover" data-trigger="hover" data-placement="left" data-content="More details." title="Popover on hover">?</span>
-                </div>
-            </div>
-
-            <div class="space-4"></div>
+         <div class="col-sm-2"></div>
+            <button class="btn btn-primary col-sm-2" id="submit">提交</button>
+            <div class="col-sm-5"></div>
         </form>
+
         
-        <div class="col-sm-2"></div>
-        <button class="btn btn-primary col-sm-2">提交</button>
-        <div class="col-sm-5"></div>
+      
     </div>
 </div>
 
-<script>
 
+<?php AceAsset::addScript($this, '@web/js/ace/js/jquery.validate.min.js'); ?>
+
+
+<script type="text/javascript">
+    WWW = {};
+    WWW.register = function(){
+        var handleValidation = function() {
+            /*
+            $("#form").validate({
+                errorElement: 'span',
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2
+                    },
+                    email: {
+                        required: true
+                    },
+                    password: {
+                        required: true
+                    },
+                    phone : {
+                        required: true,
+                        mobile: true
+                    }
+                },
+
+                messages: {
+                    name: {
+                        required: 'enter your name',
+                        minlength: "The name you entered shuld be more than {0} bite"
+                    },
+                    email: {
+                        required: 'enter your email',
+                        email: 'Please make sure the email you entered'
+                    },
+                    password: {
+                        required: 'enter your password'
+                    },
+                    phone: {
+                        required: 'enter your phone'
+                    }
+                },
+
+                errorPlacement: function(error, element) {
+                    var errorId = 'form-error-' + $(element).attr('id');
+                    var errorObj = $(element).parents("form").find("span[id='" + errorId + "']");
+                    errorObj.addClass('col-sm-9').css({
+                        color: 'red',
+                    });
+                    errorObj.text(error.text());
+                },
+
+                success: function (label, element) {
+                    // label 指代当前的errorElement
+                    $(label).removeClass('error');
+                }
+            });
+            */  
+
+        };
+
+        var isMobile = function(value, element, params) {
+
+        }
+
+        jQuery.validator.addMthod();
+
+
+
+        return {
+        //main function to initiate the module
+        init: function () {
+                handleValidation();
+            }
+        };
+
+    }();
+
+    WWW.register.init();
 
 </script>

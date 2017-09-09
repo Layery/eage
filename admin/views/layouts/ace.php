@@ -50,6 +50,11 @@ AceAsset::register($this);
 <?php $this->endPage() ?>
 
 
+<script>
+    Window.prototype.p = function(data) {
+        console.log(data);
+    }
+</script>
 
 
 <!-- 

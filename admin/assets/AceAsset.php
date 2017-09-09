@@ -44,7 +44,7 @@ class AceAsset extends AssetBundle
 
     // 这是设置所有js放置的位置, 此参数指定js资源在文件开头开始引入
     public $jsOptions = [
-        'position' => View::POS_HEAD,
+        'position' => View::POS_HEAD
     ];
 
 
@@ -59,7 +59,7 @@ class AceAsset extends AssetBundle
      * @param $view
      * @param $cssFile
      */
-    public static function addCssFile($view, $cssFile) {
+    public static function addCss($view, $cssFile) {
         $view->registerCssFile($cssFile, [AppAsset::className(), 'depends' => 'admin\assets\AppAsset']);
     }
 }

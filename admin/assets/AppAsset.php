@@ -43,7 +43,7 @@ class AppAsset extends AssetBundle
      * @param $view
      * @param $cssFile
      */
-    public static function addCssFile($view, $cssFile) {
+    public static function addCss($view, $cssFile) {
         $view->registerCssFile($cssFile, [AppAsset::className(), 'depends' => 'admin\assets\AppAsset']);
     }
 }

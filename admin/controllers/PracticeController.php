@@ -26,6 +26,7 @@ class PracticeController extends BaseController {
 
     public function actionForm()
     {
+        
         return $this->render('form');
     }
 }
