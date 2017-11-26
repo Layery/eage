@@ -5,81 +5,55 @@ use yii\helpers\Url;
 ?>
 
 
-<div class="breadcrumbs breadcrumbs-fixed" id="breadcrumbs">
-    <script type="text/javascript">
-        try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-    </script>
-
-    <ul class="breadcrumb">
-        <li>
-            <i class="icon-home home-icon"></i>
-            <a href="#">Home</a>
-        </li>
-
-        <li>
-            <a href="#">Tables</a>
-        </li>
-        <li class="active">Simple &amp; Dynamic</li>
-    </ul><!-- .breadcrumb -->
-
-    <div class="nav-search" id="nav-search">
-        <form class="form-search">
-            <span class="input-icon">
-                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
-                <i class="icon-search nav-search-icon"></i>
-            </span>
-        </form>
-    </div><!-- #nav-search -->
-</div>
 <div class="page-content">
-    <br>
     <div class="space"></div>
     <div class="row">
-        <form id="form" class="form-horizontal" role="form" action="javascript:;">
-            <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="name"> Name </label>
-                <div class="col-sm-9">
-                    <input type="text" id="name" placeholder="input..." name="name" />
+        <div class="col-xs-12">
+            <form id="form" class="form-horizontal" role="form" action="javascript:;">
+                <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="name"> Name </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="name" placeholder="input..." name="name" />
+                    </div>
+                    <span class = "form-error" id="form-error-name"></span>
                 </div>
-                <span class = "form-error" id="form-error-name"></span>
-            </div>
 
-            <div class="space-4"></div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="phone"> Phone </label>
-                <div class="col-sm-9">
-                    <input type="text" id="phone" placeholder="input..." name="phone" />
+                <div class="space-4"></div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="phone"> Phone </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="phone" placeholder="input..." name="phone" />
+                    </div>
+                    <span class = "form-error" id="form-error-phone"></span>
                 </div>
-                <span class = "form-error" id="form-error-phone"></span>
-            </div>
 
-            <div class="space-4"></div>
+                <div class="space-4"></div>
 
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="email"> Email</label>
-                <div class="col-sm-9">
-                    <input type="email" id="email" placeholder="input..." name="email" />
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="email"> Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="input..." name="email" />
+                    </div>
+                    <span class = "form-error" id="form-error-email"></span>
                 </div>
-                <span class = "form-error" id="form-error-email"></span>
-            </div>
-            <div class="space-4"></div>
-             <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="password"> Password</label>
-                <div class="col-sm-9">
-                    <input type="password" id="password" placeholder="input..." name="password" />
+                <div class="space-4"></div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="password"> Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="input..." name="password" />
+                    </div>
+                    <span class = "form-error" id="form-error-password"></span>
                 </div>
-                <span class = "form-error" id="form-error-password"></span>
-            </div>
 
-            <div class="space-4"></div>
-         <div class="col-sm-2"></div>
-            <button class="btn btn-primary col-sm-2" id="submit">提交</button>
-            <div class="col-sm-5"></div>
-        </form>
+                <div class="space-4"></div>
+                <div class="col-sm-2"></div>
+                <button class="btn btn-primary col-sm-2" id="submit">提交</button>
+                <div class="col-sm-5"></div>
+            </form>
 
-        
-      
+
+        </div>
     </div>
 </div>
 

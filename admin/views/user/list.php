@@ -11,9 +11,18 @@ use common\models\Auth;
 $auth = new Auth();
 ?>
 
-<div class="admin-content-body">
-    <div class="am-g">
-        <div class="am-u-sm-12">
+<div class="page-content">
+    <div class="page-header">
+        <h1>
+            Tables
+            <small>
+                <i class="icon-double-angle-right"></i>
+                Static &amp; Dynamic Tables
+            </small>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
             <table class="am-table am-table-striped am-table-hover table-main">
                 <tbody>
                 <tr>
@@ -39,7 +48,7 @@ $auth = new Auth();
 
                             [
                                 'attribute' => 'created_at',
-                                'value' => function($model) { return date('Y-m-d H:m', $model->created_at);}
+                                'value' => function($model) { return date('Y-m-d H:i', $model->created_at);}
                             ],
                             [
                                 'class' => 'yii\grid\ActionColumn',
