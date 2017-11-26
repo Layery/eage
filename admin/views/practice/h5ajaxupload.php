@@ -1,7 +1,8 @@
 <?php 
 use yii\helpers\Url;
 ?>
-<div class="breadcrumbs" id="breadcrumbs">
+
+<div class="breadcrumbs breadcrumbs-fixed" id="breadcrumbs">
     <script type="text/javascript">
         try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
     </script>
@@ -16,20 +17,20 @@ use yii\helpers\Url;
             <a href="#">Tables</a>
         </li>
         <li class="active">Simple &amp; Dynamic</li>
-    </ul>
+    </ul><!-- .breadcrumb -->
 
     <div class="nav-search" id="nav-search">
         <form class="form-search">
             <span class="input-icon">
-                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
                 <i class="icon-search nav-search-icon"></i>
             </span>
         </form>
-    </div>
+    </div><!-- #nav-search -->
 </div>
-
-
 <div class="page-content">
+    <div class="page-header"></div>
+    <br>
     <div class="row">
         <form class="form-horizontal" role="form" action="<?= Url::toRoute('practice/upload'); ?>" method="POST" id="form">
             <div class="form-group">

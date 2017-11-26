@@ -103,3 +103,13 @@
 11: set_time_limit(0);  配置当前php执行的脚本永不超时;
 
 
+12: centos7下安装php7
+    rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+    获取php7 yum源
+    rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+    安装
+    yum install php70w
+
+
+
+
