@@ -4,7 +4,10 @@ use yii\helpers\Url;
 ?>
 <div class="sidebar" id="sidebar">
     <script type="text/javascript">
-        try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+        try {
+            ace.settings.check('sidebar', 'fixed')
+        } catch (e) {
+        }
     </script>
 
     <div class="sidebar-shortcuts" id="sidebar-shortcuts">
@@ -72,7 +75,7 @@ use yii\helpers\Url;
                 </li>
             </ul>
         </li>
-         <li class="active">
+        <li class="active">
             <a href="#" class="dropdown-toggle">
                 <i class="icon-desktop"></i>
                 <span class="menu-text"> 练习测试 </span>
@@ -93,6 +96,22 @@ use yii\helpers\Url;
                 </li>
             </ul>
         </li>
+        <li class="active">
+            <a href="#" class="dropdown-toggle">
+                <i class="icon-desktop"></i>
+                <span class="menu-text"> 栏目管理 </span>
+                <b class="arrow icon-angle-down"></b>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="<?= Url::toRoute(['cate/list']) ?>">
+                        <i class="icon-double-angle-right"></i>
+                        栏目列表
+                    </a>
+                </li>
+            </ul>
+        </li>
+
 
     </ul>
     <!-- #sidebar-shortcuts -->
@@ -102,6 +121,9 @@ use yii\helpers\Url;
     </div>
 
     <script type="text/javascript">
-        try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+        try {
+            ace.settings.check('sidebar', 'collapsed')
+        } catch (e) {
+        }
     </script>
 </div>

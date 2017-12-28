@@ -102,4 +102,8 @@
 
 11: set_time_limit(0);  配置当前php执行的脚本永不超时;
 
+12: mysql数据库, 当有的字段值为null, 而我们查询又不想其返回为null的时候, COALESCE() , 可以使用这个函数,
+    它的作用就是把默认返回为null的, 改为用 0 来返回. 例如: select COALESCE(NULL, 0) from table
 
+13: redis for windows
+    把redis-server.exe安装成windows 服务。redis-server.exe --service-install redis.windows.conf --loglevel verbose  在win服务管理器中启动卸载可以使用 redis-server --service-uninstall

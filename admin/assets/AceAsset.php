@@ -50,7 +50,7 @@ class AceAsset extends AssetBundle
 
     //定义按需加载JS方法，注意加载顺序在最后
     public static function addScript($view, $jsfile) {
-        $view->registerJsFile($jsfile, [AppAsset::className(), 'depends' => 'admin\assets\AppAsset']);
+        $view->registerJsFile($jsfile, [AceAsset::className(), 'depends' => 'admin\assets\AppAsset']);
     }
 
     /**
@@ -60,7 +60,7 @@ class AceAsset extends AssetBundle
      * @param $cssFile
      */
     public static function addCss($view, $cssFile) {
-        $view->registerCssFile($cssFile, [AppAsset::className(), 'depends' => 'admin\assets\AppAsset']);
+        $view->registerCssFile($cssFile, [AceAsset::className(), 'depends' => 'admin\assets\AppAsset']);
     }
 }
 

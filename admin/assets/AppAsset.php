@@ -13,12 +13,9 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css\amaze\amazeui.min.css',
-        'css\amaze\admin.css',
+
     ];
     public $js = [
-        'js\amaze\amazeui.min.js',
-        'js\amaze\app.js'
 
     ];
     public $depends = [
