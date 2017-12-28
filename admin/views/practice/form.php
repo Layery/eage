@@ -4,66 +4,56 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 ?>
 
+
 <div class="page-content">
-    <!--
-    page header 可选用 
-    <div class="page-header">
-        <h3>
-            Tables
-            <small>
-                <i class="icon-double-angle-right"></i>
-                Static &amp; Dynamic Tables
-            </small>
-        </h3>
-    </div>
-    -->
     <div class="space"></div>
     <div class="row">
-        <form id="form" class="form-horizontal" role="form" action="javascript:;">
-            <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="name"> Name </label>
-                <div class="col-sm-9">
-                    <input type="text" id="name" placeholder="input..." name="name" />
+        <div class="col-xs-12">
+            <form id="form" class="form-horizontal" role="form" action="javascript:;">
+                <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="name"> Name </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="name" placeholder="input..." name="name" />
+                    </div>
+                    <span class = "form-error" id="form-error-name"></span>
                 </div>
-                <span class = "form-error" id="form-error-name"></span>
-            </div>
 
-            <div class="space-4"></div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="phone"> Phone </label>
-                <div class="col-sm-9">
-                    <input type="text" id="phone" placeholder="input..." name="phone" />
+                <div class="space-4"></div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="phone"> Phone </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="phone" placeholder="input..." name="phone" />
+                    </div>
+                    <span class = "form-error" id="form-error-phone"></span>
                 </div>
-                <span class = "form-error" id="form-error-phone"></span>
-            </div>
 
-            <div class="space-4"></div>
+                <div class="space-4"></div>
 
-            <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="email"> Email</label>
-                <div class="col-sm-9">
-                    <input type="email" id="email" placeholder="input..." name="email" />
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="email"> Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="input..." name="email" />
+                    </div>
+                    <span class = "form-error" id="form-error-email"></span>
                 </div>
-                <span class = "form-error" id="form-error-email"></span>
-            </div>
-            <div class="space-4"></div>
-             <div class="form-group">
-                <label class="col-sm-3 control-label no-padding-right" for="password"> Password</label>
-                <div class="col-sm-9">
-                    <input type="password" id="password" placeholder="input..." name="password" />
+                <div class="space-4"></div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="password"> Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="input..." name="password" />
+                    </div>
+                    <span class = "form-error" id="form-error-password"></span>
                 </div>
-                <span class = "form-error" id="form-error-password"></span>
-            </div>
 
-            <div class="space-4"></div>
-         <div class="col-sm-2"></div>
-            <button class="btn btn-primary col-sm-2" id="submit">提交</button>
-            <div class="col-sm-5"></div>
-        </form>
+                <div class="space-4"></div>
+                <div class="col-sm-2"></div>
+                <button class="btn btn-primary col-sm-2" id="submit">提交</button>
+                <div class="col-sm-5"></div>
+            </form>
 
-        
-      
+
+        </div>
     </div>
 </div>
 

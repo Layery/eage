@@ -1,5 +1,4 @@
 <?php
-
 namespace admin\assets;
 
 use yii\web\AssetBundle;
@@ -44,10 +43,3 @@ class AppAsset extends AssetBundle
         $view->registerCssFile($cssFile, [AppAsset::className(), 'depends' => 'admin\assets\AppAsset']);
     }
 }
-
-
-
-
-
-
-

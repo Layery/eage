@@ -107,3 +107,10 @@
 
 13: redis for windows
     把redis-server.exe安装成windows 服务。redis-server.exe --service-install redis.windows.conf --loglevel verbose  在win服务管理器中启动卸载可以使用 redis-server --service-uninstall
+
+14: centos7下安装php7
+    rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+    获取php7 yum源
+    rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+    安装
+    yum install php70w
