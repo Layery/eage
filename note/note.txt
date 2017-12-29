@@ -114,3 +114,4 @@
     rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
     安装
     yum install php70w
+
