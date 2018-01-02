@@ -115,3 +115,5 @@
     安装
     yum install php70w
 
+15: composer 中国镜像
+    composer config repo.packagist composer https://packagist.phpcomposer.com
