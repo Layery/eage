@@ -117,3 +117,7 @@
 
 15: composer 中国镜像
     composer config repo.packagist composer https://packagist.phpcomposer.com
+
+16: mysql 开启通用日志, 实时查询执行的sql:
+    1.进入Mysql
+    2.启用Log功能(general_log=ON) SHOW VARIABLES LIKE "general_log%"; SET GLOBAL general_log = 'ON';
