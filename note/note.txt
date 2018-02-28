@@ -1,3 +1,9 @@
+
+window服务器:
+        域名: 182.92.174.163
+        name: Administrator
+        password: Pt88888888
+
 1: 配置apache支持url美化
 		<Directory "path/to/basic/web">
 		# 开启 mod_rewrite 用于美化 URL 功能的支持（译注：对应 pretty URL 选项）
