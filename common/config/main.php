@@ -7,16 +7,19 @@ return [
             'class' => 'yii\caching\FileCache',
         ],
         'redis' => [
-            'class' => 'common\models\Redis'
+            'class' => 'yii\redis\Connection',
+            'hostname' => '127.0.0.1',
+            'port' => 6379,
+            'database' => 0,
         ],
         'curl' => [
             'class' => 'common\extensions\Curl',
         ],
-	/*
-        'request' => [
-            'enableCsrfValidation' => true, // 关闭csrf验证
-   	 ],
-	*/
+
+        /*'request' => [
+            'enableCsrfValidation' => true, // 关闭csrf验证, console应用下应关闭该选项
+        ],*/
+
 
         'authManager' => [
             'class' => 'common\models\Auth',
@@ -35,30 +38,30 @@ return [
     'params' => [
         //视图布局主题
         'layout' => 'ace',
-        'redis'=>[
-            'a:q'=>[//经纪人相关信息
-                'host'=>'127.0.0.1',
-                'port'=>6379,
-                'database'=>0,
-                'auth'=>'foryoudevelop',
+        'redis' => [
+            'a:q' => [//经纪人相关信息
+                'host' => '127.0.0.1',
+                'port' => 6379,
+                'database' => 0,
+                'auth' => 'foryoudevelop',
             ],
-            'db'=>[//司机相关信息
-                'host'=>'127.0.0.1',
-                'port'=>6379,
-                'database'=>0,
-                'auth'=>'foryoudevelop',
+            'db' => [//司机相关信息
+                'host' => '127.0.0.1',
+                'port' => 6379,
+                'database' => 0,
+                'auth' => 'foryoudevelop',
             ],
-            'c:d:o'=>[//客户相关信息
-                'host'=>'127.0.0.1',
-                'port'=>6379,
-                'database'=>0,
+            'c:d:o' => [//客户相关信息
+                'host' => '127.0.0.1',
+                'port' => 6379,
+                'database' => 0,
                 // 'auth'=>'foryoudevelop',
             ],
-            'other'=>[//剩余黑名单,管理员等
-                'host'=>'127.0.0.1',
-                'port'=>6379,
-                'database'=>0,
-                'auth'=>'foryoudevelop',
+            'other' => [//剩余黑名单,管理员等
+                'host' => '127.0.0.1',
+                'port' => 6379,
+                'database' => 0,
+                'auth' => 'foryoudevelop',
             ],
         ],
 

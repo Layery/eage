@@ -2,7 +2,7 @@
 window服务器:
         域名: 182.92.174.163
         name: Administrator
-        password: Pt88888888
+        password: Pt
 
 1: 配置apache支持url美化
 		<Directory "path/to/basic/web">
