@@ -3050,3 +3050,27 @@ $_SERVER = [
 [09-Sep-2017 10:55:48 UTC] PHP Fatal error:  Cannot declare class admin\assets\AceAsset, because the name is already in use in E:\www\eage\admin\assets\AppAsset.php on line 15
 [09-Sep-2017 11:00:16 UTC] PHP Notice:  Undefined variable: name in E:\www\eage\admin\views\site\error.php on line 9
 [09-Sep-2017 11:00:16 UTC] PHP Notice:  Undefined variable: message in E:\www\eage\admin\views\site\error.php on line 16
+[06-Mar-2018 14:19:21 UTC] PHP Warning:  Uncaught yii\base\ErrorException: require_once(Zend/Controller/Action.php): failed to open stream: No such file or directory in E:\www\eage\admin\controllers\UserController.php:7
+Stack trace:
+#0 E:\www\eage\admin\controllers\UserController.php(7): yii\base\ErrorHandler->handleError(2, 'require_once(Ze...', 'E:\\www\\eage\\adm...', 7, Array)
+#1 E:\www\eage\admin\controllers\UserController.php(7): require_once()
+#2 E:\www\eage\vendor\yiisoft\yii2\BaseYii.php(288): include('E:\\www\\eage\\adm...')
+#3 [internal function]: yii\BaseYii::autoload('admin\\controlle...')
+#4 [internal function]: spl_autoload_call('admin\\controlle...')
+#5 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(562): class_exists('admin\\controlle...')
+#6 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('user')
+#7 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('list')
+#8 E:\www\eage\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/li in E:\www\eage\admin\controllers\UserController.php on line 7
+[06-Mar-2018 14:19:21 UTC] PHP Fatal error:  yii\BaseYii::main(): Failed opening required 'Zend/Controller/Action.php' (include_path='.;C:\php\pear') in E:\www\eage\admin\controllers\UserController.php on line 7
+[06-Mar-2018 14:19:26 UTC] PHP Warning:  Uncaught yii\base\ErrorException: require_once(Zend/Controller/Action.php): failed to open stream: No such file or directory in E:\www\eage\admin\controllers\UserController.php:7
+Stack trace:
+#0 E:\www\eage\admin\controllers\UserController.php(7): yii\base\ErrorHandler->handleError(2, 'require_once(Ze...', 'E:\\www\\eage\\adm...', 7, Array)
+#1 E:\www\eage\admin\controllers\UserController.php(7): require_once()
+#2 E:\www\eage\vendor\yiisoft\yii2\BaseYii.php(288): include('E:\\www\\eage\\adm...')
+#3 [internal function]: yii\BaseYii::autoload('admin\\controlle...')
+#4 [internal function]: spl_autoload_call('admin\\controlle...')
+#5 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(562): class_exists('admin\\controlle...')
+#6 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('user')
+#7 E:\www\eage\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('list')
+#8 E:\www\eage\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/li in E:\www\eage\admin\controllers\UserController.php on line 7
+[06-Mar-2018 14:19:26 UTC] PHP Fatal error:  yii\BaseYii::main(): Failed opening required 'Zend/Controller/Action.php' (include_path='.;C:\php\pear') in E:\www\eage\admin\controllers\UserController.php on line 7

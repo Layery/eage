@@ -37,7 +37,7 @@ phpunit.phar
 /frontend/runtime
 /frontend/web/assets
 admin/web/assets/*
-
+/admin/web/php_errors.log
 
 
 
