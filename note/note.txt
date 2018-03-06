@@ -1,3 +1,9 @@
+
+window服务器:
+        域名: 182.92.174.163
+        name: Administrator
+        password: Pt
+
 1: 配置apache支持url美化
 		<Directory "path/to/basic/web">
 		# 开启 mod_rewrite 用于美化 URL 功能的支持（译注：对应 pretty URL 选项）
@@ -102,14 +108,27 @@
 
 11: set_time_limit(0);  配置当前php执行的脚本永不超时;
 
+12: mysql数据库, 当有的字段值为null, 而我们查询又不想其返回为null的时候, COALESCE() , 可以使用这个函数,
+    它的作用就是把默认返回为null的, 改为用 0 来返回. 例如: select COALESCE(NULL, 0) from table
 
-12: centos7下安装php7
+13: redis for windows
+    把redis-server.exe安装成windows 服务。redis-server.exe --service-install redis.windows.conf --loglevel verbose  在win服务管理器中启动卸载可以使用 redis-server --service-uninstall
+
+14: centos7下安装php7
     rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
     获取php7 yum源
     rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
     安装
     yum install php70w
 
+15: composer 中国镜像
+    composer config repo.packagist composer https://packagist.phpcomposer.com
 
+16: mysql 开启通用日志, 实时查询执行的sql:
+    1.进入Mysql
+    2.启用Log功能(general_log=ON) SHOW VARIABLES LIKE "general_log%"; SET GLOBAL general_log = 'ON';
 
-
+17: mysql 多字段多查询时 提升性能节省查询:
+    1: SELECT SQL_CALC_FOUND_ROWS id,query,operator,state,comment from table where .....;
+    2: SELECT FOUND_ROWS();
+    SQL_CALC_FOUND_ROWS 会默认统计总的查询结果, 然后只需要执行语句2, 就可直接得到总结果条数, 两表联查, 多字段, 复杂查询时, 能节省很大的性能;

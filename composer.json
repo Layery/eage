@@ -19,7 +19,9 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "linslin/yii2-curl": "*",
-        "kartik-v/yii2-dynagrid": "@dev"
+        "kartik-v/yii2-dynagrid": "@dev",
+        "yiisoft/yii2-redis": "^2.0",
+        "php-amqplib/php-amqplib": "^2.7"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

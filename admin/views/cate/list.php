@@ -7,8 +7,33 @@ use yii\grid\GridView;
 use common\widgets\Alert;
 
 ?>
+<div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+        try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+    </script>
 
-    <div class="admin-content-body">
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i>
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">Tables</a>
+        </li>
+        <li class="active">Simple &amp; Dynamic</li>
+    </ul>
+
+    <div class="nav-search" id="nav-search">
+        <form class="form-search">
+            <span class="input-icon">
+                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                <i class="icon-search nav-search-icon"></i>
+            </span>
+        </form>
+    </div>
+</div>
+    <div class="page-content">
         <hr>
         <div class="am-g">
             <div class="am-u-sm-12 am-u-md-6">
@@ -35,7 +60,7 @@ use common\widgets\Alert;
             <div class="am-u-sm-12 am-u-md-3">
                 <div class="am-input-group am-input-group-sm">
                     <input type="text" class="am-form-field">
-          <span class="am-input-group-btn">
+                    <span class="am-input-group-btn">
             <button class="am-btn am-btn-default" type="button">搜索</button>
           </span>
                 </div>
@@ -106,20 +131,20 @@ use common\widgets\Alert;
                         </tr>
                         </tbody>
                     </table>
-                   <!-- <div class="am-cf">
-                        共 15 条记录
-                        <div class="am-fr">
-                            <ul class="am-pagination">
-                                <li class="am-disabled"><a href="#">«</a></li>
-                                <li class="am-active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">»</a></li>
-                            </ul>
-                        </div>
-                    </div>-->
+                    <!-- <div class="am-cf">
+                         共 15 条记录
+                         <div class="am-fr">
+                             <ul class="am-pagination">
+                                 <li class="am-disabled"><a href="#">«</a></li>
+                                 <li class="am-active"><a href="#">1</a></li>
+                                 <li><a href="#">2</a></li>
+                                 <li><a href="#">3</a></li>
+                                 <li><a href="#">4</a></li>
+                                 <li><a href="#">5</a></li>
+                                 <li><a href="#">»</a></li>
+                             </ul>
+                         </div>
+                     </div>-->
                     <hr />
                 </form>
             </div>

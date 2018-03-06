@@ -54,14 +54,14 @@ return [
         ],
 
         // url美化
-//        'urlManager' => [
-//            'enablePrettyUrl' => true,
-//            'showScriptName' => false,
-//            'suffix' => '.html',
-//            'rules' => [
-//                '' => 'cate/list'
-//            ],
-//        ],
+        /*'urlManager' => [
+            'enablePrettyUrl' => false,
+            'showScriptName' => false,
+            'suffix' => '.html',
+            'rules' => [
+                '' => 'cate/list'
+            ],
+        ],*/
 
     ],
     'params' => $params,

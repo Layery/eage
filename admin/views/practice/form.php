@@ -65,7 +65,7 @@ use yii\helpers\Url;
     WWW = {};
     WWW.register = function(){
         var handleValidation = function() {
-            /*
+            
             $("#form").validate({
                 errorElement: 'span',
                 rules: {
@@ -116,17 +116,7 @@ use yii\helpers\Url;
                     $(label).removeClass('error');
                 }
             });
-            */  
-
         };
-
-        var isMobile = function(value, element, params) {
-
-        }
-
-        jQuery.validator.addMthod();
-
-
 
         return {
         //main function to initiate the module
