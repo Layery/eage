@@ -4,7 +4,7 @@
 19:window服务器:
         域名: 182.92.174.163
         name: Administrator
-        password: Pt
+        password: Pt88888888
 
 18: 配置apache支持url美化
 		<Directory "path/to/basic/web">
