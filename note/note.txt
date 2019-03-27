@@ -1,10 +1,12 @@
 
-window服务器:
+20: $rs = cal_days_in_month(CAL_GREGORIAN, 11, 2018); // 获取指定的月份的天数
+
+19:window服务器:
         域名: 182.92.174.163
         name: Administrator
         password: Pt
 
-1: 配置apache支持url美化
+18: 配置apache支持url美化
 		<Directory "path/to/basic/web">
 		# 开启 mod_rewrite 用于美化 URL 功能的支持（译注：对应 pretty URL 选项）
 		RewriteEngine on
@@ -17,14 +19,14 @@ window服务器:
 		# ...其它设置...
 		</Directory>
 
-2: lamp安装redis扩展：
+17: lamp安装redis扩展：
     １
-3: 注册静态资源的两种方式:
+16: 注册静态资源的两种方式:
         1: 在app\assets路径下添加自定义的asset文件,需要继承自yii\web\AssetBundle类, 然后视图文件中可以直接
            asset::register($this),实现全局调用
         2: 直接在视图文件中$this->registerJsfile('资源路径') / $this->registerCssFile('资源路径')
 
-4: function test()
+15: function test()
    { 
         $a = 2;
         $b = 5;
@@ -41,20 +43,20 @@ window服务器:
         }
     }
 
-5: Html::to($params1, $params2, $params3) , 此方法, 如果第二个参数是一个数组, 将会创建出完整的url路径来
+14: Html::to($params1, $params2, $params3) , 此方法, 如果第二个参数是一个数组, 将会创建出完整的url路径来
 
-6: 控制器中的beforeAction 方法, 重写此方法时, 一定要先初始化父类的beforeAction , 并且注意,此函数返回bool值, 用来决定程序是否向下执行
+13: 控制器中的beforeAction 方法, 重写此方法时, 一定要先初始化父类的beforeAction , 并且注意,此函数返回bool值, 用来决定程序是否向下执行
 
-7: csrf验证导致的400错误解决办法:
+12: csrf验证导致的400错误解决办法:
    一: 视图表单中手动添加Html::csrfMetaTage()方法
    二: 在表单中增加隐藏的验证字段
       <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
    三: 配置文件中, 或者控制器中屏蔽csrf验证
 
-8: 框架中的renderPartial方法, 默认不使用布局, 由此带来的问题就是他不会加载必需的js/css文件, 所以我们需要在视图文件中手动把
+11: 框架中的renderPartial方法, 默认不使用布局, 由此带来的问题就是他不会加载必需的js/css文件, 所以我们需要在视图文件中手动把
    静态资源加载进来, 使用Html::cssFile('@web/css/temp.css');  Html::jsFile('@web/js/jquery.min.js');
 
-9: php导出大数据excel方法:
+10: php导出大数据excel方法:
     require('./db.class.php');
     $DB = new db();
     $DB->connect();//数据库链接
@@ -103,34 +105,34 @@ window服务器:
     }
 
 
-10: lamp环境中，安装mysql扩展： sudo apt-get install php7.0-mysql; sudo apt-get insall mysql-server;
+9: lamp环境中，安装mysql扩展： sudo apt-get install php7.0-mysql; sudo apt-get insall mysql-server;
 	sudo apt-get install mysql-client;
 
-11: set_time_limit(0);  配置当前php执行的脚本永不超时;
+8: set_time_limit(0);  配置当前php执行的脚本永不超时;
 
-12: mysql数据库, 当有的字段值为null, 而我们查询又不想其返回为null的时候, COALESCE() , 可以使用这个函数,
+7: mysql数据库, 当有的字段值为null, 而我们查询又不想其返回为null的时候, COALESCE() , 可以使用这个函数,
     它的作用就是把默认返回为null的, 改为用 0 来返回. 例如: select COALESCE(NULL, 0) from table
 
-13: redis for windows
+6: redis for windows
     把redis-server.exe安装成windows 服务。redis-server.exe --service-install redis.windows.conf --loglevel verbose  在win服务管理器中启动卸载可以使用 redis-server --service-uninstall
 
-14: centos7下安装php7
+5: centos7下安装php7
     rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
     获取php7 yum源
     rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
     安装
     yum install php70w
 
-15: composer 中国镜像
+4: composer 中国镜像
     composer config repo.packagist composer https://packagist.phpcomposer.com
 
-16: mysql 开启通用日志, 实时查询执行的sql:
+3: mysql 开启通用日志, 实时查询执行的sql:
     1.进入Mysql
     2.启用Log功能(general_log=ON) SHOW VARIABLES LIKE "general_log%"; SET GLOBAL general_log = 'ON';
 
-17: mysql 多字段多查询时 提升性能节省查询:
+2: mysql 多字段多查询时 提升性能节省查询:
     1: SELECT SQL_CALC_FOUND_ROWS id,query,operator,state,comment from table where .....;
     2: SELECT FOUND_ROWS();
     SQL_CALC_FOUND_ROWS 会默认统计总的查询结果, 然后只需要执行语句2, 就可直接得到总结果条数, 两表联查, 多字段, 复杂查询时, 能节省很大的性能;
     
-18. phpstrom注册码教程: http://idea.lanyus.com/
+1. phpstrom注册码教程: http://idea.lanyus.com/
