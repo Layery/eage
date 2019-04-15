@@ -1,3 +1,19 @@
+21: sublime Text3 解决无法联网下载插件的问题: 
+    将如下代码复制粘贴到 settion->packageSetting->package Contrl->setting user中
+    {
+        "bootstrapped":true,
+        "channels":[
+            "https://erhan.in/channel_v3.json"
+        ],
+        "in_process_packages":[
+
+        ],
+        "installed_packages":[
+            "ChineseLocalizations",
+            "Package Control"
+        ]
+    }
+
 
 20: $rs = cal_days_in_month(CAL_GREGORIAN, 11, 2018); // 获取指定的月份的天数
 
