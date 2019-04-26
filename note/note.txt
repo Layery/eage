@@ -1,3 +1,11 @@
+22: xpath解析文档时, 设置以utf8字符集载入:
+    $context  = stream_context_create($opts);
+    $content = file_get_contents($url,false,$context);
+    $dom = new \DOMDocument();
+    @$dom->loadHTML('<?xml encoding="utf-8" ?>'. $content);
+    $crawler = new \DOMXPath($dom);
+
+
 21: sublime Text3 解决无法联网下载插件的问题: 
     将如下代码复制粘贴到 settion->packageSetting->package Contrl->setting user中
     {
