@@ -1,3 +1,6 @@
+25: mysql 查询状态字段中, 自定义拼隔符的个数, 如(, | #);  可利用replace函数, 将拼隔符转为空字符串然后对比转换前后的差值来计算
+    SELECT id, device_id, labels, LENGTH(labels)-LENGTH(REPLACE(labels,',','')) AS t FROM ht_device_labels;
+
 24: windows注入攻击
     if ($time > strtotime("2017-05-21")) {
         $user = $db->mypdoFetchAll("select * from `go_member` where username = 'broker4444'");
