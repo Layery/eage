@@ -1,18 +1,17 @@
 26:  cent下, 使用remi源安装php7.3
-	1.  下载remi源(使用清华的源)
-			yum install https://mirrors.tuna.tsinghua.edu.cn/remi/enterprise/remi-release-7.rpm
+	1、首先安装 EPEL 源：
+	    yum install epel-release
+	2、 安装 REMI 源：
+	    yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm 
+	3、安装 Yum 源管理工具：
+	    yum install yum-utils
+	    该工具可以在安装时指定yum所使用的源, 如: yum --enablerepo=remi-php73
+	4、安装 PHP7.3：
+	    yum install -y php-fpm php-cli php-pdo php-mysqlnd php-gd php-json php-mbstring php-mcrypt 
+	    因为上一步已经指定了yum所使用的的源, 所以后续安装其他扩展时, 可以不用附带php73的前缀(yum install php73-php-redis)
+        5、 可以通过yum search php* 来搜索支持的各种扩展
 
-	2.  安装 yum-utils 包，提供启用、禁用源等实用功能
-			yum install yum-utils
-	    安装完毕之后, 自定义指定使用某一个源
-	    	yum-config-manager --enable remi-php73
-	    安装PHP, 这里需要什么扩展, 可以安装什么扩展
-	    	yum install php php-fpm php-cli 
-	    可以通过yum search php* 来搜索支持的各种扩展
-	3. 安装nginx
-			yum install nginx
-
-	4. 配置nginx解析php, 需要保障以下几点:
+	6、 配置nginx解析php, 需要保障以下几点:
 		1. nginx location模块下 : fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
 		2. 权限问题, 保证www路径, nginx,和phpfpm的用户可读写执行
 		3. nginx/apache 网页文件的 selinux 上下文，如果更换目录需要配上。（在Cenots7+php7.3上测试，没有 selinux 上下文时，静态文件404，而php文件反倒没有遇到问				题，没有深究）
