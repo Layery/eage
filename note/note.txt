@@ -1,3 +1,8 @@
+27: 解决mysql8.0以后group by可能会造成的错误
+    SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+    SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+    
+
 26:  cent下, 使用remi源安装php7.3
 	1、首先安装 EPEL 源：
 	    yum install epel-release
