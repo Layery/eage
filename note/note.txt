@@ -1,3 +1,9 @@
+28: 解决mysql source命令导入数据慢的问题， 临时生效法：
+	set global innodb_flush_log_at_trx_commit=0;
+	set global max_allowed_packet=1024*1024*20;
+	set global bulk_insert_buffer_size=32*1024*1024;
+	set global innodb_buffer_pool_size=32*1024*1024;
+
 27: 解决mysql8.0以后group by可能会造成的错误
     SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
     SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
